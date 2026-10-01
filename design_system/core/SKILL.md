@@ -1,21 +1,23 @@
 ---
 name: social-video-design-core
-description: Foundational design-system package for 9:16 vertical social video (1080x1920). Provides canonical geometry, platform safe areas, 10 functional motion verbs, visual state & presence primitives, and reusable structural components for selectable visual profiles.
+description: Foundational design-system package for 9:16 vertical social video (1080x1920). Provides canonical canvas geometry, configurable provisional safe areas, 10 functional motion verbs, visual state & presence primitives, and reusable structural components for selectable visual profiles.
 user-invocable: true
 ---
 
 # Social Video Design System — Core
 
-This package provides the shared production discipline for vertical social-first video (TikTok, Instagram Reels, YouTube Shorts).
+This package provides the shared production discipline for vertical social-first video.
 
 ## Core Principles
 
 1. **9:16 Vertical Geometry (1080×1920)**:
-   All compositions target 1080px wide by 1920px high. Safe areas are non-negotiable:
-   - Top: 140px reserved for platform navigation, audio ticker, and search.
-   - Bottom: 380px reserved for platform captions, creator handle, and interaction chrome.
-   - Right: 120px reserved for like, comment, share, and bookmark buttons.
-   - Left: 48px margin.
+   The 1080×1920 canvas (9:16 aspect ratio) is the canonical production invariant.
+   Safe areas are named, configurable production starting points to clear common overlay zones:
+   - Top: 140px provisional default (headroom for top platform interface overlays).
+   - Bottom: 380px provisional default (clearance for captions, creator identity, and lower controls).
+   - Right: 120px provisional default (clearance for side engagement action elements).
+   - Left: 48px provisional default (side gutter margin).
+   These values are provisional starting points, not verified universal platform exclusions.
 
 2. **Visual States, Not Static Slides**:
    A video unit is a state progression: `STATE 0 -> 1 -> 2 -> RESOLVED`.

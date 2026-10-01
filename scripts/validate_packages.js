@@ -1,13 +1,14 @@
 #!/usr/bin/env node
 
 /**
- * Validation script for Social Video Design System Foundation (Grain 1).
- * Zero dependencies — relies solely on standard Node.js APIs (fs, path).
+ * Validation script for Social Video Design System Foundation (Grain 1 / Grain 1A).
+ * Uses esbuild for real JSX syntax parsing and build validation.
  */
 
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import * as esbuild from "esbuild";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -25,20 +26,33 @@ function assert(condition, message) {
   }
 }
 
-console.log("=== 1. Validating Core Manifest & Structure ===");
+console.log("=== 1. Validating Core Manifest & Safe-Area Governance ===");
 
 // Check Core Manifest
 const coreManifestPath = path.join(CORE_DIR, "_ds_manifest.json");
 assert(fs.existsSync(coreManifestPath), "Core manifest exists: _ds_manifest.json");
 const coreManifest = JSON.parse(fs.readFileSync(coreManifestPath, "utf-8"));
 assert(coreManifest.namespace === "SocialVideoDesignSystemCore", "Core namespace is SocialVideoDesignSystemCore");
-assert(coreManifest.canvas?.width === 1080 && coreManifest.canvas?.height === 1920, "Canonical 9:16 canvas is 1080x1920");
 
-// Check Safe Areas
+// Canonical canvas geometry invariant
+assert(
+  coreManifest.canvas?.width === 1080 &&
+  coreManifest.canvas?.height === 1920 &&
+  coreManifest.canvas?.status === "canonical_invariant",
+  "Canonical canvas geometry is 1080x1920 invariant"
+);
+
+// Safe Areas — classified as provisional, configurable defaults
 const safeAreas = coreManifest.safeAreas;
 assert(
-  safeAreas && safeAreas.top === 140 && safeAreas.bottom === 380 && safeAreas.right === 120 && safeAreas.left === 48,
-  "Safe areas defined with correct platform boundaries (140 top, 380 bottom, 120 right, 48 left)"
+  safeAreas &&
+  safeAreas.status === "provisional_defaults" &&
+  safeAreas.configurable === true &&
+  typeof safeAreas.defaults?.top === "number" &&
+  typeof safeAreas.defaults?.bottom === "number" &&
+  typeof safeAreas.defaults?.right === "number" &&
+  typeof safeAreas.defaults?.left === "number",
+  "Safe areas classified as configurable provisional defaults with numeric values"
 );
 
 // Check 10 Motion Verbs
@@ -100,7 +114,6 @@ for (const p of coreManifest.profiles) {
     assert(fs.existsSync(path.join(pDir, vp.path)), `Profile visual pattern exists: ${p.id} -> ${vp.path}`);
   }
 
-  // Check PROFILE.md
   assert(fs.existsSync(path.join(pDir, "PROFILE.md")), `PROFILE.md exists for ${p.id}`);
 }
 
@@ -111,7 +124,13 @@ console.log("\n=== 3. Validating Core Tokens Completeness ===");
 const motionCss = fs.readFileSync(path.join(CORE_DIR, "tokens", "motion.css"), "utf-8");
 for (const verb of requiredVerbs) {
   if (verb === "PAUSE") {
-    assert(motionCss.includes("--hold-beat") && motionCss.includes("--hold-read") && motionCss.includes("--hold-inspect") && motionCss.includes("--hold-think"), "Holds defined for PAUSE");
+    assert(
+      motionCss.includes("--hold-beat") &&
+      motionCss.includes("--hold-read") &&
+      motionCss.includes("--hold-inspect") &&
+      motionCss.includes("--hold-think"),
+      "Hold tokens defined for PAUSE"
+    );
   } else {
     const tokenName = `--motion-${verb.toLowerCase()}`;
     assert(motionCss.includes(tokenName), `Token exists for ${verb}: ${tokenName}`);
@@ -121,10 +140,10 @@ for (const verb of requiredVerbs) {
 const geomCss = fs.readFileSync(path.join(CORE_DIR, "tokens", "geometry.css"), "utf-8");
 assert(geomCss.includes("--canvas-width: 1080px"), "Geometry declares canvas width 1080px");
 assert(geomCss.includes("--canvas-height: 1920px"), "Geometry declares canvas height 1920px");
-assert(geomCss.includes("--safe-top: 140px"), "Geometry declares --safe-top: 140px");
-assert(geomCss.includes("--safe-bottom: 380px"), "Geometry declares --safe-bottom: 380px");
-assert(geomCss.includes("--safe-right: 120px"), "Geometry declares --safe-right: 120px");
-assert(geomCss.includes("--safe-left: 48px"), "Geometry declares --safe-left: 48px");
+assert(geomCss.includes("--safe-top:"), "Geometry declares configurable --safe-top token");
+assert(geomCss.includes("--safe-bottom:"), "Geometry declares configurable --safe-bottom token");
+assert(geomCss.includes("--safe-right:"), "Geometry declares configurable --safe-right token");
+assert(geomCss.includes("--safe-left:"), "Geometry declares configurable --safe-left token");
 
 const typoCss = fs.readFileSync(path.join(CORE_DIR, "tokens", "typography.css"), "utf-8");
 for (const role of ["display", "headline", "subhead", "body", "mono", "caption"]) {
@@ -137,14 +156,11 @@ assert(colorCss.includes("--text-primary"), "Color token defines --text-primary"
 assert(colorCss.includes("--color-evidence"), "Color token defines --color-evidence");
 assert(colorCss.includes("--color-verified"), "Color token defines --color-verified");
 
-console.log("\n=== 4. Validating JS/JSX Component Integrity ===");
-function validateJSXFile(filePath, componentName) {
+console.log("\n=== 4. Validating JSX Components (Tier 1: Structural Integrity) ===");
+function validateJSXStructural(filePath, componentName) {
   const content = fs.readFileSync(filePath, "utf-8");
 
-  // Verify import React
   assert(content.includes('import React'), `${componentName} imports React`);
-
-  // Verify named export
   assert(
     content.includes(`export function ${componentName}`) || content.includes(`export const ${componentName}`),
     `${componentName} exports named component function`
@@ -181,8 +197,8 @@ function validateJSXFile(filePath, componentName) {
     }
 
     if (inString) {
-      if (char === "\\" ) {
-        i++; // skip escaped char
+      if (char === "\\") {
+        i++;
       } else if (char === inString) {
         inString = null;
       }
@@ -205,42 +221,63 @@ function validateJSXFile(filePath, componentName) {
   assert(braceCount === 0, `${componentName} has balanced curly braces { }`);
   assert(parenCount === 0, `${componentName} has balanced parentheses ( )`);
   assert(bracketCount === 0, `${componentName} has balanced brackets [ ]`);
-
-  // Validate balanced JSX tags
-  const tagRegex = /(<\/?[A-Za-z0-9_.-]+(?:\s+[^>]*?)?\/?>|<\/?>)/g;
-  const tagStack = [];
-  let match;
-  let tagCount = 0;
-
-  while ((match = tagRegex.exec(content)) !== null) {
-    const tag = match[0];
-    if (tag.startsWith("/*") || tag.startsWith("//")) continue;
-
-    if (tag === "</>" || tag.startsWith("</")) {
-      const name = tag === "</>" ? "Fragment" : tag.match(/<\/([A-Za-z0-9_.-]+)>/)[1];
-      assert(tagStack.length > 0, `${componentName}: Closing tag ${tag} has an opening tag`);
-      const expected = tagStack.pop();
-      assert(expected === name, `${componentName}: Closing tag ${name} matches opening tag ${expected}`);
-      tagCount++;
-    } else if (tag.endsWith("/>")) {
-      tagCount++;
-    } else {
-      const nameMatch = tag.match(/<([A-Za-z0-9_.-]+)/);
-      const name = nameMatch ? nameMatch[1] : "Fragment";
-      tagStack.push(name);
-      tagCount++;
-    }
-  }
-
-  assert(tagStack.length === 0, `${componentName} has all JSX opening and closing tags balanced`);
-  assert(tagCount > 0, `${componentName} contains ${tagCount} valid JSX elements`);
 }
 
 for (const comp of coreManifest.components) {
-  validateJSXFile(path.join(CORE_DIR, comp.sourcePath), comp.name);
+  validateJSXStructural(path.join(CORE_DIR, comp.sourcePath), comp.name);
 }
 
-console.log("\n=== 5. Verifying Obsidian Isolation (No Leaks) ===");
+console.log("\n=== 5. Validating JSX Components (Tier 2: Real JSX Syntax Parser via esbuild) ===");
+for (const comp of coreManifest.components) {
+  const filePath = path.join(CORE_DIR, comp.sourcePath);
+  const content = fs.readFileSync(filePath, "utf-8");
+  try {
+    const transformResult = esbuild.transformSync(content, {
+      loader: "jsx",
+      sourcefile: comp.sourcePath,
+    });
+    assert(
+      transformResult.code && transformResult.code.length > 0,
+      `Real JSX syntax parse passed (esbuild): ${comp.name}`
+    );
+  } catch (err) {
+    assert(false, `Real JSX syntax parse FAILED (esbuild): ${comp.name} — ${err.message}`);
+  }
+}
+
+console.log("\n=== 6. Validating Module Resolution (Tier 3: Build & Bundle via esbuild) ===");
+try {
+  const bundleResult = esbuild.buildSync({
+    entryPoints: [path.join(CORE_DIR, "index.js")],
+    bundle: true,
+    write: false,
+    external: ["react"],
+  });
+  assert(
+    bundleResult.outputFiles && bundleResult.outputFiles.length > 0,
+    "Module resolution & bundle build succeeded for design_system/core/index.js"
+  );
+} catch (err) {
+  assert(false, `Module resolution & bundle build FAILED: ${err.message}`);
+}
+
+console.log("\n=== 7. Negative Proof: Verifying esbuild Rejects Malformed JSX ===");
+try {
+  const malformedJSX = `export function BadComponent() { return <div><span>Mismatched</div>; }`;
+  esbuild.transformSync(malformedJSX, { loader: "jsx", sourcefile: "malformed_fixture.jsx" });
+  assert(false, "Negative validation failed: esbuild accepted malformed JSX");
+} catch (err) {
+  assert(true, `Negative validation passed: esbuild rejected malformed JSX (${err.errors?.[0]?.text || "syntax error"})`);
+}
+
+console.log("\n=== 8. Validation Boundary Status Summary ===");
+console.log("  [X] Tier 1: Structural delimiter & tag contract checks -> VALIDATED");
+console.log("  [X] Tier 2: Real JSX syntax parsing via esbuild -> VALIDATED");
+console.log("  [X] Tier 3: Module resolution & bundle build via esbuild -> VALIDATED");
+console.log("  [ ] Tier 4: React runtime / DOM render execution -> NOT VALIDATED (no React DOM runtime in test)");
+console.log("  [ ] Tier 5: Claude Design live runtime rendering -> UNVALIDATED (requires execution in Claude Design)");
+
+console.log("\n=== 9. Verifying Obsidian Isolation (No Leaks) ===");
 function checkDirectoryForObsidian(dir) {
   const entries = fs.readdirSync(dir, { withFileTypes: true });
   for (const ent of entries) {

@@ -2,11 +2,13 @@
 
 The canonical 1080x1920 (9:16) social video root container.
 
-Enforces safe-area padding:
-- Top safe area (`--safe-top: 140px`) for platform status, header, and search chrome.
-- Bottom safe area (`--safe-bottom: 380px`) for caption overlays, creator handle, and music track ticker.
-- Right safe area (`--safe-right: 120px`) for platform engagement rail (like, comment, share, bookmark).
-- Left safe margin (`--safe-left: 48px`).
+Enforces configurable safe-area padding:
+- Top safe area (`--safe-top: 140px` provisional default): headroom for top interface overlays.
+- Bottom safe area (`--safe-bottom: 380px` provisional default): clearance for captions, identity, and controls.
+- Right safe area (`--safe-right: 120px` provisional default): clearance for side engagement action elements.
+- Left safe margin (`--safe-left: 48px` provisional default): side margin.
+
+Note: Numeric values are provisional production defaults, not externally verified universal platform exclusions.
 
 ## Usage
 
@@ -28,4 +30,4 @@ Enforces safe-area padding:
 ## Rules
 - Never place critical text or interactive visual elements outside the inner content safe area.
 - Top metadata chrome (`topic`, `step`, `badge`) is optional; omit for full-bleed punchy moments.
-- Use `safeOverlay={true}` during storyboard review to inspect bounds against real platform chrome.
+- Use `safeOverlay={true}` during storyboard review to inspect provisional layout bounds.

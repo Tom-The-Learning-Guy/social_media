@@ -11,8 +11,8 @@ The social video production architecture enforces a clean separation of concerns
 
 ### Core (`design_system/core/`)
 Owns universal production invariants that remain stable across different visual styles:
-- **Canonical 9:16 vertical geometry** (1080 × 1920);
-- **Platform-aware safe areas** (`--safe-top: 140px`, `--safe-bottom: 380px`, `--safe-right: 120px`, `--safe-left: 48px`);
+- **Canonical 9:16 vertical geometry** (1080 × 1920) is the immutable production invariant;
+- **Named, configurable safe areas** (`--safe-top`, `--safe-bottom`, `--safe-right`, `--safe-left`). Numeric defaults (140px, 380px, 120px, 48px) are provisional production starting points, not verified universal platform exclusions;
 - **The 10 semantic motion verbs** (`REVEAL`, `FOCUS`, `DEEMPHASIZE`, `TRANSFORM`, `TRACE`, `REPLACE`, `REMOVE`, `RESOLVE`, `PERSIST`, `PAUSE`);
 - **Visual state progression and attention presence** (`STATE 0 -> 1 -> 2 -> RESOLVED`; `primary`, `recede`, `collapse`);
 - **Structural component contracts** (`SceneFrame`, `Stage`, `Statement`, `Annotation`, `EvidenceFrame`);

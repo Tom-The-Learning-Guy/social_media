@@ -3,9 +3,9 @@ import React from "react";
 /**
  * SceneFrame — The 1080x1920 9:16 vertical video canvas container.
  *
- * Enforces configurable safe areas so critical information and interactive
- * elements are never obstructed by platform UI chrome (top status/search,
- * right engagement rail, bottom caption/audio band).
+ * Employs configurable safe-area tokens to keep critical text and visual
+ * focal points clear of typical mobile platform overlays. Default values
+ * are provisional production starting points, not universal platform specifications.
  */
 export function SceneFrame({
   children,

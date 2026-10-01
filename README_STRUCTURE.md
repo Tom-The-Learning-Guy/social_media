@@ -8,9 +8,9 @@ Canvas: 1080 × 1920 (9:16 Vertical Video)
 ### 1. `design_system/core/` — Production Primitives & Discipline
 Contains genuinely universal, profile-independent production primitives for 9:16 vertical video:
 - `SKILL.md`: Claude Design skill entrypoint describing production principles, safe areas, motion verbs, and attention presence.
-- `_ds_manifest.json`: Machine-readable package manifest specifying canvas geometry (1080x1920), platform safe areas, components, tokens, guidelines, visual patterns, and profile discovery.
+- `_ds_manifest.json`: Machine-readable package manifest specifying canonical canvas geometry (1080x1920), configurable provisional safe areas, components, tokens, guidelines, visual patterns, and profile discovery.
 - `tokens/`:
-  - `geometry.css`: 1080x1920 canvas geometry, named configurable platform safe areas (`--safe-top: 140px`, `--safe-bottom: 380px`, `--safe-right: 120px`, `--safe-left: 48px`), 4px spacing scale, border widths, and radii.
+  - `geometry.css`: Canonical 1080x1920 canvas geometry, named configurable safe areas with provisional defaults (`--safe-top: 140px`, `--safe-bottom: 380px`, `--safe-right: 120px`, `--safe-left: 48px`), 4px spacing scale, border widths, and radii.
   - `typography.css`: Functional roles (`display`, `headline`, `subhead`, `body`, `mono`, `caption`) with mobile vertical scale.
   - `colors.css`: Neutral surfaces, text colors, and analytical evidence semantics (`--color-evidence`, `--color-verified`, `--color-warning`, `--color-critical`).
   - `motion.css`: The 10 semantic motion verbs (`REVEAL`, `FOCUS`, `DEEMPHASIZE`, `TRANSFORM`, `TRACE`, `REPLACE`, `REMOVE`, `RESOLVE`, `PERSIST`, `PAUSE` holds), easings, and state transitions.
@@ -39,7 +39,7 @@ Per-video projects and manifests:
 
 ### 4. `tests/` & `scripts/`
 - `tests/test_design_system_foundation.py`: Python `unittest` suite validating structure, manifests, real paths, core tokens, profile discovery, and complete Obsidian isolation.
-- `scripts/validate_packages.js`: Zero-dependency Node.js validation script verifying manifests, token completeness, JSX tag balance, and absence of forbidden references.
+- `scripts/validate_packages.js`: Node.js validation script performing structural integrity checks, real JSX syntax parsing and build validation via `esbuild`, negative malformed-JSX tests, and absence of forbidden references.
 
 ### 5. `references/`
 - `reference_lists/`: Governed reference lists (`Social Media Content Reference.txt`).

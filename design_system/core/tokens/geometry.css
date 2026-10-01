@@ -1,20 +1,20 @@
 /* Social Video Design System — Geometry & Safe Areas
    Canonical production canvas: 1080x1920 (9:16 vertical).
-   Safe areas are named and configurable to reflect platform chrome
-   (top status/search, bottom caption/sound band, right interaction rail)
-   without asserting platform-specific pixel exclusions as immutable truths. */
+   Safe areas are named, configurable production starting points.
+   Numeric values are provisional authoring defaults to accommodate typical
+   mobile overlays, not verified universal platform exclusions. */
 
 :root {
-  /* ---------- Canvas Geometry (9:16) ---------- */
+  /* ---------- Canvas Geometry (9:16 Invariant) ---------- */
   --canvas-width: 1080px;
   --canvas-height: 1920px;
   --canvas-aspect-ratio: 9 / 16;
 
-  /* ---------- Configurable Social Safe Areas ---------- */
-  --safe-top: 140px;                 /* Platform header, search, audio ticker */
-  --safe-bottom: 380px;              /* Platform caption band, username, nav bar */
-  --safe-right: 120px;               /* Platform like, comment, share, bookmark rail */
-  --safe-left: 48px;                 /* Standard left safety margin */
+  /* ---------- Configurable Safe-Area Defaults (Provisional Starting Points) ---------- */
+  --safe-top: 140px;                 /* Provisional default: top interface overlay allowance */
+  --safe-bottom: 380px;              /* Provisional default: lower caption/controls allowance */
+  --safe-right: 120px;               /* Provisional default: side engagement action allowance */
+  --safe-left: 48px;                 /* Provisional default: side edge allowance */
 
   /* Derived safe content box */
   --safe-content-width: 912px;       /* 1080 - 48 - 120 */

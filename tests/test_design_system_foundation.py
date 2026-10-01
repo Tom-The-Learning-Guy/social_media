@@ -1,7 +1,7 @@
 """
-Unit tests for Social Video Design System Foundation (Grain 1).
+Unit tests for Social Video Design System Foundation (Grain 1 / Grain 1A).
 Validates package structure, manifests, tokens, component contracts,
-visual profiles, and strict Obsidian reference non-leakage.
+visual profiles, safe-area governance, real JSX syntax parsing, and Obsidian isolation.
 """
 
 import json
@@ -38,12 +38,29 @@ class TestDesignSystemFoundation(unittest.TestCase):
                 self.assertFalse(f.endswith(".placeholder"), f"Placeholder file remains: {os.path.join(root, f)}")
 
     def test_manifests_parse_successfully(self):
-        """2. Verify manifests parse as valid JSON."""
+        """2. Verify manifests parse as valid JSON and classify safe areas correctly."""
         core_manifest_path = os.path.join(CORE_DIR, "_ds_manifest.json")
         with open(core_manifest_path, "r", encoding="utf-8") as f:
             core_manifest = json.load(f)
         self.assertEqual(core_manifest.get("namespace"), "SocialVideoDesignSystemCore")
 
+        # Canvas must be marked as canonical invariant
+        canvas = core_manifest.get("canvas", {})
+        self.assertEqual(canvas.get("width"), 1080)
+        self.assertEqual(canvas.get("height"), 1920)
+        self.assertEqual(canvas.get("aspectRatio"), "9:16")
+        self.assertEqual(canvas.get("status"), "canonical_invariant")
+
+        # Safe areas must be classified as configurable provisional defaults
+        safe_areas = core_manifest.get("safeAreas", {})
+        self.assertEqual(safe_areas.get("status"), "provisional_defaults")
+        self.assertTrue(safe_areas.get("configurable"), "Safe areas must be marked as configurable")
+        defaults = safe_areas.get("defaults", {})
+        for edge in ["top", "bottom", "right", "left"]:
+            self.assertIn(edge, defaults, f"Missing safeArea default for {edge}")
+            self.assertIsInstance(defaults[edge], (int, float), f"Safe area default {edge} must be numeric")
+
+        # Visual profile manifests
         eg_manifest_path = os.path.join(PROFILES_DIR, "editorial_grunge", "profile.json")
         with open(eg_manifest_path, "r", encoding="utf-8") as f:
             eg_manifest = json.load(f)
@@ -98,16 +115,17 @@ class TestDesignSystemFoundation(unittest.TestCase):
                 self.assertTrue(os.path.isfile(os.path.join(p_dir, vp["path"])), f"Missing profile pattern: {vp}")
 
     def test_required_core_tokens(self):
-        """4. Verify required core tokens exist (geometry, safe areas, 10 motion verbs, typography, colors)."""
-        # Geometry
+        """4. Verify required core tokens exist without canonizing provisional safe-area values as immutable facts."""
+        # Geometry: canvas invariant and configurable safe areas
         with open(os.path.join(CORE_DIR, "tokens", "geometry.css"), "r", encoding="utf-8") as f:
             geom = f.read()
         self.assertIn("--canvas-width: 1080px;", geom)
         self.assertIn("--canvas-height: 1920px;", geom)
-        self.assertIn("--safe-top: 140px;", geom)
-        self.assertIn("--safe-bottom: 380px;", geom)
-        self.assertIn("--safe-right: 120px;", geom)
-        self.assertIn("--safe-left: 48px;", geom)
+        self.assertIn("--canvas-aspect-ratio: 9 / 16;", geom)
+
+        # Verify safe area tokens exist and have numeric px values (without asserting them as universal platform truths)
+        for token in ["--safe-top", "--safe-bottom", "--safe-right", "--safe-left"]:
+            self.assertRegex(geom, rf"{token}:\s*\d+px;", f"Missing configurable {token} token in geometry.css")
 
         # Motion — all 10 semantic motion verbs
         with open(os.path.join(CORE_DIR, "tokens", "motion.css"), "r", encoding="utf-8") as f:
@@ -164,7 +182,6 @@ class TestDesignSystemFoundation(unittest.TestCase):
         tracked_files = res.stdout.splitlines()
         for f in tracked_files:
             self.assertNotIn("references/reference_systems/", f, f"Reference system file tracked: {f}")
-            # Ensure no obsidian-branded files tracked in design_system
             if f.startswith("design_system/"):
                 self.assertNotIn("obsidian", f.lower(), f"Obsidian named file in design_system: {f}")
 
@@ -180,8 +197,28 @@ class TestDesignSystemFoundation(unittest.TestCase):
                 for term in forbidden_terms:
                     self.assertNotIn(term, content, f"Forbidden reference term '{term}' found in {file_path}")
 
-    def test_jsx_components_validity_and_balance(self):
-        """10. Verify JSX modules are well-formed with balanced tags and delimiters."""
+    def test_safe_area_claims_governance(self):
+        """Verify no tracked design system files make unsupported claims about safe areas."""
+        unsupported_phrases = [
+            "safe areas are non-negotiable",
+            "correct platform boundaries",
+            "mandatory platform exclusions",
+            "immutable safe areas",
+        ]
+        for root, _, files in os.walk(DS_DIR):
+            for file_name in files:
+                file_path = os.path.join(root, file_name)
+                with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
+                    content = f.read().lower()
+                for phrase in unsupported_phrases:
+                    self.assertNotIn(
+                        phrase,
+                        content,
+                        f"Unsupported safe area phrase '{phrase}' found in {file_path}"
+                    )
+
+    def test_jsx_structural_delimiters_and_tag_balance(self):
+        """10. Verify JSX structural delimiters, bracket balance, and tag matching."""
         components = [
             "components/scene/SceneFrame.jsx",
             "components/stage/Stage.jsx",
@@ -278,6 +315,22 @@ class TestDesignSystemFoundation(unittest.TestCase):
                     tag_stack.append(name)
 
             self.assertEqual(len(tag_stack), 0, f"Unclosed tags in {rel_path}: {tag_stack}")
+
+    def test_real_jsx_syntax_and_module_resolution_via_node(self):
+        """11. Verify real JSX syntax parsing, module resolution, and negative proof via esbuild validator script."""
+        script_path = os.path.join(ROOT_DIR, "scripts", "validate_packages.js")
+        res = subprocess.run(
+            ["node", script_path],
+            capture_output=True, text=True, cwd=ROOT_DIR
+        )
+        self.assertEqual(res.returncode, 0, f"scripts/validate_packages.js failed:\n{res.stderr}\n{res.stdout}")
+        self.assertIn("Real JSX syntax parse passed (esbuild): SceneFrame", res.stdout)
+        self.assertIn("Real JSX syntax parse passed (esbuild): Stage", res.stdout)
+        self.assertIn("Real JSX syntax parse passed (esbuild): Statement", res.stdout)
+        self.assertIn("Real JSX syntax parse passed (esbuild): Annotation", res.stdout)
+        self.assertIn("Real JSX syntax parse passed (esbuild): EvidenceFrame", res.stdout)
+        self.assertIn("Module resolution & bundle build succeeded", res.stdout)
+        self.assertIn("Negative validation passed: esbuild rejected malformed JSX", res.stdout)
 
 
 if __name__ == "__main__":

@@ -5,13 +5,19 @@
   "canvas": {
     "width": 1080,
     "height": 1920,
-    "aspectRatio": "9:16"
+    "aspectRatio": "9:16",
+    "status": "canonical_invariant"
   },
   "safeAreas": {
-    "top": 140,
-    "bottom": 380,
-    "right": 120,
-    "left": 48
+    "status": "provisional_defaults",
+    "configurable": true,
+    "description": "Provisional production starting points for vertical mobile safe areas, not verified universal platform exclusions.",
+    "defaults": {
+      "top": 140,
+      "bottom": 380,
+      "right": 120,
+      "left": 48
+    }
   },
   "motionSemantics": [
     "REVEAL",

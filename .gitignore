@@ -24,6 +24,7 @@ __pycache__/
 .idea/
 
 # Build / generated
+node_modules/
 dist/
 build/
 tmp/
