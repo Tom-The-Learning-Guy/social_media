@@ -1,0 +1,86 @@
+<!-- @dsCard group="Evidence" viewport="700x330" name="Evidence & Provenance" subtitle="Evidence is visual content; provenance and citations are first-class" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    body {
+      margin: 0;
+      background: var(--surface-ground, #0f1012);
+      color: var(--text-primary, #ffffff);
+      padding: 24px;
+      font-family: var(--font-body, sans-serif);
+      box-sizing: border-box;
+    }
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      color: var(--text-primary, #ffffff);
+      margin-bottom: 8px;
+    }
+    .desc {
+      font-size: 13px;
+      color: var(--text-secondary, #a1a1aa);
+      margin-bottom: 16px;
+      line-height: 1.4;
+    }
+    .cards-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+    .status-card {
+      background: var(--surface-card, #18191c);
+      border: 1px solid var(--border-hairline, rgba(255,255,255,0.12));
+      border-radius: 4px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .tag {
+      font-family: var(--font-mono, monospace);
+      font-size: 10px;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 2px;
+      width: fit-content;
+    }
+    .verified { color: var(--color-verified, #34d399); border: 1px solid var(--color-verified, #34d399); }
+    .official { color: var(--color-evidence, #38bdf8); border: 1px solid var(--color-evidence, #38bdf8); }
+    .contested { color: var(--color-warning, #fbbf24); border: 1px solid var(--color-warning, #fbbf24); }
+    .unsourced { color: var(--color-critical, #f87171); border: 1px solid var(--color-critical, #f87171); }
+    .card-body {
+      font-size: 11px;
+      color: var(--text-secondary, #a1a1aa);
+      line-height: 1.35;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">Evidence as Visual Content (Sections 15 & 24)</div>
+  <div class="desc">
+    Every factual claim in commentary video requires verifiable provenance.
+    Visual elements display explicit source tracking and verification status tags.
+  </div>
+  <div class="cards-row">
+    <div class="status-card">
+      <span class="tag verified">VERIFIED</span>
+      <div class="card-body">Primary dataset or multi-source confirmation.</div>
+    </div>
+    <div class="status-card">
+      <span class="tag official">OFFICIAL</span>
+      <div class="card-body">Government statistic, regulatory filing, or court record.</div>
+    </div>
+    <div class="status-card">
+      <span class="tag contested">CONTESTED</span>
+      <div class="card-body">Disputed interpretations or active debates.</div>
+    </div>
+    <div class="status-card">
+      <span class="tag unsourced">UNSOURCED</span>
+      <div class="card-body">Viral screenshot or unverified assertion.</div>
+    </div>
+  </div>
+</body>
+</html>

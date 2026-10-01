@@ -1,0 +1,15 @@
+/* Urban Punk — Typography Tokens Override */
+
+:root {
+  /* Heavy Poster Woodcut Display + Industrial Mono */
+  --font-display: "Impact", "Arial Black", "Trebuchet MS", sans-serif;
+  --font-headline: "Impact", "Arial Black", "Trebuchet MS", sans-serif;
+  --font-subhead: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "SF Mono", "Menlo", "Courier New", monospace;
+  --font-caption: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* Typography Scales Adjusted for Heavy Impact */
+  --letter-spacing-tight: -0.01em;
+  --letter-spacing-caps: 0.16em;
+}

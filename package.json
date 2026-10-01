@@ -1,0 +1,10 @@
+{
+  "name": "social-video-design-system",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Governed social video design system foundation (Grain 1)",
+  "scripts": {
+    "validate": "node scripts/validate_packages.js"
+  }
+}

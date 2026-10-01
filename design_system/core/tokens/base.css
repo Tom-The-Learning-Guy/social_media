@@ -1,0 +1,24 @@
+/* Social Video Design System — Base CSS
+   Global baseline for 1080x1920 9:16 social video canvas rendering. */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  width: var(--canvas-width);
+  min-height: var(--canvas-height);
+  background-color: var(--surface-ground);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

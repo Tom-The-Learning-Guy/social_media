@@ -1,0 +1,43 @@
+/* Social Video Design System — Typography Roles & Scale
+   Typography roles define functional hierarchy for 1080x1920 mobile viewport.
+   Specific font families are assigned by visual profiles. */
+
+:root {
+  /* ---------- Typography Functional Roles (Defaults) ---------- */
+  --font-display: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-headline: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-subhead: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  --font-caption: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* ---------- Typography Size Scale (1080x1920 Canvas) ---------- */
+  --font-size-display-xl: 96px;       /* Impact hooks, main scene titles */
+  --font-size-display: 72px;          /* Major statement titles */
+  --font-size-headline: 52px;         /* Beat headings, claims */
+  --font-size-subhead: 36px;          /* Section labels, qualifications */
+  --font-size-body-lg: 28px;          /* Prominent body, lead text */
+  --font-size-body: 24px;             /* Standard body, citations */
+  --font-size-mono: 20px;             /* Code, annotations, metadata tags */
+  --font-size-caption: 18px;          /* Credits, secondary provenance */
+
+  /* ---------- Font Weights ---------- */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
+  /* ---------- Line Heights ---------- */
+  --line-height-tight: 1.05;          /* Large titles */
+  --line-height-snug: 1.2;            /* Headlines & subheads */
+  --line-height-base: 1.4;            /* Body & instructional text */
+  --line-height-loose: 1.6;           /* Spaced body */
+
+  /* ---------- Letter Spacings ---------- */
+  --letter-spacing-tight: -0.03em;
+  --letter-spacing-snug: -0.01em;
+  --letter-spacing-normal: 0em;
+  --letter-spacing-wide: 0.04em;
+  --letter-spacing-caps: 0.12em;      /* Mono headers, eyebrow tags */
+}

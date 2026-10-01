@@ -1,0 +1,24 @@
+/* Editorial Grunge — Color Tokens Override */
+
+:root {
+  /* Editorial Palette */
+  --surface-ground: #101216;             /* Slate dark newsroom ground */
+  --surface-card: #181b20;               /* Newsprint card background */
+  --surface-paper: #ece7de;              /* Archival paper alternate ground */
+
+  --text-primary: #f5f4ef;               /* Warm newsprint white */
+  --text-secondary: #b5b3aa;             /* Editorial muted text */
+  --text-muted: #79776f;                 /* Deep paper mute */
+
+  /* Distinctive Editorial Accents */
+  --color-accent: #eab308;               /* Document highlighter amber */
+  --color-evidence: #eab308;             /* Sourced evidence indicator */
+  --color-stamp-red: #dc2626;            /* Investigative red stamp */
+  --color-verified: #22c55e;             /* Primary fact verified */
+  --color-critical: #ef4444;             /* Contradiction / false claim */
+
+  /* Hairlines and Borders */
+  --border-hairline: rgba(245, 244, 239, 0.14);
+  --border-subtle: rgba(245, 244, 239, 0.26);
+  --border-strong: rgba(234, 179, 8, 0.6);
+}

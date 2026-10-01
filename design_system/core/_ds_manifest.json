@@ -1,0 +1,121 @@
+{
+  "namespace": "SocialVideoDesignSystemCore",
+  "version": "0.1.0",
+  "description": "Foundational social-video design system for 9:16 vertical video production with selectable visual profiles.",
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": "9:16"
+  },
+  "safeAreas": {
+    "top": 140,
+    "bottom": 380,
+    "right": 120,
+    "left": 48
+  },
+  "motionSemantics": [
+    "REVEAL",
+    "FOCUS",
+    "DEEMPHASIZE",
+    "TRANSFORM",
+    "TRACE",
+    "REPLACE",
+    "REMOVE",
+    "RESOLVE",
+    "PERSIST",
+    "PAUSE"
+  ],
+  "components": [
+    {
+      "name": "SceneFrame",
+      "category": "scene",
+      "sourcePath": "components/scene/SceneFrame.jsx",
+      "dtsPath": "components/scene/SceneFrame.d.ts",
+      "promptPath": "components/scene/SceneFrame.prompt.md"
+    },
+    {
+      "name": "Stage",
+      "category": "stage",
+      "sourcePath": "components/stage/Stage.jsx",
+      "dtsPath": "components/stage/Stage.d.ts",
+      "promptPath": "components/stage/Stage.prompt.md"
+    },
+    {
+      "name": "Statement",
+      "category": "teach",
+      "sourcePath": "components/teach/Statement.jsx",
+      "dtsPath": "components/teach/Statement.d.ts",
+      "promptPath": "components/teach/Statement.prompt.md"
+    },
+    {
+      "name": "Annotation",
+      "category": "teach",
+      "sourcePath": "components/teach/Annotation.jsx",
+      "dtsPath": "components/teach/Annotation.d.ts",
+      "promptPath": "components/teach/Annotation.prompt.md"
+    },
+    {
+      "name": "EvidenceFrame",
+      "category": "media",
+      "sourcePath": "components/media/EvidenceFrame.jsx",
+      "dtsPath": "components/media/EvidenceFrame.d.ts",
+      "promptPath": "components/media/EvidenceFrame.prompt.md"
+    }
+  ],
+  "globalCssPaths": [
+    "tokens/geometry.css",
+    "tokens/colors.css",
+    "tokens/typography.css",
+    "tokens/motion.css",
+    "tokens/base.css",
+    "styles.css"
+  ],
+  "guidelines": [
+    {
+      "name": "9:16 Geometry & Safe Areas",
+      "group": "Production",
+      "path": "guidelines/geometry-and-safe-areas.html"
+    },
+    {
+      "name": "Motion Semantics",
+      "group": "Motion",
+      "path": "guidelines/motion-semantics.html"
+    },
+    {
+      "name": "Visual States & Presence",
+      "group": "Instructional",
+      "path": "guidelines/visual-states-presence.html"
+    },
+    {
+      "name": "Evidence & Provenance",
+      "group": "Evidence",
+      "path": "guidelines/evidence-provenance.html"
+    }
+  ],
+  "visualPatterns": [
+    {
+      "name": "Claim → Evidence → Resolution",
+      "id": "claim_evidence_resolution",
+      "path": "visual-patterns/claim-evidence-resolution.md"
+    },
+    {
+      "name": "Concept Breakdown",
+      "id": "concept_breakdown",
+      "path": "visual-patterns/concept-breakdown.md"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "editorial_grunge",
+      "name": "Editorial Grunge",
+      "manifestPath": "../profiles/editorial_grunge/profile.json",
+      "cssPath": "../profiles/editorial_grunge/styles.css"
+    },
+    {
+      "id": "urban_punk",
+      "name": "Urban Punk",
+      "manifestPath": "../profiles/urban_punk/profile.json",
+      "cssPath": "../profiles/urban_punk/styles.css"
+    }
+  ]
+}

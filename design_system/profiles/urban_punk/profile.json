@@ -1,0 +1,33 @@
+{
+  "id": "urban_punk",
+  "name": "Urban Punk",
+  "version": "0.1.0",
+  "inherits": "core",
+  "description": "Street, poster, and punk-influenced visual language with paste-up logic, industrial mono, and high-contrast accents.",
+  "tokens": [
+    "tokens/colors.css",
+    "tokens/typography.css",
+    "tokens/texture.css"
+  ],
+  "cssPath": "styles.css",
+  "guidelines": [
+    {
+      "name": "Paste-up Logic",
+      "path": "guidelines/paste-up-logic.html"
+    },
+    {
+      "name": "High-Contrast Accents",
+      "path": "guidelines/high-contrast-accents.html"
+    }
+  ],
+  "visualPatterns": [
+    {
+      "name": "Stencil Punch",
+      "path": "visual-patterns/stencil-punch.md"
+    },
+    {
+      "name": "Sticker Callout",
+      "path": "visual-patterns/sticker-callout.md"
+    }
+  ]
+}

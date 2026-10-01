@@ -1,0 +1,71 @@
+<!-- @dsCard group="Motion" viewport="700x330" name="Motion Semantics" subtitle="Ten functional motion verbs. Motion must have a job; cut pure decoration" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    body {
+      margin: 0;
+      background: var(--surface-ground, #0f1012);
+      color: var(--text-primary, #ffffff);
+      padding: 20px 24px;
+      font-family: var(--font-body, sans-serif);
+      box-sizing: border-box;
+    }
+    .header {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 12px;
+      color: var(--color-accent, #38bdf8);
+    }
+    .verbs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 16px;
+      font-size: 11px;
+    }
+    .verb-row {
+      display: flex;
+      gap: 8px;
+      align-items: baseline;
+      border-bottom: 1px solid var(--border-hairline, rgba(255,255,255,0.08));
+      padding-bottom: 2px;
+    }
+    .verb-name {
+      font-family: var(--font-mono, monospace);
+      font-weight: bold;
+      color: var(--color-accent, #38bdf8);
+      width: 100px;
+      flex-shrink: 0;
+    }
+    .verb-time {
+      font-family: var(--font-mono, monospace);
+      color: var(--text-muted, #71717a);
+      width: 48px;
+      flex-shrink: 0;
+    }
+    .verb-desc {
+      color: var(--text-secondary, #a1a1aa);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">Ten Semantic Motion Verbs</div>
+  <div class="verbs-grid">
+    <div class="verb-row"><span class="verb-name">REVEAL</span><span class="verb-time">450ms</span><span class="verb-desc">Sequence information in</span></div>
+    <div class="verb-row"><span class="verb-name">FOCUS</span><span class="verb-time">280ms</span><span class="verb-desc">Direct attention to detail</span></div>
+    <div class="verb-row"><span class="verb-name">DEEMPHASIZE</span><span class="verb-time">240ms</span><span class="verb-desc">Attention recedes to context</span></div>
+    <div class="verb-row"><span class="verb-name">TRANSFORM</span><span class="verb-time">600ms</span><span class="verb-desc">Explicit mental model change</span></div>
+    <div class="verb-row"><span class="verb-name">TRACE</span><span class="verb-time">800ms</span><span class="verb-desc">Draw path or relationship</span></div>
+    <div class="verb-row"><span class="verb-name">REPLACE</span><span class="verb-time">320ms</span><span class="verb-desc">Swap one object for another</span></div>
+    <div class="verb-row"><span class="verb-name">REMOVE</span><span class="verb-time">260ms</span><span class="verb-desc">Exit object cleanly from frame</span></div>
+    <div class="verb-row"><span class="verb-name">RESOLVE</span><span class="verb-time">420ms</span><span class="verb-desc">Land answer or punchline</span></div>
+    <div class="verb-row"><span class="verb-name">PERSIST</span><span class="verb-time">550ms</span><span class="verb-desc">Continuity across states</span></div>
+    <div class="verb-row"><span class="verb-name">PAUSE</span><span class="verb-time">Holds</span><span class="verb-desc">Beat (600ms), Read (2.2s), Think (5s)</span></div>
+  </div>
+</body>
+</html>

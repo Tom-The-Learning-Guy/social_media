@@ -1,0 +1,33 @@
+{
+  "id": "editorial_grunge",
+  "name": "Editorial Grunge",
+  "version": "0.1.0",
+  "inherits": "core",
+  "description": "Editorial and investigative information design with distressed/grunge texture for evidence-heavy social commentary.",
+  "tokens": [
+    "tokens/colors.css",
+    "tokens/typography.css",
+    "tokens/texture.css"
+  ],
+  "cssPath": "styles.css",
+  "guidelines": [
+    {
+      "name": "Editorial Hierarchy",
+      "path": "guidelines/editorial-hierarchy.html"
+    },
+    {
+      "name": "Evidence Treatment",
+      "path": "guidelines/evidence-treatment.html"
+    }
+  ],
+  "visualPatterns": [
+    {
+      "name": "Headline Takeover",
+      "path": "visual-patterns/headline-takeover.md"
+    },
+    {
+      "name": "Evidence Stack",
+      "path": "visual-patterns/evidence-stack.md"
+    }
+  ]
+}

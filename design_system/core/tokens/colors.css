@@ -1,0 +1,41 @@
+/* Social Video Design System — Neutral & Semantic Colors
+   Only genuinely profile-independent colors are defined here.
+   Profiles establish their own chromatic palette, saturation, and contrast. */
+
+:root {
+  /* ---------- Neutral Values ---------- */
+  --color-neutral-0: #000000;
+  --color-neutral-50: #0f1012;
+  --color-neutral-100: #18191c;
+  --color-neutral-200: #26272b;
+  --color-neutral-300: #3f4046;
+  --color-neutral-400: #71717a;
+  --color-neutral-500: #a1a1aa;
+  --color-neutral-700: #d4d4d8;
+  --color-neutral-900: #f4f4f5;
+  --color-neutral-1000: #ffffff;
+
+  /* ---------- Default Semantic Ground & Inks ---------- */
+  --surface-ground: var(--color-neutral-50);
+  --surface-card: var(--color-neutral-100);
+  --surface-overlay: rgba(0, 0, 0, 0.75);
+  --surface-elevated: var(--color-neutral-200);
+
+  --text-primary: var(--color-neutral-1000);
+  --text-secondary: var(--color-neutral-500);
+  --text-muted: var(--color-neutral-400);
+  --text-inverse: var(--color-neutral-0);
+
+  --border-hairline: rgba(255, 255, 255, 0.12);
+  --border-subtle: rgba(255, 255, 255, 0.22);
+  --border-strong: rgba(255, 255, 255, 0.45);
+
+  /* ---------- Evidence & Analytical Semantics ---------- */
+  --color-evidence: #38bdf8;       /* Citation / primary source highlight */
+  --color-verified: #34d399;       /* Factually verified claim */
+  --color-warning: #fbbf24;        /* Contested / unverified assertion */
+  --color-critical: #f87171;       /* Contradiction / false claim */
+
+  /* Neutral Accent Default (Profile will override) */
+  --color-accent: var(--color-evidence);
+}

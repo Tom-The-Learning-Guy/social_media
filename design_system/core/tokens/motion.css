@@ -1,0 +1,36 @@
+/* Social Video Design System — Motion Semantics & Timing
+   Motion has a job: communicate sequence, attention, relationship, state,
+   consequence, emphasis, transition, or comedic timing.
+   Avoid decorative animation taxonomies. Every animation should map
+   to one of the ten semantic motion verbs. */
+
+:root {
+  /* ---------- Ten Semantic Motion Verbs ---------- */
+  --motion-reveal: 450ms;       /* REVEAL — Sequence information or elements in */
+  --motion-focus: 280ms;        /* FOCUS — Shift viewer attention to key detail */
+  --motion-deemphasize: 240ms;  /* DEEMPHASIZE — Attention recedes, remains visible */
+  --motion-transform: 600ms;    /* TRANSFORM — Make a changed mental model explicit */
+  --motion-trace: 800ms;        /* TRACE — Draw a relationship, causal link, or path */
+  --motion-replace: 320ms;      /* REPLACE — Swap one element for another */
+  --motion-remove: 260ms;       /* REMOVE — Take an element cleanly out of frame */
+  --motion-resolve: 420ms;      /* RESOLVE — Land a consequence, punchline, or answer */
+  --motion-persist: 550ms;      /* PERSIST — Carry an element continuously across states */
+
+  /* ---------- PAUSE / Holds — Stillness is a designed production state ---------- */
+  --hold-beat: 600ms;           /* Brief comedic or dramatic punctuation beat */
+  --hold-read: 2200ms;          /* Statement reading hold */
+  --hold-inspect: 3600ms;       /* Evidence / diagram inspection hold */
+  --hold-think: 5000ms;         /* Reflection hold */
+
+  /* ---------- Easings ---------- */
+  --ease-standard: cubic-bezier(0.2, 0.0, 0.2, 1);   /* Smooth purposeful move */
+  --ease-out: cubic-bezier(0.0, 0.0, 0.2, 1);        /* Natural deceleration */
+  --ease-in: cubic-bezier(0.4, 0.0, 1, 1);           /* Clean exit acceleration */
+  --ease-punch: cubic-bezier(0.16, 1, 0.3, 1);       /* Sharp editorial punch */
+  --ease-snap: cubic-bezier(0.77, 0, 0.175, 1);      /* High-impact snap */
+
+  /* ---------- Visual-State Transitions ---------- */
+  --motion-state: 300ms;        /* Default transition between Stage visual states */
+  --stagger-item: 80ms;         /* Stagger offset for sequenced list items */
+  --stagger-node: 120ms;        /* Stagger offset for diagram / evidence nodes */
+}

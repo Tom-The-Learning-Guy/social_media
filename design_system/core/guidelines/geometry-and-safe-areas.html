@@ -1,0 +1,88 @@
+<!-- @dsCard group="Production" viewport="700x330" name="9:16 Geometry & Safe Areas" subtitle="Canonical 1080x1920 social canvas with platform-aware safe padding" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    body {
+      margin: 0;
+      background: var(--surface-ground, #0f1012);
+      color: var(--text-primary, #ffffff);
+      padding: 24px;
+      font-family: var(--font-body, sans-serif);
+      box-sizing: border-box;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 16px;
+      align-items: center;
+      height: 100%;
+    }
+    .preview {
+      width: 135px;
+      height: 240px;
+      background: var(--surface-card, #18191c);
+      border: 1px solid var(--border-subtle, rgba(255,255,255,0.22));
+      position: relative;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .safe-box {
+      position: absolute;
+      top: 17.5px; /* ~140/1920 * 240 */
+      bottom: 47.5px; /* ~380/1920 * 240 */
+      left: 6px; /* ~48/1080 * 135 */
+      right: 15px; /* ~120/1080 * 135 */
+      border: 1px dashed var(--color-accent, #38bdf8);
+      background: rgba(56, 189, 248, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 8px;
+      font-family: var(--font-mono, monospace);
+      color: var(--color-accent, #38bdf8);
+      text-align: center;
+    }
+    .details {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      color: var(--text-primary, #ffffff);
+    }
+    .spec-row {
+      display: flex;
+      font-size: 12px;
+      font-family: var(--font-mono, monospace);
+      gap: 8px;
+      color: var(--text-secondary, #a1a1aa);
+      border-bottom: 1px solid var(--border-hairline, rgba(255,255,255,0.12));
+      padding-bottom: 4px;
+    }
+    .spec-key {
+      color: var(--color-accent, #38bdf8);
+      width: 110px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="preview">
+      <div class="safe-box">SAFE CONTENT</div>
+    </div>
+    <div class="details">
+      <div class="title">1080 × 1920 Canonical Canvas</div>
+      <div class="spec-row"><span class="spec-key">--safe-top</span><span>140px (platform header & search)</span></div>
+      <div class="spec-row"><span class="spec-key">--safe-bottom</span><span>380px (captions, handle, audio)</span></div>
+      <div class="spec-row"><span class="spec-key">--safe-right</span><span>120px (engagement action rail)</span></div>
+      <div class="spec-row"><span class="spec-key">--safe-left</span><span>48px (edge safety margin)</span></div>
+      <div class="spec-row"><span class="spec-key">Safe Area</span><span>912px × 1400px interior focus</span></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+/* Editorial Grunge — Profile Entrypoint Stylesheet */
+
+@import "../../core/styles.css";
+@import "tokens/colors.css";
+@import "tokens/typography.css";
+@import "tokens/texture.css";
+
+/* Profile-specific component adjustments */
+.statement__heading {
+  font-family: var(--font-headline);
+  letter-spacing: -0.02em;
+}
+
+.evidence-frame {
+  border-left: 4px solid var(--color-accent);
+}

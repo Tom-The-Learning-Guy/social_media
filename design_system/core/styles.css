@@ -1,0 +1,9 @@
+/* Social Video Design System — Core Stylesheet
+   Imports foundational tokens for 9:16 social video.
+   Import order: geometry -> colors -> typography -> motion -> base */
+
+@import "tokens/geometry.css";
+@import "tokens/colors.css";
+@import "tokens/typography.css";
+@import "tokens/motion.css";
+@import "tokens/base.css";

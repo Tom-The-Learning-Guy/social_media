@@ -1,0 +1,99 @@
+<!-- @dsCard group="Instructional" viewport="700x330" name="Visual States & Presence" subtitle="Production units are state progressions (0 -> 1 -> 2 -> RESOLVED), not static slides" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    body {
+      margin: 0;
+      background: var(--surface-ground, #0f1012);
+      color: var(--text-primary, #ffffff);
+      padding: 24px;
+      font-family: var(--font-body, sans-serif);
+      box-sizing: border-box;
+    }
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      color: var(--text-primary, #ffffff);
+      margin-bottom: 8px;
+    }
+    .flow {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .state-box {
+      background: var(--surface-card, #18191c);
+      border: 1px solid var(--border-subtle, rgba(255,255,255,0.22));
+      padding: 10px 14px;
+      border-radius: 4px;
+      font-family: var(--font-mono, monospace);
+      font-size: 12px;
+      color: var(--text-primary, #ffffff);
+      text-align: center;
+    }
+    .arrow {
+      color: var(--color-accent, #38bdf8);
+      font-weight: bold;
+    }
+    .presence-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+    .presence-table th, .presence-table td {
+      padding: 6px 8px;
+      text-align: left;
+      border-bottom: 1px solid var(--border-hairline, rgba(255,255,255,0.12));
+    }
+    .presence-table th {
+      color: var(--text-muted, #71717a);
+      font-family: var(--font-mono, monospace);
+    }
+    .presence-pill {
+      font-family: var(--font-mono, monospace);
+      font-size: 11px;
+      font-weight: bold;
+      color: var(--color-accent, #38bdf8);
+    }
+  </style>
+</head>
+<body>
+  <div class="title">Visual State Progression</div>
+  <div class="flow">
+    <div class="state-box">STATE 0<br><small style="color:var(--text-muted)">CLAIM</small></div>
+    <div class="arrow">→</div>
+    <div class="state-box">STATE 1<br><small style="color:var(--text-muted)">EVIDENCE</small></div>
+    <div class="arrow">→</div>
+    <div class="state-box">STATE 2<br><small style="color:var(--text-muted)">REASONING</small></div>
+    <div class="arrow">→</div>
+    <div class="state-box" style="border-color:var(--color-accent, #38bdf8)">RESOLVED<br><small style="color:var(--color-accent)">CONCLUSION</small></div>
+  </div>
+
+  <table class="presence-table">
+    <thead>
+      <tr><th>Presence</th><th>Visual Behavior</th><th>Production Purpose</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="presence-pill">primary</td>
+        <td>Full opacity, active accent colors</td>
+        <td>The active visual focus commanding viewer attention.</td>
+      </tr>
+      <tr>
+        <td class="presence-pill">recede</td>
+        <td>35% opacity, desaturated, no pointer</td>
+        <td>Maintains visual context/continuity without competing with new focus.</td>
+      </tr>
+      <tr>
+        <td class="presence-pill">collapse</td>
+        <td>Removed from layout (display: none)</td>
+        <td>Clean removal when component has finished its explanatory work.</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

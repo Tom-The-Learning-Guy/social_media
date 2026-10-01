@@ -1,0 +1,26 @@
+/* Urban Punk — Color Tokens Override */
+
+:root {
+  /* High-Contrast Street Palette */
+  --surface-ground: #0a0a0c;             /* Deep asphalt / night wall */
+  --surface-card: #141417;               /* Photocopied board ground */
+  --surface-elevated: #1e1e24;
+
+  --text-primary: #f8fafc;               /* Stark photocopy white */
+  --text-secondary: #94a3b8;             /* Weathered concrete gray */
+  --text-muted: #64748b;
+
+  /* Acid & Street Accents */
+  --color-accent: #ccff00;               /* Toxic acid lime / electric yellow */
+  --color-punch-pink: #ff2a6d;           /* Stencil punch pink */
+  --color-caution-orange: #ff6b00;       /* Caution tape orange */
+  --color-evidence: #ccff00;
+  --color-verified: #ccff00;
+  --color-critical: #ff2a6d;
+  --color-warning: #ff6b00;
+
+  /* High-Contrast Cutout Borders */
+  --border-hairline: rgba(248, 250, 252, 0.2);
+  --border-subtle: rgba(248, 250, 252, 0.4);
+  --border-strong: #ccff00;
+}

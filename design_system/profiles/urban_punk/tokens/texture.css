@@ -1,0 +1,14 @@
+/* Urban Punk — Texture & Geometry Override */
+
+:root {
+  /* Hard Cutout & Tape Variables */
+  --texture-tape-angle: -1.5deg;
+  --texture-shadow-pasteup: 4px 4px 0px #000000;
+  --texture-border-cutout: 3px solid #f8fafc;
+
+  /* Crisp non-rounded corners for paste-up aesthetic */
+  --radius-xs: 0px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 2px;
+}

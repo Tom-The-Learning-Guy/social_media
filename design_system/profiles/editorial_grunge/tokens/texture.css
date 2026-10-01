@@ -1,0 +1,14 @@
+/* Editorial Grunge — Texture Tokens */
+
+:root {
+  /* Editorial Texture Variables */
+  --texture-halftone-opacity: 0.08;
+  --texture-paper-grain-opacity: 0.06;
+  --texture-stamp-rotation: -2deg;
+  --texture-rule-style: double;
+
+  /* Card styling overrides */
+  --radius-xs: 0px;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+}
