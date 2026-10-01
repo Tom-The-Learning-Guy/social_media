@@ -1,0 +1,973 @@
+SOCIAL VIDEO CONTENT SPECIFICATION
+
+Version: 0.1
+Status: Experimental / Living Standard
+Primary Medium: Social-first vertical video
+Purpose: Establish repeatable editorial, writing, evidence, visual, production, and provenance standards for social content.
+
+⸻
+
+1. PURPOSE
+
+Create distinctive social-first videos combining:
+
+* learning;
+* policy ideas;
+* social commentary;
+* comedy;
+* cultural references;
+* evidence;
+* animation;
+* live presentation;
+* media excerpts; and
+* strong personal perspective.
+
+The objective is not conventional educational content, generic influencer content, political punditry, or sanitized corporate explainer video.
+
+The desired content should be:
+
+sharp + intelligent + funny + provocative + evidence-aware + visually interesting + educational
+
+Edginess is permitted intentionally.
+
+Profanity is permitted intentionally.
+
+Strong conclusions are permitted.
+
+Controversial subjects are permitted.
+
+The content should not become intellectually sloppy merely because the presentation is informal.
+
+⸻
+
+2. CORE EDITORIAL PRINCIPLE
+
+Strong language. Stronger reasoning.
+
+The content may be aggressive, irreverent, comedic, profane, skeptical, or confrontational.
+
+The underlying reasoning should be more disciplined than the rhetoric.
+
+Where appropriate:
+
+CLAIM → EVIDENCE → REASONING → CONCLUSION
+
+Do not manufacture false certainty merely to produce a stronger line.
+
+Distinguish:
+
+* fact;
+* definition;
+* evidence;
+* interpretation;
+* inference;
+* opinion;
+* value judgment;
+* joke;
+* speculation.
+
+A provocative presentation should not require weak reasoning.
+
+⸻
+
+3. PRESENTER VOICE — INITIAL PROFILE
+
+The presenter should sound like a knowledgeable person actually talking rather than reading professionally written educational copy.
+
+Preserve conversational language.
+
+Examples of natural constructions:
+
+* “What the fuck are we even doing?”
+* “Like…”
+* “I mean, c’mon.”
+* “Who gives two flying fucks?”
+* “Are you fucking kidding me?”
+* “Let’s put a pin in this giant fucking grenade.”
+* “What the hell does this have to do with…?”
+
+Do not automatically correct conversational grammar into formal written English.
+
+Sentence fragments are acceptable.
+
+Abrupt transitions are acceptable when they sound natural.
+
+Rhetorical questions are encouraged.
+
+Strategic repetition is encouraged.
+
+Profanity should normally serve a function:
+
+* emphasis;
+* incredulity;
+* rhythm;
+* comedy;
+* frustration;
+* transition;
+* punchline.
+
+Do not insert profanity mechanically to make otherwise bland writing appear edgy.
+
+⸻
+
+4. INTELLECTUAL PERSONA
+
+The presenter is NOT:
+
+* an omniscient professor;
+* a sanitized corporate instructor;
+* a generic political commentator;
+* a motivational speaker;
+* a rage-bait character.
+
+The emerging persona is closer to:
+
+“A regular person looking at something ridiculous with the audience who happens to know how to break the problem apart.”
+
+The audience should feel invited into the reasoning process rather than lectured from above.
+
+The presenter may say:
+
+“This is fucking stupid.”
+
+But should ideally be able to follow it with:
+
+“And here’s why.”
+
+⸻
+
+5. PRECISION OVER POLITENESS
+
+Do not weaken accurate terminology merely because a term is controversial or offensive to someone.
+
+Labels are analytical tools when they have meaningful definitions.
+
+Examples include:
+
+* fascist;
+* Nazi;
+* socialist;
+* communist;
+* authoritarian;
+* racist;
+* propagandistic;
+* exploitative.
+
+The standard is NOT:
+
+“Avoid inflammatory labels.”
+
+The standard is:
+
+Understand the label before applying it.
+
+Where a label materially contributes to an argument:
+
+DEFINE → ESTABLISH CRITERIA → EXAMINE EVIDENCE → APPLY OR REJECT LABEL
+
+A person or institution meeting the relevant criteria may be described accordingly.
+
+A label should not substitute for analysis.
+
+⸻
+
+6. ATTACK THE ARGUMENT
+
+Where practical, direct criticism toward:
+
+* reasoning;
+* evidence;
+* contradictions;
+* systems;
+* decisions;
+* policies;
+* behaviours;
+* arguments.
+
+Personal criticism may still be warranted where the person or their conduct is substantively relevant.
+
+The objective is not artificial civility.
+
+The objective is making criticism difficult to dismiss as unsupported abuse.
+
+⸻
+
+7. SELF-SKEPTICISM
+
+The content should occasionally turn its own reasoning standard back on itself.
+
+Example pattern:
+
+Presenter raises an attractive but unsupported explanation.
+
+Then:
+
+“Maybe. But unless we’ve got some fucking evidence, that’s not critical thinking either.”
+
+This reinforces credibility and models the behaviour being taught.
+
+The presenter is allowed to:
+
+* acknowledge uncertainty;
+* distinguish suspicion from evidence;
+* correct himself;
+* identify assumptions;
+* change conclusions when evidence changes.
+
+These behaviours are strengths, not weaknesses.
+
+⸻
+
+8. VIDEO LENGTH
+
+Do NOT impose an arbitrary short-form duration.
+
+The reference material ranges from approximately 36 seconds to almost eight minutes.
+
+The operative category is:
+
+SOCIAL-FIRST VERTICAL VIDEO
+
+rather than:
+
+VIDEO UNDER 60 SECONDS
+
+Duration should follow:
+
+* complexity;
+* narrative;
+* entertainment value;
+* information density;
+* pacing;
+* platform constraints.
+
+Remove material that does not earn its runtime.
+
+Do not remove necessary explanation merely to hit an arbitrary duration.
+
+⸻
+
+9. DEFAULT FORMAT
+
+Primary aspect ratio:
+
+9:16 vertical
+
+The format may combine:
+
+* direct-to-camera presenter;
+* animated learning;
+* kinetic typography;
+* diagrams;
+* screenshots;
+* headlines;
+* charts;
+* photographs;
+* maps;
+* archival material;
+* television/film excerpts;
+* memes;
+* news footage;
+* social posts;
+* documents;
+* visual jokes.
+
+No single visual mode should dominate merely because it is easier to produce.
+
+⸻
+
+10. VISUAL GRAMMAR
+
+A visual change should normally have a reason.
+
+Common triggers:
+
+NEW CLAIM
+
+Introduce a new visual environment or evidence object.
+
+ABSTRACT CONCEPT
+
+Use animation or diagramming.
+
+EVIDENCE
+
+Show the source, headline, data, quotation, document, graph, or relevant footage.
+
+EXAMPLE
+
+Move from abstraction into a concrete situation.
+
+COMEDIC RELEASE
+
+Use cultural clip, meme, visual gag, reaction or unexpected animation.
+
+EMPHASIS
+
+Use zoom, crop, typography, silence, visual isolation or camera push.
+
+TOPIC TRANSITION
+
+Change visual language enough that the viewer perceives a new chapter.
+
+ATTENTION RESET
+
+Introduce meaningful visual novelty before the presentation becomes visually static.
+
+Do not change visuals simply because a fixed number of seconds has elapsed.
+
+⸻
+
+11. PRESENTER AS VISUAL ANCHOR
+
+For flagship commentary videos, the presenter can remain the narrative anchor while the visual world changes around them.
+
+Possible treatments:
+
+* evidence appears beside presenter;
+* headlines enter the physical composition;
+* diagrams build around presenter;
+* background changes with topic;
+* presenter becomes integrated into animation;
+* screenshots expand into full-screen evidence;
+* camera pushes emphasize key lines.
+
+The presenter should not simply remain centered while unrelated B-roll plays.
+
+⸻
+
+12. ANIMATED LEARNING
+
+Animation should explain.
+
+Use animation particularly when demonstrating:
+
+* systems;
+* relationships;
+* processes;
+* causal chains;
+* comparisons;
+* definitions;
+* categories;
+* timelines;
+* contradictions;
+* conceptual distinctions.
+
+Example:
+
+Instead of merely saying political groups are becoming entrenched:
+
+1. show two groups;
+2. show disagreement;
+3. physically move groups farther apart;
+4. increase hostility;
+5. show the original problem becoming visually forgotten.
+
+The animation teaches the concept.
+
+⸻
+
+13. MULTIPLE ANIMATION PROFILES
+
+Do not force every topic into one universal illustration style.
+
+Maintain multiple compatible visual profiles.
+
+The chosen profile may depend on:
+
+* subject;
+* seriousness;
+* emotional tone;
+* intended audience;
+* comedic intensity;
+* production budget;
+* required explanatory complexity.
+
+Reference material should inspire production quality and techniques rather than be copied directly.
+
+⸻
+
+14. CULTURAL MEDIA AS INSTRUCTIONAL DEVICE
+
+Popular-media excerpts are not merely B-roll.
+
+They may function as:
+
+* analogy;
+* punchline;
+* reinforcement;
+* example;
+* contradiction;
+* emotional reset;
+* mnemonic device;
+* satire;
+* commentary.
+
+Preferred pattern:
+
+CONCEPT → PLAIN-LANGUAGE EXPLANATION → CULTURAL REINFORCEMENT
+
+Example:
+
+“Something can be good even if you don’t personally like it.”
+
+Then:
+
+Seinfeld / Newman refusing broccoli
+
+The clip provides a second representation of the concept and makes the idea more memorable.
+
+⸻
+
+15. EVIDENCE AS VISUAL CONTENT
+
+Evidence should become part of the production.
+
+Potential evidence objects:
+
+* headlines;
+* academic research;
+* official statistics;
+* legislation;
+* public statements;
+* social posts;
+* historical material;
+* photographs;
+* charts;
+* primary documents.
+
+Avoid merely narrating evidence where showing it would be stronger.
+
+For accumulating evidence, consider visual structures such as:
+
+SOURCE → SOURCE → SOURCE → PATTERN
+
+The screen may become progressively more crowded before resolving into the conclusion.
+
+⸻
+
+16. COMEDIC CONTRAST
+
+One emerging technique is deliberate movement between intellectual seriousness and absurdity.
+
+Example:
+
+Academic concept.
+
+↓
+
+Clear explanation.
+
+↓
+
+Ridiculous plain-English translation.
+
+↓
+
+Cultural clip.
+
+↓
+
+Return immediately to serious argument.
+
+The contrast itself creates humour.
+
+Do not make every moment comedic. Seriousness makes the absurd moments stronger.
+
+⸻
+
+17. INFORMATION RHYTHM
+
+Useful recurring pattern:
+
+PROVOCATION
+→ EXAMPLE
+→ EXPLANATION
+→ EVIDENCE
+→ VISUALIZATION
+→ COMEDIC RELEASE
+→ INSIGHT
+→ MOVE
+
+Not every section requires every stage.
+
+Avoid prolonged stretches containing only:
+
+presenter talks → presenter talks → presenter talks
+
+Likewise avoid:
+
+random B-roll → random B-roll → random B-roll
+
+Visuals should participate in meaning.
+
+⸻
+
+18. EDUCATIONAL DESIGN
+
+The audience should leave understanding something—not merely knowing the presenter’s opinion.
+
+Potential learning mechanisms:
+
+* definition;
+* distinction;
+* worked example;
+* analogy;
+* non-example;
+* comparison;
+* categorization;
+* causal explanation;
+* visualization;
+* repetition;
+* mnemonic cultural reference;
+* retrieval/callback.
+
+Whenever possible, convert abstract concepts into something viewers can recognize later.
+
+⸻
+
+19. CALLBACKS
+
+Reuse earlier visual or comedic elements later in the video.
+
+Example sequence:
+
+* animated potato introduced during pronoun discussion;
+* potato briefly returns during final montage.
+
+Callbacks create cohesion and reward attention.
+
+Potential callback objects should be identified during storyboarding.
+
+⸻
+
+20. HOOKS
+
+Avoid generic creator hooks such as:
+
+“Here are five things you need to know…”
+
+Prefer hooks arising naturally from genuine frustration, curiosity, contradiction or absurdity.
+
+Examples:
+
+“One of the things that fuckin’ grinds me right now…”
+
+“What in the utter fuck are we even doing?”
+
+The hook should establish:
+
+1. tension;
+2. personality;
+3. subject;
+4. reason to continue.
+
+Do not manufacture a misleading hook that the video fails to satisfy.
+
+⸻
+
+21. STRUCTURAL SPINE
+
+Before writing scenes, define one controlling question or thesis.
+
+Example:
+
+“What the fuck happened to critical thinking?”
+
+Every major section should ultimately support that spine.
+
+Interesting tangents that do not support the controlling idea should be:
+
+* removed;
+* shortened;
+* or retained for another video.
+
+This permits wide-ranging examples without creating an incoherent rant.
+
+⸻
+
+22. SCRIPT + STORYBOARD FORMAT
+
+Future drafts should NOT be delivered as prose treatments when a reviewable video draft is requested.
+
+Use scene-level structure.
+
+Each scene should support fields such as:
+
+SCENE
+Scene number/title.
+
+PURPOSE
+What this scene accomplishes.
+
+SCRIPT
+Exact or near-exact spoken language.
+
+PRESENTER
+Camera/performance direction.
+
+VISUAL
+Animation, footage, graphics, typography or composition.
+
+MEDIA
+Requested external clip/image/reference.
+
+EVIDENCE
+Claims requiring supporting material.
+
+AUDIO
+Music, silence, sound effect or clip audio where material.
+
+TRANSITION
+How the scene enters/exits where important.
+
+CALLBACK
+Any element intended for later reuse.
+
+Not every field needs content in every scene.
+
+⸻
+
+23. SCRIPT DEVELOPMENT PROCESS
+
+PASS 1 — CONVERSATIONAL DUMP
+
+Presenter explains the idea naturally.
+
+Do not over-structure.
+
+Capture:
+
+* vocabulary;
+* profanity;
+* sentence rhythm;
+* jokes;
+* frustration;
+* examples;
+* analogies;
+* tentative ideas.
+
+PASS 2 — FIND THE SPINE
+
+Determine:
+
+* central question;
+* thesis;
+* major supporting sections;
+* learning objective.
+
+PASS 3 — ROUGH SCRIPT/STORYBOARD
+
+Convert the conversation into scenes while preserving voice.
+
+PASS 4 — HUMAN VOICE REVIEW
+
+Presenter marks:
+
+* “doesn’t sound like me”;
+* incorrect interpretation;
+* missing nuance;
+* excessive polish;
+* stronger language desired;
+* weaker language desired;
+* visual ideas;
+* clips;
+* jokes;
+* evidence requirements.
+
+PASS 5 — REVISE
+
+Use corrections as evidence for both:
+
+1. the current video; and
+2. future updates to this specification.
+
+PASS 6 — EVIDENCE PASS
+
+Identify every externally verifiable substantive claim.
+
+Classify as appropriate:
+
+* verified;
+* needs sourcing;
+* opinion;
+* inference;
+* joke;
+* intentionally speculative.
+
+PASS 7 — PRODUCTION STORYBOARD
+
+Specify sufficient visual direction for production tooling.
+
+PASS 8 — PROTOTYPE
+
+Produce a rough version before committing to high-cost polish.
+
+PASS 9 — REVIEW
+
+Evaluate:
+
+* voice fidelity;
+* clarity;
+* factual integrity;
+* pacing;
+* visual variety;
+* educational effectiveness;
+* humour;
+* production quality.
+
+PASS 10 — UPDATE STANDARD
+
+Record genuinely reusable lessons.
+
+Do not convert every one-off creative decision into a permanent rule.
+
+⸻
+
+24. SOURCE & MEDIA PROVENANCE
+
+Maintain a production source log.
+
+For external media record where practical:
+
+* asset/clip;
+* source;
+* creator/rightsholder where known;
+* program/publication;
+* URL/source location;
+* approximate excerpt;
+* purpose in video;
+* scene;
+* credit text;
+* relevant notes.
+
+For factual evidence record:
+
+* claim supported;
+* source;
+* publication date;
+* access date where useful;
+* source type;
+* relevant excerpt/data;
+* scene.
+
+The purpose is editorial integrity, reproducibility, credit, and production management.
+
+⸻
+
+25. CREDITS
+
+Provide viewer-facing credits appropriate to the medium.
+
+Videos may contain an end-card statement explaining the use of third-party excerpts for commentary, criticism, education, parody, satire or other applicable purposes.
+
+Detailed credits may additionally live in:
+
+* caption;
+* description;
+* linked source list;
+* production record.
+
+Credit creators and sources because proper attribution is an editorial value, not merely a defensive exercise.
+
+⸻
+
+26. FACT CHECKING
+
+Before production lock:
+
+Verify consequential factual claims.
+
+Prefer primary or authoritative sources where practical.
+
+Do not allow:
+
+* a screenshot without context;
+* an unsourced viral claim;
+* a misleading crop;
+* an inaccurate statistic;
+* an uncertain quotation
+
+to become “true” merely because it improves the story.
+
+Where evidence is contested, represent the relevant uncertainty rather than silently converting interpretation into fact.
+
+⸻
+
+27. EDITING GRAMMAR
+
+Reference techniques worth testing include:
+
+* punch-ins;
+* reframing;
+* rapid cuts;
+* hard cuts;
+* match cuts;
+* visual interruptions;
+* full-screen evidence;
+* animated overlays;
+* kinetic typography;
+* compositing;
+* silence before punchlines;
+* deliberate holds;
+* montage;
+* abrupt visual resets.
+
+Editing intensity should follow meaning.
+
+Fast editing is not automatically good editing.
+
+Slow moments may increase the impact of important ideas.
+
+⸻
+
+28. PRODUCTION TIERS
+
+At least two production tiers appear useful.
+
+FLAGSHIP
+
+Higher production value.
+
+Potentially includes:
+
+* presenter;
+* custom animation;
+* sophisticated compositing;
+* evidence visualization;
+* external clips;
+* designed transitions;
+* multiple visual environments.
+
+Best suited to major policy, learning and social-commentary pieces.
+
+RAPID LEARNING
+
+“Good enough” production optimized for speed.
+
+Potentially includes:
+
+* narration;
+* simpler animation;
+* stock/reference assets;
+* typography;
+* diagrams;
+* limited custom compositing.
+
+The intellectual standard should remain high even when production complexity is low.
+
+Additional tiers may emerge through testing.
+
+⸻
+
+29. WHAT TO AVOID
+
+Avoid drifting toward:
+
+GENERIC CORPORATE LEARNING
+
+Overly polished, sterile, safe and personality-free.
+
+GENERIC INFLUENCER CONTENT
+
+Manufactured hooks, empty gestures and algorithmic clichés.
+
+RAGE BAIT
+
+Provocation without substance.
+
+RANDOM B-ROLL
+
+Visual changes unrelated to meaning.
+
+PROFANITY AS COSTUME
+
+Swearing inserted merely to manufacture personality.
+
+FALSE BALANCE
+
+Treating every proposition as equally supported merely because competing positions exist.
+
+TRIBAL REASONING
+
+Starting with the desired team conclusion and reverse-engineering justification.
+
+LABEL WITHOUT DEFINITION
+
+Using analytical terminology without understanding what it means.
+
+EVIDENCE DUMP
+
+Showing ten sources without explaining what they establish.
+
+OVER-AUTOMATION
+
+Automating creative decisions before the underlying production grammar is understood.
+
+⸻
+
+30. AUTOMATION PRINCIPLE
+
+Automation should be introduced incrementally.
+
+Good early candidates:
+
+* source logging;
+* media inventory;
+* transcript generation;
+* claim extraction;
+* source retrieval;
+* citation tracking;
+* clip metadata;
+* storyboard formatting;
+* asset organization;
+* production checklists;
+* version tracking.
+
+Potential later candidates:
+
+* animation generation;
+* B-roll recommendations;
+* clip retrieval;
+* rough cuts;
+* captioning;
+* motion graphics;
+* platform adaptation.
+
+Do not automate a creative rule merely because one successful video used it.
+
+First establish that the behaviour is genuinely repeatable.
+
+⸻
+
+31. INITIAL QUALITY GATE
+
+Before production lock, ask:
+
+VOICE
+
+Does this actually sound like the presenter?
+
+ARGUMENT
+
+What is the central point?
+
+REASONING
+
+Does the conclusion follow?
+
+EVIDENCE
+
+Are important factual claims supportable?
+
+LEARNING
+
+What will the viewer understand afterward?
+
+VISUALS
+
+Are visuals explaining or merely decorating?
+
+PACING
+
+Does

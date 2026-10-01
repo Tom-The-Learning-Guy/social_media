@@ -1,0 +1,17 @@
+Reference Library for Social Media Content
+
+1. For "Animatmed Learning" inserts
+	Specs:
+		- A mix of diverse-looking stuff, I think we might want multiple profiles to draw on for the animation based on the intended topic. These two articles contain very high quality examples for you to draw on - but not copy directly.
+	1. https://www.yansmedia.com/blog/10-best-animated-instructional-videos
+	2. https://www.moonb.io/blog/animated-educational-videos
+
+2. Social Media Examples
+	File Name: social_media_edgy.mp4
+	Reasoning: He is addressing a very relevant and sensitive topic with incredibly creative production value. I would look to prototype something like this as edgy content that combines policy and learning together. 
+	File Name: social_media_tucker.mp4
+	Reasoning: The content itself is not that important or something to focus on, but how the video is produced is a great example of using cuts, transitions and zooms extremely well.
+	File Name: social_media_animated_learning.mp4
+	Reasoning: It's a quick "good enough" learning video about a topic that is sure to catch people attention for a bit. More of a quick and dirty version.
+	File Name: social_media_animation_learning_2.mp4
+	Reasoning: Another example of a "good enough" learning video about a specific topic.

@@ -27,3 +27,8 @@ __pycache__/
 dist/
 build/
 tmp/
+
+# Local external reference systems
+references/reference_systems/
+references/media
+references/visual
