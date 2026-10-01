@@ -1,0 +1,490 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tom-the-learning-guy.local/schemas/production_manifest.schema.json",
+  "title": "Social Video Production Manifest Schema",
+  "description": "Minimal governed schema for social-video production manifests, unit routing, visual profiles, motion semantics, and dependency registers.",
+  "type": "object",
+  "required": [
+    "project_id",
+    "title",
+    "source_script_path",
+    "format",
+    "canvas",
+    "manifest_version",
+    "approved_routes",
+    "available_profiles",
+    "unit_count",
+    "approval_state",
+    "unresolved_issues",
+    "production_units",
+    "dependencies"
+  ],
+  "properties": {
+    "project_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_-]+$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "source_script_path": {
+      "type": "string"
+    },
+    "format": {
+      "type": "string"
+    },
+    "canvas": {
+      "type": "object",
+      "required": ["width", "height", "aspect_ratio", "status"],
+      "properties": {
+        "width": { "type": "integer", "const": 1080 },
+        "height": { "type": "integer", "const": 1920 },
+        "aspect_ratio": { "type": "string", "const": "9:16" },
+        "status": { "type": "string", "enum": ["canonical_invariant"] }
+      },
+      "additionalProperties": false
+    },
+    "manifest_version": {
+      "type": "string"
+    },
+    "approved_routes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "human",
+          "claude_design",
+          "canva",
+          "sourced_media",
+          "local_tooling",
+          "hybrid"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "available_profiles": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "editorial_grunge",
+          "urban_punk",
+          "none",
+          "bespoke",
+          "unresolved"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "unit_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "approval_state": {
+      "type": "object",
+      "required": [
+        "gate_a_decomposition_approval",
+        "gate_b_evidence_readiness",
+        "gate_c_rough_assembly",
+        "gate_d_final_publication"
+      ],
+      "properties": {
+        "gate_a_decomposition_approval": {
+          "type": "object",
+          "required": ["status", "description"],
+          "properties": {
+            "status": { "type": "string", "enum": ["pending_human_review", "approved", "rejected"] },
+            "description": { "type": "string" },
+            "approved_by": { "type": ["string", "null"] },
+            "approved_at": { "type": ["string", "null"] }
+          },
+          "additionalProperties": false
+        },
+        "gate_b_evidence_readiness": {
+          "type": "object",
+          "required": ["status", "description"],
+          "properties": {
+            "status": { "type": "string", "enum": ["deferred", "in_progress", "approved", "blocked"] },
+            "description": { "type": "string" },
+            "approved_by": { "type": ["string", "null"] },
+            "approved_at": { "type": ["string", "null"] }
+          },
+          "additionalProperties": false
+        },
+        "gate_c_rough_assembly": {
+          "type": "object",
+          "required": ["status", "description"],
+          "properties": {
+            "status": { "type": "string", "enum": ["deferred", "in_progress", "approved", "blocked"] },
+            "description": { "type": "string" },
+            "approved_by": { "type": ["string", "null"] },
+            "approved_at": { "type": ["string", "null"] }
+          },
+          "additionalProperties": false
+        },
+        "gate_d_final_publication": {
+          "type": "object",
+          "required": ["status", "description"],
+          "properties": {
+            "status": { "type": "string", "enum": ["deferred", "in_progress", "approved", "rejected"] },
+            "description": { "type": "string" },
+            "approved_by": { "type": ["string", "null"] },
+            "approved_at": { "type": ["string", "null"] }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "unresolved_issues": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "production_units": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/production_unit"
+      }
+    },
+    "dependencies": {
+      "type": "object",
+      "required": [
+        "human_recordings",
+        "third_party_media",
+        "evidence_research",
+        "documents_headlines",
+        "generated_assets",
+        "internal_design_system",
+        "editorial_decisions"
+      ],
+      "properties": {
+        "human_recordings": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/dependency_record" }
+        },
+        "third_party_media": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/dependency_record" }
+        },
+        "evidence_research": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/dependency_record" }
+        },
+        "documents_headlines": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/dependency_record" }
+        },
+        "generated_assets": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/dependency_record" }
+        },
+        "internal_design_system": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/dependency_record" }
+        },
+        "editorial_decisions": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/dependency_record" }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "production_unit": {
+      "type": "object",
+      "required": [
+        "unit_id",
+        "scene_ref",
+        "name",
+        "script_span",
+        "takeaway",
+        "on_screen_copy",
+        "unresolved_placeholder",
+        "routing",
+        "visual_treatment",
+        "motion",
+        "dependencies",
+        "output",
+        "readiness",
+        "timing"
+      ],
+      "properties": {
+        "unit_id": {
+          "type": "string",
+          "pattern": "^CT-[0-9]{3}$"
+        },
+        "scene_ref": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "script_span": {
+          "type": "string"
+        },
+        "takeaway": {
+          "type": "string"
+        },
+        "on_screen_copy": {
+          "type": ["string", "null"]
+        },
+        "unresolved_placeholder": {
+          "type": ["string", "null"]
+        },
+        "routing": {
+          "type": "object",
+          "required": ["primary_route", "supporting_routes", "rationale", "confidence"],
+          "properties": {
+            "primary_route": {
+              "type": "string",
+              "enum": [
+                "human",
+                "claude_design",
+                "canva",
+                "sourced_media",
+                "local_tooling",
+                "hybrid"
+              ]
+            },
+            "supporting_routes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "human",
+                  "claude_design",
+                  "canva",
+                  "sourced_media",
+                  "local_tooling",
+                  "hybrid"
+                ]
+              }
+            },
+            "rationale": { "type": "string" },
+            "confidence": {
+              "type": "string",
+              "enum": ["high", "medium", "low"]
+            }
+          },
+          "additionalProperties": false
+        },
+        "visual_treatment": {
+          "type": "object",
+          "required": [
+            "profile",
+            "pattern",
+            "viewer_sees",
+            "continuity_elements",
+            "transition_in",
+            "transition_out"
+          ],
+          "properties": {
+            "profile": {
+              "type": "string",
+              "enum": [
+                "editorial_grunge",
+                "urban_punk",
+                "none",
+                "bespoke",
+                "unresolved"
+              ]
+            },
+            "pattern": { "type": ["string", "null"] },
+            "viewer_sees": { "type": "string" },
+            "continuity_elements": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "transition_in": { "type": "string" },
+            "transition_out": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "motion": {
+          "type": "object",
+          "required": ["verbs", "intent"],
+          "properties": {
+            "verbs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "REVEAL",
+                  "FOCUS",
+                  "DEEMPHASIZE",
+                  "TRANSFORM",
+                  "TRACE",
+                  "REPLACE",
+                  "REMOVE",
+                  "RESOLVE",
+                  "PERSIST",
+                  "PAUSE"
+                ]
+              }
+            },
+            "intent": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "dependencies": {
+          "type": "object",
+          "required": [
+            "talking_head",
+            "third_party_media",
+            "evidence_research",
+            "documents_headlines",
+            "generated_assets",
+            "design_system",
+            "editorial_decisions"
+          ],
+          "properties": {
+            "talking_head": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "third_party_media": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "evidence_research": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "documents_headlines": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "generated_assets": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "design_system": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "editorial_decisions": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "additionalProperties": false
+        },
+        "output": {
+          "type": "object",
+          "required": ["expected_artifact", "media_type", "downstream_dependency"],
+          "properties": {
+            "expected_artifact": { "type": "string" },
+            "media_type": { "type": "string" },
+            "downstream_dependency": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "readiness": {
+          "type": "object",
+          "required": ["status", "blockers"],
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "ready",
+                "blocked_asset",
+                "blocked_evidence",
+                "blocked_human_recording",
+                "blocked_editorial_decision",
+                "blocked_design_decision",
+                "not_applicable"
+              ]
+            },
+            "blockers": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "blocked_asset",
+                  "blocked_evidence",
+                  "blocked_human_recording",
+                  "blocked_editorial_decision",
+                  "blocked_design_decision"
+                ]
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "timing": {
+          "type": "object",
+          "required": ["estimated_seconds", "confidence", "basis"],
+          "properties": {
+            "estimated_seconds": {
+              "type": "number",
+              "minimum": 0
+            },
+            "confidence": {
+              "type": "string",
+              "enum": ["high", "medium", "low"]
+            },
+            "basis": {
+              "type": "string",
+              "enum": [
+                "narration_estimate",
+                "clip_placeholder",
+                "designed_hold",
+                "unresolved"
+              ]
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "dependency_record": {
+      "type": "object",
+      "required": [
+        "id",
+        "category",
+        "description",
+        "linked_units",
+        "source_reference",
+        "status",
+        "unblock_requirement"
+      ],
+      "properties": {
+        "id": { "type": "string" },
+        "category": {
+          "type": "string",
+          "enum": [
+            "human_recordings",
+            "third_party_media",
+            "evidence_research",
+            "documents_headlines",
+            "generated_assets",
+            "internal_design_system",
+            "editorial_decisions"
+          ]
+        },
+        "description": { "type": "string" },
+        "linked_units": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "source_reference": { "type": ["string", "null"] },
+        "status": {
+          "type": "string",
+          "enum": [
+            "ready",
+            "blocked",
+            "pending_selection",
+            "pending_research",
+            "pending_recording",
+            "implemented"
+          ]
+        },
+        "unblock_requirement": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

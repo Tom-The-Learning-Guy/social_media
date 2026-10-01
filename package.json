@@ -5,7 +5,9 @@
   "type": "module",
   "description": "Governed social video design system foundation (Grain 1)",
   "scripts": {
-    "validate": "node scripts/validate_packages.js"
+    "validate": "node scripts/validate_packages.js && node scripts/validate_manifest.js",
+    "validate:packages": "node scripts/validate_packages.js",
+    "validate:manifest": "node scripts/validate_manifest.js"
   },
   "devDependencies": {
     "esbuild": "^0.28.2"

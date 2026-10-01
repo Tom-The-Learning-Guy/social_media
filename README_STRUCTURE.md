@@ -1,6 +1,6 @@
-# Social Media Repository Structure — Grain 1 Implemented
+# Social Media Repository Structure — Grain 1 & Grain 2 Implemented
 
-Status: Grain 1 Foundation Implemented  
+Status: Grain 1 Foundation & Grain 2 Production Decomposition Implemented  
 Canvas: 1080 × 1920 (9:16 Vertical Video)
 
 ## Implemented Architecture
@@ -33,14 +33,26 @@ Independent, selectable visual profiles that override aesthetics without changin
 - *Redundant directory resolution*: The scaffold directory `design_system/shared/` was evaluated and removed as redundant with `design_system/core/`.
 
 ### 3. `production/`
-Per-video projects and manifests:
-- `projects/script_critical_thinking.txt`: First production integration script.
-- `schemas/`, `manifests/`: Reserved for future video manifests and production schemas.
+Per-video projects, manifests, and production schemas:
+- `projects/script_critical_thinking.txt`: First production integration script (source of truth).
+- `schemas/production_manifest.schema.json`: Minimal governed JSON Schema defining project metadata, allowed routes, visual profiles, motion verbs, and dependency contracts.
+- `projects/critical_thinking/`:
+  - `PRODUCTION_MAP.md`: Human-readable production map containing unit breakdowns, legends, queues (talking-head, Claude Design, Canva, sourced media, blocked), assembly order, and human review gates (Gate A–D).
+  - `production_manifest.json`: Machine-readable production manifest specifying the 47 production units and 61 dependencies.
+  - `DEPENDENCIES.md`: Complete dependency register categorized into human recordings, third-party media, evidence/research, documents/headlines, generated visuals, design system elements, and editorial decisions.
 
 ### 4. `tests/` & `scripts/`
-- `tests/test_design_system_foundation.py`: Python `unittest` suite validating structure, manifests, real paths, core tokens, profile discovery, and complete Obsidian isolation.
-- `scripts/validate_packages.js`: Node.js validation script performing structural integrity checks, real JSX syntax parsing and build validation via `esbuild`, negative malformed-JSX tests, and absence of forbidden references.
+- `tests/test_design_system_foundation.py`: Python `unittest` suite validating Grain 1 structure, manifests, real paths, core tokens, profile discovery, and complete Obsidian isolation.
+- `tests/test_production_manifest.py`: Python `unittest` suite validating Grain 2 manifest parsing, schema conformance, unit IDs, routing, profiles, motion verbs, dependencies cross-references, script immutability, and scene isolation.
+- `scripts/validate_packages.js`: Node.js validation script performing structural integrity checks, real JSX syntax parsing and build validation via `esbuild`.
+- `scripts/validate_manifest.js`: Node.js validation script validating Grain 2 manifest schema adherence, unit IDs, routing, profiles, motion verbs, dependency integrity, and source script hash.
+- `package.json`: Scripts configured for `validate` (running both package and manifest checks), `validate:packages`, and `validate:manifest`.
 
-### 5. `references/`
+### 5. `docs/architecture/`
+- `docs/architecture/ARCHITECTURE.md`: High-level system architecture and separation of concerns.
+- `docs/architecture/ADR_001_GRAIN_1_FOUNDATION.md`: Decision record for Grain 1 design-system foundation.
+- `docs/architecture/GRAIN_2_PRODUCTION_DECOMPOSITION_FINDINGS.md`: Evidence-based findings from the Critical Thinking decomposition evaluating component utility, visual patterns, missing primitives, and production schema needs.
+
+### 6. `references/`
 - `reference_lists/`: Governed reference lists (`Social Media Content Reference.txt`).
 - `reference_systems/`: Local, untracked architectural reference ZIPs (strictly ignored by Git).

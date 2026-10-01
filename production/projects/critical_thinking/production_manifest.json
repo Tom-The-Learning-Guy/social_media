@@ -1,0 +1,3887 @@
+{
+  "project_id": "critical_thinking",
+  "title": "What The Fuck Happened To Critical Thinking?",
+  "source_script_path": "production/projects/script_critical_thinking.txt",
+  "format": "9:16 vertical video",
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": "9:16",
+    "status": "canonical_invariant"
+  },
+  "manifest_version": "0.1.0",
+  "approved_routes": [
+    "human",
+    "claude_design",
+    "canva",
+    "sourced_media",
+    "local_tooling",
+    "hybrid"
+  ],
+  "available_profiles": [
+    "editorial_grunge",
+    "urban_punk",
+    "none",
+    "bespoke",
+    "unresolved"
+  ],
+  "unit_count": 47,
+  "approval_state": {
+    "gate_a_decomposition_approval": {
+      "status": "pending_human_review",
+      "description": "Human review of unit boundaries, route assignments, blockers, and visual profile selections before any scene production.",
+      "approved_by": null,
+      "approved_at": null
+    },
+    "gate_b_evidence_readiness": {
+      "status": "deferred",
+      "description": "Verification of factual claims, sourcing of news stories, and acquisition of third-party media clips prior to asset generation.",
+      "approved_by": null,
+      "approved_at": null
+    },
+    "gate_c_rough_assembly": {
+      "status": "deferred",
+      "description": "Review of rough timeline assembly of talking-head, graphics, and sourced clips prior to final sound design and color grade.",
+      "approved_by": null,
+      "approved_at": null
+    },
+    "gate_d_final_publication": {
+      "status": "deferred",
+      "description": "Human authority final editorial sign-off and publication approval.",
+      "approved_by": null,
+      "approved_at": null
+    }
+  },
+  "unresolved_issues": [
+    "Scene 4: Selection of specific copyright-cleared or fair-use audio/clip for Dennis Leary 'I\\'m an Asshole'.",
+    "Scene 4: Sourcing precise clip of Star Trek TOS 'Patterns of Force' (Spock 'good-looking Nazi').",
+    "Scene 4: Selection and curation of specific Trump and politician self-contradiction clips.",
+    "Scene 6: Editorial decision on specific online creators to feature in 'least favourite creators who are truly radicalizers' montage.",
+    "Scene 8: Sourcing Seinfeld clip (Newman refusing broccoli, Kenny Rogers Roasters episode).",
+    "Scene 9: Sourcing editorial stills/clips for Data Center and Israeli Flag / Netanyahu bipartisan consensus moment.",
+    "Scene 10: Factual verification of Tobi Lütke vote-buying comment/tweet and context before production.",
+    "Scene 10: Factual verification and precise neutral wording of Elon Musk incident to avoid asserting contested characterizations as fact.",
+    "Scene 10: Factual verification of David Ellison staff homes report details.",
+    "Scene 15: Sourcing Bad Boys film excerpt ('You\\'re the detective. Go detect some shit.').",
+    "End Card: Editorial decision on final channel brand handle and visual lockup."
+  ],
+  "production_units": [
+    {
+      "unit_id": "CT-001",
+      "scene_ref": "SCENE 1 — HOOK",
+      "name": "On-Camera Opening Direct Address",
+      "script_span": "One of the things that fuckin’ grinds me right now is the sheer lack of critical thinking skills I’m seeing out in the world. [BEAT] Like…",
+      "takeaway": "Hook viewer with authentic frustration direct to camera regarding the collapse of critical thinking.",
+      "on_screen_copy": null,
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "human",
+        "supporting_routes": [],
+        "rationale": "Direct-to-camera presenter establishes voice, authentic emotion, and narrative premise.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "none",
+        "pattern": null,
+        "viewer_sees": "Presenter direct to camera, medium close-up, dark neutral studio environment.",
+        "continuity_elements": [
+          "presenter"
+        ],
+        "transition_in": "Hard cut from black",
+        "transition_out": "Cut into rapid chaotic montage"
+      },
+      "motion": {
+        "verbs": [
+          "PAUSE"
+        ],
+        "intent": "Conversational pause on 'Like...' sets up contrast before chaotic montage."
+      },
+      "dependencies": {
+        "talking_head": [
+          "DEP-HUM-01"
+        ],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Talking-head master video take",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Master assembly Hook sequence"
+      },
+      "readiness": {
+        "status": "blocked_human_recording",
+        "blockers": [
+          "blocked_human_recording"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 7.5,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-002",
+      "scene_ref": "SCENE 1 — HOOK",
+      "name": "Cultural & Political Chaos Montage",
+      "script_span": "[FAST MONTAGE begins underneath] What in the utter fuck are we even doing? [MONTAGE: political screaming / social-media arguments / ridiculous headlines / culture-war clips / billionaire headlines / talking heads] Because apparently we’ve collectively decided that actually thinking about shit is optional.",
+      "takeaway": "Provide overwhelming sensory proof of modern societal cognitive chaos.",
+      "on_screen_copy": null,
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "sourced_media",
+        "supporting_routes": [
+          "local_tooling"
+        ],
+        "rationale": "Rapid montage of third-party broadcast, social media, and headline clips assembled to rhythm.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "bespoke",
+        "pattern": null,
+        "viewer_sees": "Rapid-fire 9:16 montage cut to presenter narration cadence; split screens and flashing news clips.",
+        "continuity_elements": [],
+        "transition_in": "Cut in underneath presenter audio",
+        "transition_out": "Smash cut to title card"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "REPLACE"
+        ],
+        "intent": "Rapid visual replacements induce sensory cognitive overload."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [
+          "DEP-MED-01"
+        ],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Montage sub-sequence video",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Hook sequence assembly"
+      },
+      "readiness": {
+        "status": "blocked_asset",
+        "blockers": [
+          "blocked_asset"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 5.5,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-003",
+      "scene_ref": "SCENE 1 — HOOK",
+      "name": "Smash Cut Title Card",
+      "script_span": "[SMASH CUT TO TITLE] WHAT THE FUCK HAPPENED TO CRITICAL THINKING?",
+      "takeaway": "Establish video thesis question with maximum visual impact and unmistakable clarity.",
+      "on_screen_copy": "WHAT THE FUCK HAPPENED TO CRITICAL THINKING?",
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "claude_design",
+        "supporting_routes": [
+          "canva"
+        ],
+        "rationale": "Governed kinetic typography title card utilizing design system canvas geometry.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "urban_punk",
+        "pattern": "stencil-punch",
+        "viewer_sees": "High-contrast full-canvas woodcut headline in asphalt ground with acid lime and photocopy white punch.",
+        "continuity_elements": [
+          "video_title"
+        ],
+        "transition_in": "Smash cut from montage",
+        "transition_out": "Hard cut to Scene 2 on-camera setup"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "RESOLVE",
+          "PAUSE"
+        ],
+        "intent": "Instant typographic impact landing the controlling thesis question."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [
+          "DEP-GEN-01"
+        ],
+        "design_system": [
+          "DEP-DS-01",
+          "DEP-DS-03",
+          "DEP-DS-10"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Rendered 9:16 title card motion graphic",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Act 1 transition"
+      },
+      "readiness": {
+        "status": "ready",
+        "blockers": []
+      },
+      "timing": {
+        "estimated_seconds": 2.5,
+        "confidence": "high",
+        "basis": "designed_hold"
+      }
+    },
+    {
+      "unit_id": "CT-004",
+      "scene_ref": "PART 1 — POLITICS / SCENE 2 — EVERYBODY PICK A TEAM",
+      "name": "Politics Setup Direct Address",
+      "script_span": "[ON CAMERA] Let’s start with the obvious one. Politics.",
+      "takeaway": "Transition into first analytical chapter: partisan political polarization.",
+      "on_screen_copy": null,
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "human",
+        "supporting_routes": [],
+        "rationale": "Presenter direct-to-camera anchors the chapter transition.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "none",
+        "pattern": null,
+        "viewer_sees": "Presenter on camera, medium close-up, clear visual reset from title card.",
+        "continuity_elements": [
+          "presenter"
+        ],
+        "transition_in": "Hard cut from title card",
+        "transition_out": "Graphic elements enter beside presenter"
+      },
+      "motion": {
+        "verbs": [
+          "PAUSE"
+        ],
+        "intent": "Conversational beat establishing relaxed, conversational tone."
+      },
+      "dependencies": {
+        "talking_head": [
+          "DEP-HUM-02"
+        ],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Talking-head footage clip",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Scene 2 sequence assembly"
+      },
+      "readiness": {
+        "status": "blocked_human_recording",
+        "blockers": [
+          "blocked_human_recording"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 3.0,
+        "confidence": "high",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-005",
+      "scene_ref": "PART 1 — POLITICS / SCENE 2 — EVERYBODY PICK A TEAM",
+      "name": "Entrenched Ideologies & Stubborn As Fuck",
+      "script_span": "[ANIMATION: two simplified groups appear on opposite sides of screen.] We’ve got two ideologies constantly fighting with each other… [Groups yell back and forth. With every exchange, they physically move farther apart.] …getting more and more entrenched— [TEXT: “ENTRENCHED”] —which is basically the academic way of saying… [TEXT CHANGES] STUBBORN AS FUCK. And somewhere along the way, actually solving problems became secondary to beating the other team.",
+      "takeaway": "Illustrate how polarization increases physical/ideological distance until solving problems is replaced by tribal combat.",
+      "on_screen_copy": "ENTRENCHED -> STUBBORN AS FUCK",
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "claude_design",
+        "supporting_routes": [
+          "canva"
+        ],
+        "rationale": "State progression animation tracking ideological distance and kinetic text transformation.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "urban_punk",
+        "pattern": "concept_breakdown",
+        "viewer_sees": "Two simplified ideological groups shouting across vertical canvas, widening distance with each exchange; label 'ENTRENCHED' transforms into 'STUBBORN AS FUCK'.",
+        "continuity_elements": [
+          "ideological_split"
+        ],
+        "transition_in": "Graphic elements enter beside presenter",
+        "transition_out": "Cut to Scene 3 contradiction clips"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "TRACE",
+          "TRANSFORM",
+          "FOCUS",
+          "RESOLVE"
+        ],
+        "intent": "Visual distance progression maps polarization; text transformation cuts through academic euphemism."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [
+          "DEP-GEN-02"
+        ],
+        "design_system": [
+          "DEP-DS-01",
+          "DEP-DS-02",
+          "DEP-DS-03",
+          "DEP-DS-04",
+          "DEP-DS-06"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Rendered 9:16 explanatory motion scene",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Scene 2 composite"
+      },
+      "readiness": {
+        "status": "ready",
+        "blockers": []
+      },
+      "timing": {
+        "estimated_seconds": 14.0,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-006",
+      "scene_ref": "PART 1 — POLITICS / SCENE 3 — CONTRADICTIONS",
+      "name": "Freedom Rhetoric Media Excerpts",
+      "script_span": "One side CONSTANTLY cries about the government taking away their freedom… [NEWS / SOCIAL CLIPS illustrating freedom rhetoric.]",
+      "takeaway": "Document partisan rhetoric decrying loss of freedom with authentic third-party clips.",
+      "on_screen_copy": null,
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "sourced_media",
+        "supporting_routes": [],
+        "rationale": "Third-party news and social clips illustrating freedom rhetoric.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "none",
+        "pattern": null,
+        "viewer_sees": "Curated news excerpts of speeches/protests focused on government taking freedom.",
+        "continuity_elements": [],
+        "transition_in": "Cut from Scene 2",
+        "transition_out": "Cut to animated sign grab"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL"
+        ],
+        "intent": "Documentary cut-in provides real-world rhetorical grounding."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [
+          "DEP-MED-02"
+        ],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Curated news clip excerpt",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Contradiction sequence assembly"
+      },
+      "readiness": {
+        "status": "blocked_asset",
+        "blockers": [
+          "blocked_asset"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 5.0,
+        "confidence": "medium",
+        "basis": "clip_placeholder"
+      }
+    },
+    {
+      "unit_id": "CT-007",
+      "scene_ref": "PART 1 — POLITICS / SCENE 3 — CONTRADICTIONS",
+      "name": "Freedom Sign Terms & Conditions Animation",
+      "script_span": "…while simultaneously wanting to take freedoms away from people they fuckin’ disagree with. [ANIMATION: giant FREEDOM sign. Character grabs it and pulls it away from another character.] Apparently freedom comes with terms and conditions now. [CUT]",
+      "takeaway": "Expose the hypocrisy of selective freedom through visual gag of pulling freedom away.",
+      "on_screen_copy": "FREEDOM *TERMS & CONDITIONS APPLY*",
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "claude_design",
+        "supporting_routes": [],
+        "rationale": "Animated graphic demonstration of conceptual contradiction and satirical terms-and-conditions punchline.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "editorial_grunge",
+        "pattern": "concept_breakdown",
+        "viewer_sees": "Giant FREEDOM sign snatched away by character; rubber stamp 'Terms and conditions apply' hits sign.",
+        "continuity_elements": [],
+        "transition_in": "Hard cut from news clip",
+        "transition_out": "Cut to opposing grievance media"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "TRANSFORM",
+          "RESOLVE"
+        ],
+        "intent": "Physical snatching translates abstract hypocrisy into concrete comedic motion."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [
+          "DEP-GEN-03"
+        ],
+        "design_system": [
+          "DEP-DS-01",
+          "DEP-DS-03"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Motion graphic animation",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Contradiction sequence assembly"
+      },
+      "readiness": {
+        "status": "ready",
+        "blockers": []
+      },
+      "timing": {
+        "estimated_seconds": 6.0,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-008",
+      "scene_ref": "PART 1 — POLITICS / SCENE 3 — CONTRADICTIONS",
+      "name": "Grievance & Retaliation Media",
+      "script_span": "Meanwhile, the other side is understandably fucking furious about some of the shit the other side has done… [HEADLINES / NEWS FOOTAGE] …and increasingly wants revenge, punishment, and to “set things right.”",
+      "takeaway": "Document legitimate anger escalating into demands for retaliation rather than structural solutions.",
+      "on_screen_copy": null,
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "sourced_media",
+        "supporting_routes": [],
+        "rationale": "News footage and headlines illustrating grievance, anger, and punitive political rhetoric.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "none",
+        "pattern": null,
+        "viewer_sees": "News footage and headlines showing escalating retaliatory rhetoric from the other side.",
+        "continuity_elements": [],
+        "transition_in": "Hard cut from sign animation",
+        "transition_out": "Cut to swinging pendulum animation"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL"
+        ],
+        "intent": "Cut-ins present documentary proof of retaliatory escalation."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [
+          "DEP-MED-03"
+        ],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Curated news clip and headline sequence",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Contradiction sequence assembly"
+      },
+      "readiness": {
+        "status": "blocked_asset",
+        "blockers": [
+          "blocked_asset"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 6.0,
+        "confidence": "medium",
+        "basis": "clip_placeholder"
+      }
+    },
+    {
+      "unit_id": "CT-009",
+      "scene_ref": "PART 1 — POLITICS / SCENE 3 — CONTRADICTIONS",
+      "name": "Pendulum of Revenge vs Problem Solving",
+      "script_span": "[ANIMATION: pendulum swings violently from one side toward the other.] Which is how you end up with politics becoming less: “How do we solve this?” and more: “How do we fucking destroy them?”",
+      "takeaway": "Contrast constructive problem-solving with destructive vengeance via kinetic pendulum metaphor.",
+      "on_screen_copy": "HOW DO WE SOLVE THIS? -> HOW DO WE FUCKING DESTROY THEM?",
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "claude_design",
+        "supporting_routes": [],
+        "rationale": "Kinetic animation of swinging pendulum and stark contrasting typographic statements.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "urban_punk",
+        "pattern": "concept_breakdown",
+        "viewer_sees": "Violently swinging pendulum across frame; top text 'HOW DO WE SOLVE THIS?' shrinks and is crushed by heavy acid-stamped 'HOW DO WE FUCKING DESTROY THEM?'.",
+        "continuity_elements": [],
+        "transition_in": "Cut from news clips",
+        "transition_out": "Cut to Scene 4 presenter direct address"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "TRACE",
+          "TRANSFORM",
+          "REPLACE",
+          "RESOLVE"
+        ],
+        "intent": "Pendulum arc drives the rhythm of destructive political escalation."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [
+          "DEP-GEN-04"
+        ],
+        "design_system": [
+          "DEP-DS-01",
+          "DEP-DS-03",
+          "DEP-DS-10"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Motion graphic animation scene",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Act 1 political sequence"
+      },
+      "readiness": {
+        "status": "ready",
+        "blockers": []
+      },
+      "timing": {
+        "estimated_seconds": 8.0,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-010",
+      "scene_ref": "PART 1 — POLITICS / SCENE 4 — WORDS ACTUALLY MEAN THINGS",
+      "name": "Social Media Label Rant Direct Address",
+      "script_span": "And then there’s another one that drives me fucking insane. People throwing around words they clearly don’t even have a inkling of understanding. Blame social media for this one.",
+      "takeaway": "Set up core linguistic argument: social media has degraded analytical words into thoughtless insults.",
+      "on_screen_copy": null,
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "human",
+        "supporting_routes": [],
+        "rationale": "Presenter personal rant direct to camera establishing emotional stake.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "none",
+        "pattern": null,
+        "viewer_sees": "Presenter on camera, medium shot, exasperated and direct.",
+        "continuity_elements": [
+          "presenter"
+        ],
+        "transition_in": "Cut from pendulum animation",
+        "transition_out": "Smash cut into fast label montage"
+      },
+      "motion": {
+        "verbs": [
+          "PAUSE"
+        ],
+        "intent": "Rhetorical build-up before rapid visual explosion."
+      },
+      "dependencies": {
+        "talking_head": [
+          "DEP-HUM-03"
+        ],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Talking-head footage clip",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Scene 4 assembly"
+      },
+      "readiness": {
+        "status": "blocked_human_recording",
+        "blockers": [
+          "blocked_human_recording"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 7.0,
+        "confidence": "high",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-011",
+      "scene_ref": "PART 1 — POLITICS / SCENE 4 — WORDS ACTUALLY MEAN THINGS",
+      "name": "Label Blah Kinetic Montage",
+      "script_span": "[FAST MONTAGE: NAZI / FASCIST / SOCIALIST / COMMUNIST / MARXIST / WOKE / etc.] Nazi. Fascist. Socialist. Communist. Blah. BLAH. BLAH.",
+      "takeaway": "Dramatize the sensory exhaustion of overused political labels reduced to empty white noise.",
+      "on_screen_copy": "NAZI / FASCIST / SOCIALIST / COMMUNIST / MARXIST / WOKE / BLAH BLAH BLAH",
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "claude_design",
+        "supporting_routes": [
+          "local_tooling"
+        ],
+        "rationale": "Kinetic typography bursting, stacking, and stamping labels in rapid succession.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "urban_punk",
+        "pattern": "stencil-punch",
+        "viewer_sees": "Strobe-like text slamming into view: NAZI, FASCIST, SOCIALIST, COMMUNIST, overlaid by massive BLAH BLAH BLAH stamps in warning neon.",
+        "continuity_elements": [],
+        "transition_in": "Smash cut from presenter",
+        "transition_out": "Cut to Denis Leary clip"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "REPLACE",
+          "FOCUS",
+          "RESOLVE"
+        ],
+        "intent": "Rapid text impacts mirror the dizzying repetition of online insults."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [
+          "DEP-GEN-05"
+        ],
+        "design_system": [
+          "DEP-DS-01",
+          "DEP-DS-03",
+          "DEP-DS-10"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Kinetic typography motion scene",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Scene 4 assembly"
+      },
+      "readiness": {
+        "status": "ready",
+        "blockers": []
+      },
+      "timing": {
+        "estimated_seconds": 4.5,
+        "confidence": "high",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-012",
+      "scene_ref": "PART 1 — POLITICS / SCENE 4 — WORDS ACTUALLY MEAN THINGS",
+      "name": "Denis Leary Asshole Cultural Clip",
+      "script_span": "These aren’t just random insults you throw at somebody because you think they’re an asshole. You can just call them an asshole. As an asshole, we expect it. [Clip: Dennis Leary's I'm an Asshole]",
+      "takeaway": "Comedic release clarifying that personal dislike should not be dressed up as academic political labels.",
+      "on_screen_copy": null,
+      "unresolved_placeholder": "[Clip: Dennis Leary's I'm an Asshole]",
+      "routing": {
+        "primary_route": "sourced_media",
+        "supporting_routes": [],
+        "rationale": "Fair-use pop-culture media excerpt providing comedic analogy.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "none",
+        "pattern": null,
+        "viewer_sees": "Excerpt from Denis Leary's music video/performance singing 'I'm an Asshole'.",
+        "continuity_elements": [],
+        "transition_in": "Cut from text montage",
+        "transition_out": "Cut back to presenter"
+      },
+      "motion": {
+        "verbs": [
+          "PAUSE"
+        ],
+        "intent": "Comedic hold allowing audience laugh."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [
+          "DEP-MED-04"
+        ],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Extracted media clip",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Scene 4 assembly"
+      },
+      "readiness": {
+        "status": "blocked_asset",
+        "blockers": [
+          "blocked_asset"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 7.0,
+        "confidence": "medium",
+        "basis": "clip_placeholder"
+      }
+    },
+    {
+      "unit_id": "CT-013",
+      "scene_ref": "PART 1 — POLITICS / SCENE 4 — WORDS ACTUALLY MEAN THINGS",
+      "name": "Definitions, Characteristics & Histories Direct Address",
+      "script_span": "They’re words. They describe actual things. They have definitions. They have characteristics. They have histories. And if someone actually meets the criteria? [BEAT.] Then use the fucking word. That’s what words are for. The problem isn’t calling someone a fascist. The problem is calling someone a fascist when you don’t have the slightest fucking clue what fascism actually is. Or calling something communist because the government spent money. Or socialist because somebody mentioned taxes.",
+      "takeaway": "Establish that analytical words require definitions, criteria, and evidence rather than casual weaponization.",
+      "on_screen_copy": null,
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "human",
+        "supporting_routes": [],
+        "rationale": "Core intellectual position delivered directly by presenter with sustained focus and gravity.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "none",
+        "pattern": null,
+        "viewer_sees": "Presenter on camera, intense and deliberate, camera slowly pushing in on 'use the fucking word'.",
+        "continuity_elements": [
+          "presenter"
+        ],
+        "transition_in": "Cut from Leary clip",
+        "transition_out": "Graphic slides in over or beside presenter"
+      },
+      "motion": {
+        "verbs": [
+          "PAUSE",
+          "FOCUS"
+        ],
+        "intent": "Camera push and silence before 'Then use the fucking word' emphasizes intellectual seriousness."
+      },
+      "dependencies": {
+        "talking_head": [
+          "DEP-HUM-04"
+        ],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Talking-head master take",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Scene 4 assembly"
+      },
+      "readiness": {
+        "status": "blocked_human_recording",
+        "blockers": [
+          "blocked_human_recording"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 24.0,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-014",
+      "scene_ref": "PART 1 — POLITICS / SCENE 4 — WORDS ACTUALLY MEAN THINGS",
+      "name": "Critical Thinking Framework: Label Formulation",
+      "script_span": "[ANIMATION: LABEL → DEFINITION → CRITERIA → EVIDENCE] Critical thinking means you don’t start with the label. You understand the concept. You establish the criteria. You look at the evidence. Then you determine whether the label fucking fits.",
+      "takeaway": "Teach the four-stage reasoning sequence: understand concept, establish criteria, examine evidence, then apply label.",
+      "on_screen_copy": "CONCEPT → CRITERIA → EVIDENCE → LABEL",
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "claude_design",
+        "supporting_routes": [],
+        "rationale": "Explanatory instructional diagram sequencing through conceptual stages.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "editorial_grunge",
+        "pattern": "claim_evidence_resolution",
+        "viewer_sees": "Four-stage sequence building on screen in disciplined newsroom style: CONCEPT, then CRITERIA, then EVIDENCE, resolving into LABEL.",
+        "continuity_elements": [
+          "framework_sequence"
+        ],
+        "transition_in": "Slide in from presenter frame",
+        "transition_out": "Cut to Star Trek clip"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "TRACE",
+          "FOCUS",
+          "TRANSFORM",
+          "RESOLVE"
+        ],
+        "intent": "Sequential node reveal teaches chronological discipline of reasoning."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [
+          "DEP-DS-01",
+          "DEP-DS-02",
+          "DEP-DS-03",
+          "DEP-DS-04",
+          "DEP-DS-06",
+          "DEP-DS-07"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Animated pedagogical framework component",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Scene 4 instructional core"
+      },
+      "readiness": {
+        "status": "ready",
+        "blockers": []
+      },
+      "timing": {
+        "estimated_seconds": 10.0,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-015",
+      "scene_ref": "PART 1 — POLITICS / SCENE 4 — WORDS ACTUALLY MEAN THINGS",
+      "name": "Star Trek Spock Nazi Clip",
+      "script_span": "[CLIP: STAR TREK — Spock calling Kirk a “good-looking Nazi.”]",
+      "takeaway": "Comedic pop-culture illustration of absurd label combinations.",
+      "on_screen_copy": null,
+      "unresolved_placeholder": "[CLIP: STAR TREK — Spock calling Kirk a “good-looking Nazi.”]",
+      "routing": {
+        "primary_route": "sourced_media",
+        "supporting_routes": [],
+        "rationale": "Archival television excerpt from Star Trek TOS 'Patterns of Force'.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "none",
+        "pattern": null,
+        "viewer_sees": "Spock and Kirk in Star Trek TOS episode dialogue.",
+        "continuity_elements": [],
+        "transition_in": "Cut from diagram",
+        "transition_out": "Cut back to presenter"
+      },
+      "motion": {
+        "verbs": [
+          "PAUSE"
+        ],
+        "intent": "Comedic pause."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [
+          "DEP-MED-05"
+        ],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Curated television clip",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Scene 4 assembly"
+      },
+      "readiness": {
+        "status": "blocked_asset",
+        "blockers": [
+          "blocked_asset"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 4.0,
+        "confidence": "medium",
+        "basis": "clip_placeholder"
+      }
+    },
+    {
+      "unit_id": "CT-016",
+      "scene_ref": "PART 1 — POLITICS / SCENE 4 — WORDS ACTUALLY MEAN THINGS",
+      "name": "Good-Looking Nazi & Hypocrisy Warning Direct Address",
+      "script_span": "[CUT BACK TO CAMERA.] Although apparently “good-looking Nazi” is also an available category. Now am I saying go around and call everyone Nazis or Commies? Well to be honest, that's a you question. If you think's its moral or ethical to do that - do you. If you don't, then do you too. The key is not to be a fucking raging hyprocrite your whole life.",
+      "takeaway": "Warn against lifelong hypocrisy: ethical positions must be held consistently.",
+      "on_screen_copy": null,
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "human",
+        "supporting_routes": [],
+        "rationale": "Presenter direct address delivering moral and philosophical nuance.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "none",
+        "pattern": null,
+        "viewer_sees": "Presenter on camera, reflective and conversational, transitioning to indignation on 'raging hypocrite'.",
+        "continuity_elements": [
+          "presenter"
+        ],
+        "transition_in": "Cut from Star Trek",
+        "transition_out": "Cut to politician contradiction clips"
+      },
+      "motion": {
+        "verbs": [
+          "PAUSE"
+        ],
+        "intent": "Conversational cadence."
+      },
+      "dependencies": {
+        "talking_head": [
+          "DEP-HUM-05"
+        ],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Talking-head video clip",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Scene 4 assembly"
+      },
+      "readiness": {
+        "status": "blocked_human_recording",
+        "blockers": [
+          "blocked_human_recording"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 18.0,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-017",
+      "scene_ref": "PART 1 — POLITICS / SCENE 4 — WORDS ACTUALLY MEAN THINGS",
+      "name": "Political Contradiction Montage & Embarrassing Reaction",
+      "script_span": "[CLIP: TRUMP, POLITICANS CONTRADCITING THEMSELVES] Fucking embarassing. [BEAT / MOVE ON.]",
+      "takeaway": "Document real-world political hypocrisy and punctuate with deadpan disgust.",
+      "on_screen_copy": null,
+      "unresolved_placeholder": "[CLIP: TRUMP, POLITICANS CONTRADCITING THEMSELVES]",
+      "routing": {
+        "primary_route": "sourced_media",
+        "supporting_routes": [
+          "human"
+        ],
+        "rationale": "Documentary clips of politicians contradicting themselves, capped with presenter voiceover reaction.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "none",
+        "pattern": null,
+        "viewer_sees": "Consecutive clips of politicians contradicting themselves; audio punch 'Fucking embarrassing'.",
+        "continuity_elements": [],
+        "transition_in": "Cut from presenter",
+        "transition_out": "Visual reset to Part 2"
+      },
+      "motion": {
+        "verbs": [
+          "PAUSE",
+          "RESOLVE"
+        ],
+        "intent": "Deadpan pause lands the disgust before chapter turn."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [
+          "DEP-MED-06"
+        ],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Curated hypocrisy montage with voiceover tag",
+        "media_type": "video/mp4",
+        "downstream_dependency": "End of Part 1"
+      },
+      "readiness": {
+        "status": "blocked_asset",
+        "blockers": [
+          "blocked_asset"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 6.0,
+        "confidence": "medium",
+        "basis": "clip_placeholder"
+      }
+    },
+    {
+      "unit_id": "CT-018",
+      "scene_ref": "PART 2 — CULTURE / SCENE 5 — WE’VE CONFUSED EVERYTHING",
+      "name": "Culture Wars Setup & Degeneracy Collage",
+      "script_span": "[VISUAL RESET. New environment.] Speaking of embarssing, let's talk about the culture wars. And Jesus Christ… where do we even start? [FAST VISUAL COLLAGE: influencers / pornography industry headlines / TikTok / social platforms / celebrity culture / gender debates.] The very idea that we should be idolizing pornstars is beyond absurd.",
+      "takeaway": "Pivot to culture wars and illustrate the superficial, distorted media landscape.",
+      "on_screen_copy": null,
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "hybrid",
+        "supporting_routes": [
+          "human",
+          "sourced_media"
+        ],
+        "rationale": "Presenter on camera against an environment-changing background collage of modern media artifacts.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "bespoke",
+        "pattern": null,
+        "viewer_sees": "Complete background environment change; rapid collage of influencer feeds, TikTok UI elements, and tabloid headlines revolving behind presenter.",
+        "continuity_elements": [
+          "presenter"
+        ],
+        "transition_in": "Visual reset with wipe or hard environment shift",
+        "transition_out": "Presenter steps aside or cuts to animation"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "TRANSFORM"
+        ],
+        "intent": "Environmental shift signals departure from politics into cultural critique."
+      },
+      "dependencies": {
+        "talking_head": [
+          "DEP-HUM-06"
+        ],
+        "third_party_media": [
+          "DEP-MED-11"
+        ],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [
+          "DEP-DS-01"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Hybrid video composite with collage",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Scene 5 sequence"
+      },
+      "readiness": {
+        "status": "blocked_human_recording",
+        "blockers": [
+          "blocked_human_recording",
+          "blocked_asset"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 9.0,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-019",
+      "scene_ref": "PART 2 — CULTURE / SCENE 5 — WE’VE CONFUSED EVERYTHING",
+      "name": "Kids Attention Monetization Sequence",
+      "script_span": "And maybe letting the minds of kids be programmed by a handful of billionaires who see their attention as something to monetize isn’t our finest fucking idea either. [ANIMATION: CHILD → PHONE → DATA → $$$]",
+      "takeaway": "Expose the extractive pipeline turning youth attention into corporate data and profit.",
+      "on_screen_copy": "CHILD → PHONE → DATA → $$$",
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "claude_design",
+        "supporting_routes": [],
+        "rationale": "Animated process diagram showing extraction chain from child to corporate profits.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "editorial_grunge",
+        "pattern": "concept_breakdown",
+        "viewer_sees": "Stark instructional flow: Child icon connected to smartphone, emitting data stream that converts into dollar signs entering billionaire vault.",
+        "continuity_elements": [
+          "extraction_flow"
+        ],
+        "transition_in": "Slide in from collage",
+        "transition_out": "Boxes multiply on screen"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "TRACE",
+          "TRANSFORM",
+          "RESOLVE"
+        ],
+        "intent": "Causal flow trace links social-media addiction to algorithmic profit."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [
+          "DEP-GEN-06"
+        ],
+        "design_system": [
+          "DEP-DS-01",
+          "DEP-DS-02",
+          "DEP-DS-03",
+          "DEP-DS-06"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Animated extraction diagram",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Scene 5 sequence"
+      },
+      "readiness": {
+        "status": "ready",
+        "blockers": []
+      },
+      "timing": {
+        "estimated_seconds": 10.0,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-020",
+      "scene_ref": "PART 2 — CULTURE / SCENE 5 — WE’VE CONFUSED EVERYTHING",
+      "name": "The Culture-War Shit Sandwich Collision",
+      "script_span": "But here’s where critical thinking actually matters. Because we’ve started taking completely different questions… [MULTIPLE BOXES appear.] …and smashing them into one giant culture-war shit sandwich.",
+      "takeaway": "Demonstrate that conflating distinct policy questions creates an intractable cognitive mess.",
+      "on_screen_copy": "CULTURE-WAR SHIT SANDWICH",
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "claude_design",
+        "supporting_routes": [],
+        "rationale": "Dynamic animation showing clean discrete category boxes collapsing into chaotic collision.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "editorial_grunge",
+        "pattern": "concept_breakdown",
+        "viewer_sees": "Multiple neat geometric category boxes pop up, then slam together into a distressed, tangled multi-layered mess.",
+        "continuity_elements": [
+          "confused_boxes"
+        ],
+        "transition_in": "Boxes build on stage",
+        "transition_out": "Clean wipe to Scene 6"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "TRANSFORM",
+          "FOCUS",
+          "RESOLVE"
+        ],
+        "intent": "Order-to-chaos transition teaches why modern discourse feels impossible to resolve."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [
+          "DEP-GEN-07"
+        ],
+        "design_system": [
+          "DEP-DS-01",
+          "DEP-DS-02",
+          "DEP-DS-03"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Collision motion graphic",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Scene 5 to 6 transition"
+      },
+      "readiness": {
+        "status": "ready",
+        "blockers": []
+      },
+      "timing": {
+        "estimated_seconds": 7.0,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-021",
+      "scene_ref": "PART 2 — CULTURE / SCENE 6 — SEX / GENDER / IDENTITY",
+      "name": "Sex != Gender Core Distinction",
+      "script_span": "[CLEAN VISUAL RESET.] Gender and sex are NOT the same thing. [TEXT] SEX ≠ GENDER They’re different concepts.",
+      "takeaway": "Establish the foundational distinction between sex and gender clearly and neutrally.",
+      "on_screen_copy": "SEX ≠ GENDER",
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "claude_design",
+        "supporting_routes": [],
+        "rationale": "Clean typographic instructional statement isolating core conceptual distinction.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "editorial_grunge",
+        "pattern": "concept_breakdown",
+        "viewer_sees": "Clean slate background with bold typography: 'SEX ≠ GENDER'. Minimal, disciplined presentation.",
+        "continuity_elements": [
+          "clean_canvas"
+        ],
+        "transition_in": "Clean hard visual reset",
+        "transition_out": "Questions branch out"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "FOCUS",
+          "PAUSE"
+        ],
+        "intent": "Deliberate pause lets the distinction register without emotional noise."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [
+          "DEP-DS-01",
+          "DEP-DS-02",
+          "DEP-DS-03"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Typography axiom card",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Scene 6 sequence"
+      },
+      "readiness": {
+        "status": "ready",
+        "blockers": []
+      },
+      "timing": {
+        "estimated_seconds": 5.0,
+        "confidence": "high",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-022",
+      "scene_ref": "PART 2 — CULTURE / SCENE 6 — SEX / GENDER / IDENTITY",
+      "name": "Five Separate Policy Questions",
+      "script_span": "That’s not the same question as: [TEXT APPEARS SEQUENTIALLY] “What gender identities should society recognize?” “What should cultural norms be?” “What should schools teach?” “What language should people use?” “What should government regulate?” Those are different fucking questions. [ANIMATION: questions physically separate into different boxes.]",
+      "takeaway": "Disentangle the debate into five separate policy questions that require distinct reasoning.",
+      "on_screen_copy": "1. What gender identities should society recognize?\n2. What should cultural norms be?\n3. What should schools teach?\n4. What language should people use?\n5. What should government regulate?",
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "claude_design",
+        "supporting_routes": [],
+        "rationale": "Sequential text reveal with spatial isolation into separate compartmentalized boxes.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "editorial_grunge",
+        "pattern": "concept_breakdown",
+        "viewer_sees": "Five distinct bordered cards appear one by one, each containing one question, then arrange into organized grid.",
+        "continuity_elements": [
+          "question_grid"
+        ],
+        "transition_in": "Cards sequence in from central distinction",
+        "transition_out": "Boxes tangle together"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "FOCUS",
+          "DEEMPHASIZE",
+          "TRACE"
+        ],
+        "intent": "Sequencing questions individually forces viewer to recognize each requires different reasoning."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [
+          "DEP-DS-01",
+          "DEP-DS-02",
+          "DEP-DS-03",
+          "DEP-DS-04",
+          "DEP-DS-06"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Multi-card instructional scene",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Scene 6 sequence"
+      },
+      "readiness": {
+        "status": "ready",
+        "blockers": []
+      },
+      "timing": {
+        "estimated_seconds": 12.0,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-023",
+      "scene_ref": "PART 2 — CULTURE / SCENE 6 — SEX / GENDER / IDENTITY",
+      "name": "Tangled Argument & Radicalizer Creators Montage",
+      "script_span": "And if you mash all of them together, congratulations— [ANIMATION becomes tangled mess.] —you’ve created an argument nobody can actually solve and just a bunch of fear-mongering garbage - but I suspect some of you want that. [Show montage of my least favourite creators who are truly radicalizers)",
+      "takeaway": "Call out bad-faith conflation designed by rage-farming creators to block solutions.",
+      "on_screen_copy": null,
+      "unresolved_placeholder": "[Show montage of my least favourite creators who are truly radicalizers)",
+      "routing": {
+        "primary_route": "hybrid",
+        "supporting_routes": [
+          "claude_design",
+          "sourced_media"
+        ],
+        "rationale": "Animation collapses question boxes into tangled knot, cutting to montage of radicalizing creators.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "bespoke",
+        "pattern": null,
+        "viewer_sees": "Question boxes tangle with chaotic connecting lines, cutting to rapid montage of specific radicalizing culture-war creators.",
+        "continuity_elements": [],
+        "transition_in": "Order collapses into tangled lines",
+        "transition_out": "Cut to presenter in Scene 7"
+      },
+      "motion": {
+        "verbs": [
+          "TRANSFORM",
+          "REPLACE",
+          "RESOLVE"
+        ],
+        "intent": "Visual collapse mirrors discursive breakdown; montage exposes bad actors."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [
+          "DEP-MED-10"
+        ],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [
+          "DEP-GEN-07"
+        ],
+        "design_system": [
+          "DEP-DS-01"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-01",
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Hybrid animation and creator video montage",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Scene 6 resolution"
+      },
+      "readiness": {
+        "status": "blocked_editorial_decision",
+        "blockers": [
+          "blocked_editorial_decision",
+          "blocked_asset"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 10.0,
+        "confidence": "medium",
+        "basis": "clip_placeholder"
+      }
+    },
+    {
+      "unit_id": "CT-024",
+      "scene_ref": "PART 2 — CULTURE / SCENE 7 — PRONOUNS",
+      "name": "Potato Identity Interaction",
+      "script_span": "And personally? Who gives two flying fucks what somebody wants to be called? Him. Her. They. It. Potato. [ANIMATED POTATO appears.] If someone asks me to call them Potato… [BEAT] Okay, Potato. [Potato gives thumbs-up.] Why the fuck do we care?",
+      "takeaway": "Deflate pronoun hysteria with lighthearted comedic acceptance: basic personal courtesy costs nothing.",
+      "on_screen_copy": "Potato",
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "hybrid",
+        "supporting_routes": [
+          "human",
+          "claude_design"
+        ],
+        "rationale": "Presenter interacting with an animated character overlay.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "bespoke",
+        "pattern": null,
+        "viewer_sees": "Presenter on camera; a charming, simplified animated potato hops into frame on shoulder/lower third and gives a cheerful thumbs-up.",
+        "continuity_elements": [
+          "potato_character",
+          "presenter"
+        ],
+        "transition_in": "Potato hops into frame",
+        "transition_out": "Potato waves and exits"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "PAUSE",
+          "RESOLVE",
+          "REMOVE"
+        ],
+        "intent": "Comedic character entrance, beat timing with presenter dialogue, clean exit."
+      },
+      "dependencies": {
+        "talking_head": [
+          "DEP-HUM-06"
+        ],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [
+          "DEP-GEN-08"
+        ],
+        "design_system": [],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Composited talking-head & character scene",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Scene 7 sequence"
+      },
+      "readiness": {
+        "status": "blocked_human_recording",
+        "blockers": [
+          "blocked_human_recording",
+          "blocked_asset"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 8.0,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-025",
+      "scene_ref": "PART 2 — CULTURE / SCENE 7 — PRONOUNS",
+      "name": "Tolerance vs Societal Utility Distinction",
+      "script_span": "But here’s the important part: [VISUAL RESET] My personal tolerance for something… doesn’t automatically tell us whether that thing is good, bad, harmful, useful, or something society should encourage. Those require actual arguments.",
+      "takeaway": "Separate personal tolerance from social policy: tolerance is not a substitute for analytical argument.",
+      "on_screen_copy": null,
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "human",
+        "supporting_routes": [],
+        "rationale": "Presenter on camera delivering critical philosophical nuance.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "none",
+        "pattern": null,
+        "viewer_sees": "Clean visual reset to presenter on camera, medium close-up, sincere and rigorous.",
+        "continuity_elements": [
+          "presenter"
+        ],
+        "transition_in": "Visual reset",
+        "transition_out": "Cut to Part 3 text graphic"
+      },
+      "motion": {
+        "verbs": [
+          "PAUSE"
+        ],
+        "intent": "Beat emphasizes that critical thinking applies even to things we personally tolerate."
+      },
+      "dependencies": {
+        "talking_head": [
+          "DEP-HUM-06"
+        ],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Talking-head footage clip",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Part 2 close"
+      },
+      "readiness": {
+        "status": "blocked_human_recording",
+        "blockers": [
+          "blocked_human_recording"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 9.0,
+        "confidence": "high",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-026",
+      "scene_ref": "PART 3 — LIKE ≠ GOOD / SCENE 8 — THE DISTINCTION",
+      "name": "Like != Good Instructional Axiom",
+      "script_span": "And this might be one of the simplest critical-thinking failures happening everywhere: [TEXT] I LIKE IT does NOT mean IT IS GOOD. And— I DON’T LIKE IT does NOT mean IT IS BAD. Just because you like something doesn’t make it good. And just because something is objectively good… doesn’t mean you have to fucking like it.",
+      "takeaway": "Decouple subjective aesthetic/emotional preference from objective value and quality.",
+      "on_screen_copy": "I LIKE IT ≠ IT IS GOOD\nI DON'T LIKE IT ≠ IT IS BAD",
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "claude_design",
+        "supporting_routes": [],
+        "rationale": "Core conceptual teaching card pairing matched antithetical typographic statements.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "editorial_grunge",
+        "pattern": "concept_breakdown",
+        "viewer_sees": "Stark typographic equations presented with mathematical precision: 'I LIKE IT ≠ IT IS GOOD' followed by inverse 'I DON'T LIKE IT ≠ IT IS BAD'.",
+        "continuity_elements": [
+          "axiom_card"
+        ],
+        "transition_in": "Hard cut from presenter",
+        "transition_out": "Cut to Seinfeld clip"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "FOCUS",
+          "TRANSFORM",
+          "PAUSE"
+        ],
+        "intent": "Synchronized reveal matches spoken rhythm; pause lets principle sink in."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [
+          "DEP-DS-01",
+          "DEP-DS-02",
+          "DEP-DS-03",
+          "DEP-DS-06"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Typography axiom motion graphic",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Scene 8 assembly"
+      },
+      "readiness": {
+        "status": "ready",
+        "blockers": []
+      },
+      "timing": {
+        "estimated_seconds": 15.0,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-027",
+      "scene_ref": "PART 3 — LIKE ≠ GOOD / SCENE 8 — THE DISTINCTION",
+      "name": "Seinfeld Newman Broccoli Cultural Punchline",
+      "script_span": "[CLIP: SEINFELD — Newman refusing to eat the broccoli.] [HOLD FOR COMEDIC BEAT.] Exactly. Broccoli doesn’t give a shit about your opinion.",
+      "takeaway": "Memorable cultural anchor: broccoli is objectively good for you whether Newman likes it or not.",
+      "on_screen_copy": null,
+      "unresolved_placeholder": "[CLIP: SEINFELD — Newman refusing to eat the broccoli.]",
+      "routing": {
+        "primary_route": "sourced_media",
+        "supporting_routes": [
+          "human"
+        ],
+        "rationale": "Cultural media clip illustrating concept, capped with voiceover punchline.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "none",
+        "pattern": null,
+        "viewer_sees": "Seinfeld clip of Newman gagging on broccoli; comedic hold beat; audio punchline 'Broccoli doesn't give a shit about your opinion'.",
+        "continuity_elements": [],
+        "transition_in": "Cut from axiom graphic",
+        "transition_out": "Cut to Part 4"
+      },
+      "motion": {
+        "verbs": [
+          "PAUSE",
+          "RESOLVE"
+        ],
+        "intent": "Comedic hold before landing final punchline."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [
+          "DEP-MED-07"
+        ],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Curated media excerpt with audio overlay",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Part 3 close"
+      },
+      "readiness": {
+        "status": "blocked_asset",
+        "blockers": [
+          "blocked_asset"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 6.0,
+        "confidence": "medium",
+        "basis": "clip_placeholder"
+      }
+    },
+    {
+      "unit_id": "CT-028",
+      "scene_ref": "PART 4 — CULTURAL NORMS / SCENE 9 — OLD VS NEW",
+      "name": "Old vs New Cultural Negotiation",
+      "script_span": "That’s part of what cultural norms and mores are actually about. [ANIMATION: OLD on one side / NEW on another.] Societies are constantly negotiating between: “What should we preserve?” and “What should we change?” [Elements from both sides move toward middle.] That’s normal. What’s probably NOT normal is tearing each other’s fucking heads off every time someone suggests moving the line six inches.",
+      "takeaway": "Frame cultural evolution as a continuous dialectic between conservation and adaptation.",
+      "on_screen_copy": "WHAT SHOULD WE PRESERVE? (OLD) ↔ WHAT SHOULD WE CHANGE? (NEW)",
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "claude_design",
+        "supporting_routes": [],
+        "rationale": "Spatial animated diagram showing two poles negotiating a moving center line.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "editorial_grunge",
+        "pattern": "concept_breakdown",
+        "viewer_sees": "Split stage: 'OLD' (tradition/preservation) on left, 'NEW' (change/adaptation) on right; a sliding negotiation line shifts between them in measured increments.",
+        "continuity_elements": [
+          "negotiation_scale"
+        ],
+        "transition_in": "Slide in from Part 3",
+        "transition_out": "Freeze on tension line"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "TRACE",
+          "TRANSFORM",
+          "FOCUS"
+        ],
+        "intent": "Fluid lateral motion represents healthy societal negotiation versus toxic gridlock."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [
+          "DEP-DS-01",
+          "DEP-DS-02",
+          "DEP-DS-03",
+          "DEP-DS-06"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Animated conceptual balance graphic",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Scene 9 sequence"
+      },
+      "readiness": {
+        "status": "ready",
+        "blockers": []
+      },
+      "timing": {
+        "estimated_seconds": 13.0,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-029",
+      "scene_ref": "PART 4 — CULTURAL NORMS / SCENE 9 — OLD VS NEW",
+      "name": "Bipartisan Consensus Juxtaposition",
+      "script_span": "And c’mon. There are obviously things both sides agree about. [BEAT.] [IMAGE: DATA CENTER.] [IMAGE: ISRAELI FLAG / NETANYAHU.] [LONGER BEAT.] Apparently we found common ground. [CUT.]",
+      "takeaway": "Satirical revelation of unacknowledged bipartisan consensus areas (tech infrastructure & foreign policy).",
+      "on_screen_copy": null,
+      "unresolved_placeholder": "[IMAGE: DATA CENTER.] [IMAGE: ISRAELI FLAG / NETANYAHU.]",
+      "routing": {
+        "primary_route": "sourced_media",
+        "supporting_routes": [
+          "claude_design"
+        ],
+        "rationale": "Curated still images presented with deadpan editorial hold beats.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "editorial_grunge",
+        "pattern": null,
+        "viewer_sees": "Deadpan visual cut: massive industrial Data Center image appears; beat; cut to Israeli flag / Netanyahu photo; long awkward beat; 'Apparently we found common ground.'",
+        "continuity_elements": [],
+        "transition_in": "Hard cut",
+        "transition_out": "Abrupt cut into economics"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "PAUSE",
+          "RESOLVE"
+        ],
+        "intent": "Extended stillness and awkward pauses create deadpan political satire."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [
+          "DEP-MED-08"
+        ],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [
+          "DEP-DS-01"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Image sequence with timed holds",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Part 4 close"
+      },
+      "readiness": {
+        "status": "blocked_asset",
+        "blockers": [
+          "blocked_asset"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 9.0,
+        "confidence": "high",
+        "basis": "designed_hold"
+      }
+    },
+    {
+      "unit_id": "CT-030",
+      "scene_ref": "PART 5 — ECONOMICS / SCENE 10 — “ARE YOU FUCKING KIDDING ME?”",
+      "name": "Lütke Vote-Buying Comment Evidence",
+      "script_span": "And third— definitely not the last example— economics. Because I literally shake my head at shit like this. [HEADLINE / SCREENSHOT: LÜTKE VOTE-BUYING COMMENT/TWEET — SOURCE AND CONTEXT VERIFIED BEFORE PRODUCTION.]",
+      "takeaway": "Examine public statement from tech CEO regarding political incentives, verified for context.",
+      "on_screen_copy": "LÜTKE COMMENT SCREENSHOT [VERIFIED CONTEXT]",
+      "unresolved_placeholder": "[HEADLINE / SCREENSHOT: LÜTKE VOTE-BUYING COMMENT/TWEET — SOURCE AND CONTEXT VERIFIED BEFORE PRODUCTION.]",
+      "routing": {
+        "primary_route": "claude_design",
+        "supporting_routes": [],
+        "rationale": "EvidenceFrame component rendering verified screenshot with provenance metadata.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "editorial_grunge",
+        "pattern": "headline-takeover",
+        "viewer_sees": "Distressed newsroom frame showcasing verified social post / headline with date and source badge.",
+        "continuity_elements": [
+          "evidence_stack_layer1"
+        ],
+        "transition_in": "Slide in over dark background",
+        "transition_out": "Stacks behind next headline"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "FOCUS"
+        ],
+        "intent": "Firm document entrance landing as documentary proof."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [],
+        "evidence_research": [
+          "DEP-EVI-01"
+        ],
+        "documents_headlines": [
+          "DEP-DOC-01"
+        ],
+        "generated_assets": [],
+        "design_system": [
+          "DEP-DS-01",
+          "DEP-DS-05",
+          "DEP-DS-08",
+          "DEP-DS-09"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "EvidenceFrame documentary graphic",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Evidence stack accumulation"
+      },
+      "readiness": {
+        "status": "blocked_evidence",
+        "blockers": [
+          "blocked_evidence"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 5.0,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-031",
+      "scene_ref": "PART 5 — ECONOMICS / SCENE 10 — “ARE YOU FUCKING KIDDING ME?”",
+      "name": "Musk Incident Sourced Evidence",
+      "script_span": "Then this. [MUSK INCIDENT / HEADLINE — USE PRECISE, SOURCED DESCRIPTION RATHER THAN ASSERTING CONTESTED CHARACTERIZATION AS FACT.]",
+      "takeaway": "Present precise, sourced news documentation of billionaire conduct without contested characterization.",
+      "on_screen_copy": "MUSK INCIDENT HEADLINE [SOURCED]",
+      "unresolved_placeholder": "[MUSK INCIDENT / HEADLINE — USE PRECISE, SOURCED DESCRIPTION RATHER THAN ASSERTING CONTESTED CHARACTERIZATION AS FACT.]",
+      "routing": {
+        "primary_route": "claude_design",
+        "supporting_routes": [],
+        "rationale": "EvidenceFrame displaying sourced headline with verified factual citation.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "editorial_grunge",
+        "pattern": "evidence-stack",
+        "viewer_sees": "Second headline card enters at slight offset angle, stacking over first document.",
+        "continuity_elements": [
+          "evidence_stack_layer2"
+        ],
+        "transition_in": "Slams onto previous card",
+        "transition_out": "Retains position as third card enters"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "FOCUS"
+        ],
+        "intent": "Piling evidence elements demonstrates recurring systemic pattern."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [],
+        "evidence_research": [
+          "DEP-EVI-02"
+        ],
+        "documents_headlines": [
+          "DEP-DOC-02"
+        ],
+        "generated_assets": [],
+        "design_system": [
+          "DEP-DS-01",
+          "DEP-DS-05",
+          "DEP-DS-08",
+          "DEP-DS-09"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-02",
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "EvidenceFrame layered card",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Evidence stack accumulation"
+      },
+      "readiness": {
+        "status": "blocked_evidence",
+        "blockers": [
+          "blocked_evidence",
+          "blocked_editorial_decision"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 4.0,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-032",
+      "scene_ref": "PART 5 — ECONOMICS / SCENE 10 — “ARE YOU FUCKING KIDDING ME?”",
+      "name": "Ellison Staff Homes Evidence Accumulation",
+      "script_span": "Then shit like this. [DAVID ELLISON / STAFF HOMES STORY — VERIFY DETAILS.] [Evidence begins accumulating around presenter.]",
+      "takeaway": "Add third data point documenting extreme billionaire wealth disparities surrounding workforce.",
+      "on_screen_copy": "DAVID ELLISON STAFF HOMES STORY [DETAILS VERIFIED]",
+      "unresolved_placeholder": "[DAVID ELLISON / STAFF HOMES STORY — VERIFY DETAILS.]",
+      "routing": {
+        "primary_route": "claude_design",
+        "supporting_routes": [],
+        "rationale": "EvidenceFrame card entering and triggering full evidence stack accumulation around frame.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "editorial_grunge",
+        "pattern": "evidence-stack",
+        "viewer_sees": "Third investigative document slams down; evidence documents spread and accumulate to crowd the screen.",
+        "continuity_elements": [
+          "crowded_evidence_wall"
+        ],
+        "transition_in": "Rapid entry",
+        "transition_out": "Camera cuts to presenter surrounded by documents"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "TRANSFORM",
+          "PERSIST"
+        ],
+        "intent": "Visual clutter physically embodies the overwhelming scale of economic absurdity."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [],
+        "evidence_research": [
+          "DEP-EVI-03"
+        ],
+        "documents_headlines": [
+          "DEP-DOC-03"
+        ],
+        "generated_assets": [],
+        "design_system": [
+          "DEP-DS-01",
+          "DEP-DS-05",
+          "DEP-DS-09"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Evidence stack background layer",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Scene 10 composite"
+      },
+      "readiness": {
+        "status": "blocked_evidence",
+        "blockers": [
+          "blocked_evidence"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 5.0,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-033",
+      "scene_ref": "PART 5 — ECONOMICS / SCENE 10 — “ARE YOU FUCKING KIDDING ME?”",
+      "name": "The System Is Broken Direct Address",
+      "script_span": "Like… are you fucking kidding me? [CAMERA PUSH.] Ladies and gentlemen— I think the system might be fucking broken.",
+      "takeaway": "Deliver visceral personal verdict as camera pushes into presenter surrounded by evidence.",
+      "on_screen_copy": null,
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "human",
+        "supporting_routes": [
+          "claude_design"
+        ],
+        "rationale": "Presenter performance with dramatic camera push surrounded by evidence overlays.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "editorial_grunge",
+        "pattern": null,
+        "viewer_sees": "Presenter centered, framed by the three accumulated evidence cards; camera dynamically pushes in to tight close-up on final sentence.",
+        "continuity_elements": [
+          "presenter",
+          "evidence_cards"
+        ],
+        "transition_in": "Camera push begins",
+        "transition_out": "Cut to macroeconomic GDP graphic"
+      },
+      "motion": {
+        "verbs": [
+          "FOCUS",
+          "RESOLVE",
+          "PAUSE"
+        ],
+        "intent": "Camera push isolates presenter and locks intense eye contact on conclusion."
+      },
+      "dependencies": {
+        "talking_head": [
+          "DEP-HUM-07"
+        ],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [
+          "DEP-DS-01"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Composited talking-head take",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Scene 10 resolution"
+      },
+      "readiness": {
+        "status": "blocked_human_recording",
+        "blockers": [
+          "blocked_human_recording"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 6.0,
+        "confidence": "high",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-034",
+      "scene_ref": "PART 5 — ECONOMICS / SCENE 11 — WEALTH CONCENTRATION",
+      "name": "GDP Concentration vs Societal Good",
+      "script_span": "[ANIMATED SCALE / GDP visualization.] No human being should be concentrating percentage points of an entire country’s economic output into themselves. I don’t care how innovative you are. I don’t care how successful you are. At some point we should probably be capable of asking: [TEXT] “IS THIS ACTUALLY GOOD FOR SOCIETY?” instead of assuming: [TEXT] SUCCESS = GOOD",
+      "takeaway": "Question the automatic equation of market success with societal benefit using scale visualization.",
+      "on_screen_copy": "“IS THIS ACTUALLY GOOD FOR SOCIETY?” ≠ (SUCCESS = GOOD)",
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "claude_design",
+        "supporting_routes": [],
+        "rationale": "Data graphic comparing individual wealth accumulation against national GDP proportions.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "editorial_grunge",
+        "pattern": "concept_breakdown",
+        "viewer_sees": "Animated visual scale: national GDP block on one side, single individual share tipped against it; text contrasts 'IS THIS ACTUALLY GOOD FOR SOCIETY?' with false assumption 'SUCCESS = GOOD'.",
+        "continuity_elements": [
+          "macro_scale"
+        ],
+        "transition_in": "Hard cut from punchline",
+        "transition_out": "Grenade lands on frame"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "TRACE",
+          "TRANSFORM",
+          "FOCUS"
+        ],
+        "intent": "Visual scale imbalance demonstrates economic proportionality problem."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [],
+        "evidence_research": [
+          "DEP-EVI-04"
+        ],
+        "documents_headlines": [],
+        "generated_assets": [
+          "DEP-GEN-09"
+        ],
+        "design_system": [
+          "DEP-DS-01",
+          "DEP-DS-02",
+          "DEP-DS-03",
+          "DEP-DS-06"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Economic scale motion graphic",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Scene 11 sequence"
+      },
+      "readiness": {
+        "status": "ready",
+        "blockers": []
+      },
+      "timing": {
+        "estimated_seconds": 16.0,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-035",
+      "scene_ref": "PART 5 — ECONOMICS / SCENE 11 — WEALTH CONCENTRATION",
+      "name": "The Economic Grenade Pinning",
+      "script_span": "I’ve got a LOT more to say about this one… [ANIMATION: grenade lands on table.] …so we’re gonna put a pin in this giant fucking grenade and come back to it later. [Presenter cautiously inserts pin.]",
+      "takeaway": "Comedic promise of future deep dive: pinning the grenade to maintain narrative focus.",
+      "on_screen_copy": null,
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "hybrid",
+        "supporting_routes": [
+          "human",
+          "claude_design"
+        ],
+        "rationale": "Presenter interacting with an animated prop landing in frame.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "bespoke",
+        "pattern": null,
+        "viewer_sees": "An animated grenade thuds onto table in front of presenter; presenter delicately, cautiously slides cotter pin into the fuse.",
+        "continuity_elements": [
+          "presenter",
+          "grenade_prop"
+        ],
+        "transition_in": "Grenade falls into frame with sound effect",
+        "transition_out": "Abrupt hard cut to black/clean"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "PAUSE",
+          "RESOLVE"
+        ],
+        "intent": "Visual gag lands the callback setup for a future video."
+      },
+      "dependencies": {
+        "talking_head": [
+          "DEP-HUM-07"
+        ],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [
+          "DEP-GEN-10"
+        ],
+        "design_system": [],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Composited talking-head & prop scene",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Part 5 close"
+      },
+      "readiness": {
+        "status": "blocked_human_recording",
+        "blockers": [
+          "blocked_human_recording",
+          "blocked_asset"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 8.0,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-036",
+      "scene_ref": "PART 6 — WAIT… WHAT DOES THIS HAVE TO DO WITH CRITICAL THINKING? / SCENE 12 — THE TURN",
+      "name": "The Turn: What Does Any Of This Have To Do With It?",
+      "script_span": "[Everything abruptly stops.] [Clean background.] Okay. So what the hell does ANY of this have to do with critical thinking? Everything. Because underneath all this shit are the same basic failures. We stop analyzing. We stop evaluating. We stop asking what the evidence actually tells us. We stop trying to solve the fucking problem. And maybe most importantly… we stop asking whether we might be wrong.",
+      "takeaway": "Execute structural pivot connecting previous chaos to five fundamental cognitive breakdowns.",
+      "on_screen_copy": null,
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "human",
+        "supporting_routes": [],
+        "rationale": "Master narrative pivot delivered with absolute clarity direct to camera.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "none",
+        "pattern": null,
+        "viewer_sees": "Total sensory reset: all graphics vanish, clean dark studio background, presenter speaks with quiet, deliberate intensity.",
+        "continuity_elements": [
+          "presenter"
+        ],
+        "transition_in": "Abrupt stop / silence",
+        "transition_out": "Style change into instructional graphics"
+      },
+      "motion": {
+        "verbs": [
+          "PAUSE"
+        ],
+        "intent": "Total stillness and lack of motion commands focused viewer attention."
+      },
+      "dependencies": {
+        "talking_head": [
+          "DEP-HUM-08"
+        ],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Talking-head master monologue clip",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Act 2 instructional core"
+      },
+      "readiness": {
+        "status": "blocked_human_recording",
+        "blockers": [
+          "blocked_human_recording"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 14.0,
+        "confidence": "high",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-037",
+      "scene_ref": "PART 7 — FIVE SKILLS / SCENE 13 — ANALYZE",
+      "name": "Skill 1: Break The Problem Apart (Analyze)",
+      "script_span": "[STYLE CHANGE: animated instructional sequence.] Great critical thinkers do a few things really fucking well. Number one: ANALYZE. [ANIMATION: complicated object/argument breaks into components.] Break the problem apart. What are we actually talking about? What are the different questions? What do we know? What are we assuming?",
+      "takeaway": "Teach analytical decomposition: breaking complex arguments into constituent parts and assumptions.",
+      "on_screen_copy": "1. ANALYZE\n• What are we actually talking about?\n• What are the different questions?\n• What do we know?\n• What are we assuming?",
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "claude_design",
+        "supporting_routes": [],
+        "rationale": "Animated instructional sequence exploding a complex knot into clear labeled components.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "editorial_grunge",
+        "pattern": "concept_breakdown",
+        "viewer_sees": "Distinct visual chapter banner: '1. ANALYZE'. A dense monolithic block fractures into four labeled constituent parts.",
+        "continuity_elements": [
+          "skills_sequence_counter"
+        ],
+        "transition_in": "Style change transition",
+        "transition_out": "Card transitions into Skill 2"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "TRANSFORM",
+          "FOCUS",
+          "DEEMPHASIZE"
+        ],
+        "intent": "Component explosion visually embodies breaking problems apart."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [
+          "DEP-GEN-11"
+        ],
+        "design_system": [
+          "DEP-DS-01",
+          "DEP-DS-02",
+          "DEP-DS-03",
+          "DEP-DS-04",
+          "DEP-DS-06"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Instructional motion scene",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Skills sequence"
+      },
+      "readiness": {
+        "status": "ready",
+        "blockers": []
+      },
+      "timing": {
+        "estimated_seconds": 9.0,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-038",
+      "scene_ref": "PART 7 — FIVE SKILLS / SCENE 14 — EVALUATE",
+      "name": "Skill 2: Evidence & Source Assessment (Evaluate)",
+      "script_span": "Number two: EVALUATE. [HEADLINE / TWEET / GRAPH appears.] Where did this information come from? What’s the evidence? What’s missing? Does this actually support the claim… or does it just confirm something I already wanted to fucking believe?",
+      "takeaway": "Teach rigorous evaluation of evidence provenance, gaps, and confrontation of confirmation bias.",
+      "on_screen_copy": "2. EVALUATE\n• Where did it come from?\n• What's the evidence?\n• What's missing?\n• Confirmation bias check",
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "claude_design",
+        "supporting_routes": [],
+        "rationale": "EvidenceFrame displaying sample headline/graph with evaluative annotation questions.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "editorial_grunge",
+        "pattern": "claim_evidence_resolution",
+        "viewer_sees": "Chapter banner: '2. EVALUATE'. Evidence card appears with inspection callout labels highlighting provenance, methodology, and omissions.",
+        "continuity_elements": [
+          "skills_sequence_counter"
+        ],
+        "transition_in": "Slide across from Skill 1",
+        "transition_out": "Cut to Bad Boys clip"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "FOCUS",
+          "TRACE",
+          "DEEMPHASIZE"
+        ],
+        "intent": "Inspection callouts direct critical eye to evidence criteria."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [
+          "DEP-DOC-04"
+        ],
+        "generated_assets": [],
+        "design_system": [
+          "DEP-DS-01",
+          "DEP-DS-02",
+          "DEP-DS-04",
+          "DEP-DS-05",
+          "DEP-DS-07"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Evidence evaluation motion scene",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Skills sequence"
+      },
+      "readiness": {
+        "status": "ready",
+        "blockers": []
+      },
+      "timing": {
+        "estimated_seconds": 10.0,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-039",
+      "scene_ref": "PART 7 — FIVE SKILLS / SCENE 15 — INFER / DEDUCE / DETECT",
+      "name": "Bad Boys Detective Cultural Clip",
+      "script_span": "Number three: INFER. DEDUCE. DETECT. [CLIP: BAD BOYS] “You’re the detective. Go detect some shit.”",
+      "takeaway": "Comedic cultural mnemonic reinforcement of active deductive investigation.",
+      "on_screen_copy": "3. INFER / DEDUCE / DETECT",
+      "unresolved_placeholder": "[CLIP: BAD BOYS]",
+      "routing": {
+        "primary_route": "sourced_media",
+        "supporting_routes": [],
+        "rationale": "Movie excerpt from Bad Boys functioning as comedic mnemonic device.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "none",
+        "pattern": null,
+        "viewer_sees": "Bad Boys film excerpt: 'You're the detective. Go detect some shit.'",
+        "continuity_elements": [],
+        "transition_in": "Hard cut from Skill 2",
+        "transition_out": "Cut to presenter takeaway"
+      },
+      "motion": {
+        "verbs": [
+          "PAUSE"
+        ],
+        "intent": "Comedic timing hold."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [
+          "DEP-MED-09"
+        ],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Extracted movie clip",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Skill 3 sequence"
+      },
+      "readiness": {
+        "status": "blocked_asset",
+        "blockers": [
+          "blocked_asset"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 5.0,
+        "confidence": "medium",
+        "basis": "clip_placeholder"
+      }
+    },
+    {
+      "unit_id": "CT-040",
+      "scene_ref": "PART 7 — FIVE SKILLS / SCENE 15 — INFER / DEDUCE / DETECT",
+      "name": "Reasonable Conclusion Takeaway",
+      "script_span": "Given what we actually know… what can we reasonably conclude?",
+      "takeaway": "Distill deduction to its essential discipline: concluding only what evidence warrants.",
+      "on_screen_copy": null,
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "human",
+        "supporting_routes": [],
+        "rationale": "Presenter on camera directly framing the core question of deduction.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "none",
+        "pattern": null,
+        "viewer_sees": "Presenter on camera, crisp delivery, direct eye contact.",
+        "continuity_elements": [
+          "presenter"
+        ],
+        "transition_in": "Cut from film clip",
+        "transition_out": "Cut to Skill 4 graphic"
+      },
+      "motion": {
+        "verbs": [
+          "PAUSE"
+        ],
+        "intent": "Short beat for question to resonate."
+      },
+      "dependencies": {
+        "talking_head": [
+          "DEP-HUM-09"
+        ],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Talking-head reaction clip",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Skill 3 resolution"
+      },
+      "readiness": {
+        "status": "blocked_human_recording",
+        "blockers": [
+          "blocked_human_recording"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 4.0,
+        "confidence": "high",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-041",
+      "scene_ref": "PART 7 — FIVE SKILLS / SCENE 16 — PROBLEM SOLVE",
+      "name": "Skill 4: Fix The Problem vs Win The Fight",
+      "script_span": "Number four: PROBLEM SOLVE. [ANIMATION: shouting characters disappear; actual problem remains.] Not: “Which team is right?” Not: “Who deserves to get owned?” Not: “How do I win this argument?” [TEXT] WHAT ACTUALLY FIXES THE FUCKING PROBLEM? That’s the point.",
+      "takeaway": "Direct cognitive effort toward solving problems rather than winning rhetorical fights.",
+      "on_screen_copy": "4. PROBLEM SOLVE\nNOT: Which team is right?\nNOT: Who gets owned?\nWHAT ACTUALLY FIXES THE FUCKING PROBLEM?",
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "claude_design",
+        "supporting_routes": [],
+        "rationale": "Dynamic animation removing shouting avatars to expose and highlight the core pragmatic question.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "urban_punk",
+        "pattern": "stencil-punch",
+        "viewer_sees": "Chapter banner: '4. PROBLEM SOLVE'. Shouting cartoon avatars vanish cleanly, leaving solitary central box that expands into massive bold headline: 'WHAT ACTUALLY FIXES THE FUCKING PROBLEM?'.",
+        "continuity_elements": [
+          "skills_sequence_counter"
+        ],
+        "transition_in": "Cut from presenter",
+        "transition_out": "Quiet fade to Skill 5"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "REMOVE",
+          "FOCUS",
+          "RESOLVE"
+        ],
+        "intent": "Removal of political distractions leaves clear focus on the pragmatic solution."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [
+          "DEP-GEN-12"
+        ],
+        "design_system": [
+          "DEP-DS-01",
+          "DEP-DS-02",
+          "DEP-DS-03",
+          "DEP-DS-10"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Problem solving motion graphic scene",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Skills sequence"
+      },
+      "readiness": {
+        "status": "ready",
+        "blockers": []
+      },
+      "timing": {
+        "estimated_seconds": 9.0,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-042",
+      "scene_ref": "PART 7 — FIVE SKILLS / SCENE 17 — REFLECT",
+      "name": "Skill 5: Reflect & What If I'm Fucking Wrong?",
+      "script_span": "And number five— and this might be the hardest one: REFLECT. [Everything becomes quiet.] What did I miss? What assumptions did I make? What would change my mind? And… [CAMERA PUSH.] what if I’m fucking wrong? [BEAT.] If your answer is: “Nothing could ever change my mind”… you’re not thinking critically anymore. You’re defending a belief. Those aren’t the same thing.",
+      "takeaway": "Deliver the climax of the instructional arc: critical thinking requires willingness to admit error.",
+      "on_screen_copy": null,
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "human",
+        "supporting_routes": [],
+        "rationale": "Climactic reflective monologue delivered with intimate direct-to-camera performance.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "none",
+        "pattern": null,
+        "viewer_sees": "All motion stops. Quiet room tone. Slow camera push on presenter asking 'what if I'm fucking wrong?'. Sincere, vulnerable, uncompromising.",
+        "continuity_elements": [
+          "presenter"
+        ],
+        "transition_in": "Slow dissolve/cut into quiet studio",
+        "transition_out": "Cut to Scene 18 phone transition"
+      },
+      "motion": {
+        "verbs": [
+          "PAUSE",
+          "FOCUS"
+        ],
+        "intent": "Prolonged hold and silence creates gravitas for self-skepticism."
+      },
+      "dependencies": {
+        "talking_head": [
+          "DEP-HUM-10"
+        ],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Talking-head master take",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Skills sequence climax"
+      },
+      "readiness": {
+        "status": "blocked_human_recording",
+        "blockers": [
+          "blocked_human_recording"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 14.0,
+        "confidence": "high",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-043",
+      "scene_ref": "PART 8 — THE CONSPIRACY JOKE / SCENE 18 — WHY ARE WE SO BAD AT THIS?",
+      "name": "Smartphone Dopamine Feedback Loop",
+      "script_span": "Now if you’re sitting there thinking: “Jesus Christ, I’m terrible at half of these.” Relax. Most of us are. [PHONE appears.] And staring at this fucking thing all day certainly isn’t helping. [ANIMATION: PHONE → outrage → notification → outrage → ad → dopamine → repeat.]",
+      "takeaway": "Acknowledge common human struggle with critical thinking exacerbated by algorithmic feeds.",
+      "on_screen_copy": "PHONE → OUTRAGE → NOTIFICATION → OUTRAGE → AD → DOPAMINE → REPEAT",
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "claude_design",
+        "supporting_routes": [
+          "canva"
+        ],
+        "rationale": "Rapid animated cycle illustrating the addictive digital feedback loop.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "urban_punk",
+        "pattern": "concept_breakdown",
+        "viewer_sees": "Smartphone frame illuminates in asphalt/acid palette; circular loop arrows spin wildly between OUTRAGE, NOTIFICATION, AD, and DOPAMINE.",
+        "continuity_elements": [
+          "phone_prop"
+        ],
+        "transition_in": "Phone slides up into frame",
+        "transition_out": "Conspiracy animation begins"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "TRACE",
+          "TRANSFORM"
+        ],
+        "intent": "Spinning circular motion captures the relentless treadmill of online feeds."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [
+          "DEP-GEN-13"
+        ],
+        "design_system": [
+          "DEP-DS-01",
+          "DEP-DS-06"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Animated loop motion scene",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Scene 18 sequence"
+      },
+      "readiness": {
+        "status": "ready",
+        "blockers": []
+      },
+      "timing": {
+        "estimated_seconds": 11.0,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-044",
+      "scene_ref": "PART 8 — THE CONSPIRACY JOKE / SCENE 18 — WHY ARE WE SO BAD AT THIS?",
+      "name": "Conspiracy Meeting & Critical Thinking Stamp",
+      "script_span": "And before somebody tells me this is all part of some giant conspiracy being cooked up in a seedy room by twelve billionaires and some asshole who owns an island— [ANIMATION: absurd shadowy billionaire meeting.] Maybe. [BEAT.] But unless you’ve got some fucking evidence… [GIANT STAMP] THAT’S NOT CRITICAL THINKING EITHER.",
+      "takeaway": "Reject conspiratorial thinking lacking evidence: self-skepticism applies universally.",
+      "on_screen_copy": "THAT’S NOT CRITICAL THINKING EITHER",
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "claude_design",
+        "supporting_routes": [],
+        "rationale": "Absurdist cartoon illustration followed by massive editorial impact stamp.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "urban_punk",
+        "pattern": "stencil-punch",
+        "viewer_sees": "Absurd shadowy cartoon of cigar-smoking billionaires and tropical island; beat; giant rubber stamp slams down across entire screen in neon ink: 'THAT'S NOT CRITICAL THINKING EITHER'.",
+        "continuity_elements": [],
+        "transition_in": "Cut from phone",
+        "transition_out": "Cut to Scene 19 callback sequence"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "PAUSE",
+          "RESOLVE"
+        ],
+        "intent": "Sudden stamp impact shatters conspiratorial fantasy and asserts evidentiary discipline."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [
+          "DEP-GEN-14",
+          "DEP-GEN-15"
+        ],
+        "design_system": [
+          "DEP-DS-01",
+          "DEP-DS-02",
+          "DEP-DS-03",
+          "DEP-DS-04",
+          "DEP-DS-10"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Conspiracy satire & stamp animation",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Part 8 close"
+      },
+      "readiness": {
+        "status": "ready",
+        "blockers": []
+      },
+      "timing": {
+        "estimated_seconds": 13.0,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-045",
+      "scene_ref": "PART 9 — CLOSE / SCENE 19 — CALLBACK MONTAGE",
+      "name": "Concept Callback Rapid Sequence",
+      "script_span": "So yeah. We’re gonna talk about critical thinking a lot around here. [FAST CALLBACKS: political teams / potato / Newman / billionaire wall / detective / phone.] Because I genuinely think it’s one of the most important skills people can learn right now. Not because it’ll tell you what to think. But because it’ll make you a hell of a lot better at figuring out how to think.",
+      "takeaway": "Synthesize the entire video through rapid visual callbacks rewarding viewer memory.",
+      "on_screen_copy": null,
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "local_tooling",
+        "supporting_routes": [
+          "hybrid"
+        ],
+        "rationale": "Rapid montage assembling rendered elements and clips from earlier units.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "bespoke",
+        "pattern": null,
+        "viewer_sees": "Rapid-fire visual callback montage cutting in rhythm with narration: political teams yelling (CT-005), Potato thumbs-up (CT-024), Newman broccoli disgust (CT-027), billionaire wall (CT-032), Bad Boys detective (CT-039), and spinning phone (CT-043).",
+        "continuity_elements": [
+          "prior_visual_motifs"
+        ],
+        "transition_in": "Cut from stamp",
+        "transition_out": "Cut to final on-camera frame"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "REPLACE",
+          "RESOLVE"
+        ],
+        "intent": "Rapid callbacks reinforce visual memory and conceptual continuity."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [
+          "DEP-GEN-16"
+        ],
+        "design_system": [
+          "DEP-DS-01"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Montage callback video sequence",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Closing sequence assembly"
+      },
+      "readiness": {
+        "status": "blocked_asset",
+        "blockers": [
+          "blocked_asset"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 12.0,
+        "confidence": "medium",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-046",
+      "scene_ref": "PART 9 — CLOSE / SCENE 19 — CALLBACK MONTAGE",
+      "name": "Closing Reflection & Warning Direct Address",
+      "script_span": "[ON CAMERA.] And the world isn’t getting any fucking simpler. [BEAT.] We probably shouldn’t be getting dumber. [CUT TO BLACK.]",
+      "takeaway": "Final sober, memorable sign-off: simplicity will not rescue us, only disciplined thinking.",
+      "on_screen_copy": null,
+      "unresolved_placeholder": null,
+      "routing": {
+        "primary_route": "human",
+        "supporting_routes": [],
+        "rationale": "Presenter final direct-to-camera delivery and cut to black.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "none",
+        "pattern": null,
+        "viewer_sees": "Presenter on camera, deadpan delivery, holding beat after 'We probably shouldn't be getting dumber', then sharp cut to black.",
+        "continuity_elements": [
+          "presenter"
+        ],
+        "transition_in": "Cut from callback montage",
+        "transition_out": "Cut to black"
+      },
+      "motion": {
+        "verbs": [
+          "PAUSE"
+        ],
+        "intent": "Final deadpan pause before sudden blackout."
+      },
+      "dependencies": {
+        "talking_head": [
+          "DEP-HUM-11"
+        ],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [],
+        "design_system": [],
+        "editorial_decisions": [
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "Talking-head final take clip",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Video close"
+      },
+      "readiness": {
+        "status": "blocked_human_recording",
+        "blockers": [
+          "blocked_human_recording"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 7.0,
+        "confidence": "high",
+        "basis": "narration_estimate"
+      }
+    },
+    {
+      "unit_id": "CT-047",
+      "scene_ref": "END CARD",
+      "name": "Sources, Citations & Fair Use End Card",
+      "script_span": "Sources, references and media credits available in the accompanying credits/source record. Selected third-party media excerpts are used for purposes including commentary, criticism, education, parody and/or satire. [BRAND / HANDLE]",
+      "takeaway": "Fulfill provenance, Fair Use, attribution obligations, and display channel handle.",
+      "on_screen_copy": "SOURCES & MEDIA CREDITS\nSelected third-party media excerpts used under Fair Use for commentary, criticism, education, and parody.\n[BRAND / HANDLE]",
+      "unresolved_placeholder": "[BRAND / HANDLE]",
+      "routing": {
+        "primary_route": "claude_design",
+        "supporting_routes": [
+          "canva"
+        ],
+        "rationale": "Standardized governed end card displaying credits disclaimer, Fair Use notice, and brand lockup.",
+        "confidence": "high"
+      },
+      "visual_treatment": {
+        "profile": "editorial_grunge",
+        "pattern": null,
+        "viewer_sees": "Governed 9:16 end card: typography disclaimer clearly formatted within safe areas; brand handle / logo lockup centered.",
+        "continuity_elements": [
+          "brand_mark"
+        ],
+        "transition_in": "Cut up from black",
+        "transition_out": "Fade out"
+      },
+      "motion": {
+        "verbs": [
+          "REVEAL",
+          "PAUSE"
+        ],
+        "intent": "Legible display hold allowing viewers to read legal and credit notice."
+      },
+      "dependencies": {
+        "talking_head": [],
+        "third_party_media": [],
+        "evidence_research": [],
+        "documents_headlines": [],
+        "generated_assets": [
+          "DEP-GEN-17"
+        ],
+        "design_system": [
+          "DEP-DS-01",
+          "DEP-DS-02",
+          "DEP-DS-03"
+        ],
+        "editorial_decisions": [
+          "DEP-DEC-03",
+          "DEP-DEC-04"
+        ]
+      },
+      "output": {
+        "expected_artifact": "End card graphic / motion clip",
+        "media_type": "video/mp4",
+        "downstream_dependency": "Master video tail"
+      },
+      "readiness": {
+        "status": "blocked_editorial_decision",
+        "blockers": [
+          "blocked_editorial_decision"
+        ]
+      },
+      "timing": {
+        "estimated_seconds": 4.0,
+        "confidence": "high",
+        "basis": "designed_hold"
+      }
+    }
+  ],
+  "dependencies": {
+    "human_recordings": [
+      {
+        "id": "DEP-HUM-01",
+        "category": "human_recordings",
+        "description": "Talking-head direct address opening hook monologue ('One of the things that fuckin' grinds me...')",
+        "linked_units": [
+          "CT-001"
+        ],
+        "source_reference": "Scene 1",
+        "status": "pending_recording",
+        "unblock_requirement": "Human recording session in 9:16 vertical framing."
+      },
+      {
+        "id": "DEP-HUM-02",
+        "category": "human_recordings",
+        "description": "Talking-head topic setup ('Let’s start with the obvious one. Politics.')",
+        "linked_units": [
+          "CT-004"
+        ],
+        "source_reference": "Scene 2",
+        "status": "pending_recording",
+        "unblock_requirement": "Human recording session."
+      },
+      {
+        "id": "DEP-HUM-03",
+        "category": "human_recordings",
+        "description": "Talking-head social media label rant ('And then there’s another one that drives me fucking insane...')",
+        "linked_units": [
+          "CT-010"
+        ],
+        "source_reference": "Scene 4",
+        "status": "pending_recording",
+        "unblock_requirement": "Human recording session."
+      },
+      {
+        "id": "DEP-HUM-04",
+        "category": "human_recordings",
+        "description": "Talking-head core argument on definitions, criteria, and histories ('They’re words. They describe actual things...')",
+        "linked_units": [
+          "CT-013"
+        ],
+        "source_reference": "Scene 4",
+        "status": "pending_recording",
+        "unblock_requirement": "Human recording session."
+      },
+      {
+        "id": "DEP-HUM-05",
+        "category": "human_recordings",
+        "description": "Talking-head reflection on ethical consistency and raging hypocrisy ('Although apparently “good-looking Nazi”...')",
+        "linked_units": [
+          "CT-016"
+        ],
+        "source_reference": "Scene 4",
+        "status": "pending_recording",
+        "unblock_requirement": "Human recording session."
+      },
+      {
+        "id": "DEP-HUM-06",
+        "category": "human_recordings",
+        "description": "Talking-head cultural critique, Potato interaction reaction, and tolerance vs utility distinction",
+        "linked_units": [
+          "CT-018",
+          "CT-024",
+          "CT-025"
+        ],
+        "source_reference": "Scenes 5, 7",
+        "status": "pending_recording",
+        "unblock_requirement": "Human recording session."
+      },
+      {
+        "id": "DEP-HUM-07",
+        "category": "human_recordings",
+        "description": "Talking-head economic outrage delivery ('Like… are you fucking kidding me? ... system might be fucking broken') and grenade pin interaction",
+        "linked_units": [
+          "CT-033",
+          "CT-035"
+        ],
+        "source_reference": "Scenes 10, 11",
+        "status": "pending_recording",
+        "unblock_requirement": "Human recording session with physical/prop interaction."
+      },
+      {
+        "id": "DEP-HUM-08",
+        "category": "human_recordings",
+        "description": "Talking-head master narrative pivot monologue ('Okay. So what the hell does ANY of this have to do with critical thinking?...')",
+        "linked_units": [
+          "CT-036"
+        ],
+        "source_reference": "Scene 12",
+        "status": "pending_recording",
+        "unblock_requirement": "Human recording session."
+      },
+      {
+        "id": "DEP-HUM-09",
+        "category": "human_recordings",
+        "description": "Talking-head deduction question ('Given what we actually know… what can we reasonably conclude?')",
+        "linked_units": [
+          "CT-040"
+        ],
+        "source_reference": "Scene 15",
+        "status": "pending_recording",
+        "unblock_requirement": "Human recording session."
+      },
+      {
+        "id": "DEP-HUM-10",
+        "category": "human_recordings",
+        "description": "Talking-head reflective climax ('What did I miss? ... what if I’m fucking wrong?...')",
+        "linked_units": [
+          "CT-042"
+        ],
+        "source_reference": "Scene 17",
+        "status": "pending_recording",
+        "unblock_requirement": "Human recording session with slow camera push."
+      },
+      {
+        "id": "DEP-HUM-11",
+        "category": "human_recordings",
+        "description": "Talking-head final sign-off delivery ('And the world isn’t getting any fucking simpler. We probably shouldn’t be getting dumber.')",
+        "linked_units": [
+          "CT-046"
+        ],
+        "source_reference": "Scene 19",
+        "status": "pending_recording",
+        "unblock_requirement": "Human recording session."
+      }
+    ],
+    "third_party_media": [
+      {
+        "id": "DEP-MED-01",
+        "category": "third_party_media",
+        "description": "Rapid montage footage of political screaming, social media fights, absurd headlines, culture-war clips, and talking heads",
+        "linked_units": [
+          "CT-002"
+        ],
+        "source_reference": "Scene 1 script direction [MONTAGE]",
+        "status": "pending_research",
+        "unblock_requirement": "Source and ingest ~6-8 short licensed/fair-use video excerpts."
+      },
+      {
+        "id": "DEP-MED-02",
+        "category": "third_party_media",
+        "description": "News / social clips illustrating partisan freedom rhetoric ('crying about government taking away freedom')",
+        "linked_units": [
+          "CT-006"
+        ],
+        "source_reference": "Scene 3 script direction [NEWS / SOCIAL CLIPS]",
+        "status": "pending_research",
+        "unblock_requirement": "Identify and clip 1-2 broadcast/social news excerpts illustrating rhetoric."
+      },
+      {
+        "id": "DEP-MED-03",
+        "category": "third_party_media",
+        "description": "Headlines / news footage of political outrage and calls for revenge/retribution",
+        "linked_units": [
+          "CT-008"
+        ],
+        "source_reference": "Scene 3 script direction [HEADLINES / NEWS FOOTAGE]",
+        "status": "pending_research",
+        "unblock_requirement": "Identify and clip 1-2 broadcast/headline news excerpts."
+      },
+      {
+        "id": "DEP-MED-04",
+        "category": "third_party_media",
+        "description": "Denis Leary 'I\\'m an Asshole' song/performance excerpt",
+        "linked_units": [
+          "CT-012"
+        ],
+        "source_reference": "Scene 4 script note [Clip: Dennis Leary's I'm an Asshole]",
+        "status": "pending_research",
+        "unblock_requirement": "Source copyright-cleared or fair-use 3-second excerpt."
+      },
+      {
+        "id": "DEP-MED-05",
+        "category": "third_party_media",
+        "description": "Star Trek TOS 'Patterns of Force' excerpt (Spock calling Kirk 'good-looking Nazi')",
+        "linked_units": [
+          "CT-015"
+        ],
+        "source_reference": "Scene 4 script note [CLIP: STAR TREK — Spock calling Kirk a “good-looking Nazi.”]",
+        "status": "pending_research",
+        "unblock_requirement": "Locate episode clip and verify timestamp for 3-second excerpt."
+      },
+      {
+        "id": "DEP-MED-06",
+        "category": "third_party_media",
+        "description": "Footage montage of politicians / Trump contradicting themselves",
+        "linked_units": [
+          "CT-017"
+        ],
+        "source_reference": "Scene 4 script note [CLIP: TRUMP, POLITICANS CONTRADCITING THEMSELVES]",
+        "status": "pending_research",
+        "unblock_requirement": "Curate 2-3 verified juxtaposition clips of public contradictory statements."
+      },
+      {
+        "id": "DEP-MED-07",
+        "category": "third_party_media",
+        "description": "Seinfeld television excerpt: Newman refusing to eat broccoli ('Kenny Rogers Roasters' / 'The Strike')",
+        "linked_units": [
+          "CT-027"
+        ],
+        "source_reference": "Scene 8 script note [CLIP: SEINFELD — Newman refusing to eat the broccoli.]",
+        "status": "pending_research",
+        "unblock_requirement": "Locate episode excerpt and prepare clean 4-second video cut."
+      },
+      {
+        "id": "DEP-MED-08",
+        "category": "third_party_media",
+        "description": "Editorial stills/footage of Data Center facility and Israeli flag / Netanyahu",
+        "linked_units": [
+          "CT-029"
+        ],
+        "source_reference": "Scene 9 script notes [IMAGE: DATA CENTER.] [IMAGE: ISRAELI FLAG / NETANYAHU.]",
+        "status": "pending_research",
+        "unblock_requirement": "Acquire high-resolution editorial photos/clips with verified rights."
+      },
+      {
+        "id": "DEP-MED-09",
+        "category": "third_party_media",
+        "description": "Bad Boys movie excerpt: 'You\\'re the detective. Go detect some shit.'",
+        "linked_units": [
+          "CT-039"
+        ],
+        "source_reference": "Scene 15 script note [CLIP: BAD BOYS]",
+        "status": "pending_research",
+        "unblock_requirement": "Source and extract clean 3-second movie clip."
+      },
+      {
+        "id": "DEP-MED-10",
+        "category": "third_party_media",
+        "description": "Montage clips of prominent online creators acting as radicalizers / rage-farmers",
+        "linked_units": [
+          "CT-023"
+        ],
+        "source_reference": "Scene 6 script note [Show montage of my least favourite creators who are truly radicalizers)",
+        "status": "pending_selection",
+        "unblock_requirement": "Human editorial selection of creators (DEP-DEC-01) followed by clip sourcing."
+      },
+      {
+        "id": "DEP-MED-11",
+        "category": "third_party_media",
+        "description": "Fast visual collage media: influencer feeds, porn industry headlines, TikTok clips, celebrity feeds",
+        "linked_units": [
+          "CT-018"
+        ],
+        "source_reference": "Scene 5 script direction [FAST VISUAL COLLAGE]",
+        "status": "pending_research",
+        "unblock_requirement": "Curate collection of social-media screenshots and short video clips."
+      }
+    ],
+    "evidence_research": [
+      {
+        "id": "DEP-EVI-01",
+        "category": "evidence_research",
+        "description": "Factual verification, date, exact text, and contextual analysis of Tobi Lütke vote-buying comment/tweet",
+        "linked_units": [
+          "CT-030"
+        ],
+        "source_reference": "Scene 10 script note [LÜTKE VOTE-BUYING COMMENT/TWEET — SOURCE AND CONTEXT VERIFIED BEFORE PRODUCTION.]",
+        "status": "pending_research",
+        "unblock_requirement": "Conduct factual research grain to verify original tweet/post, timestamp, and context."
+      },
+      {
+        "id": "DEP-EVI-02",
+        "category": "evidence_research",
+        "description": "Factual sourcing and precise neutral description for Elon Musk incident to prevent asserting contested characterizations as fact",
+        "linked_units": [
+          "CT-031"
+        ],
+        "source_reference": "Scene 10 script note [MUSK INCIDENT / HEADLINE — USE PRECISE, SOURCED DESCRIPTION RATHER THAN ASSERTING CONTESTED CHARACTERIZATION AS FACT.]",
+        "status": "pending_research",
+        "unblock_requirement": "Conduct research grain and establish editorial consensus on specific incident (DEP-DEC-02)."
+      },
+      {
+        "id": "DEP-EVI-03",
+        "category": "evidence_research",
+        "description": "Factual verification of details for David Ellison staff homes report",
+        "linked_units": [
+          "CT-032"
+        ],
+        "source_reference": "Scene 10 script note [DAVID ELLISON / STAFF HOMES STORY — VERIFY DETAILS.]",
+        "status": "pending_research",
+        "unblock_requirement": "Conduct research grain locating primary reporting, publication dates, and corroborated facts."
+      },
+      {
+        "id": "DEP-EVI-04",
+        "category": "evidence_research",
+        "description": "Macroeconomic context and national GDP ratio comparisons for top individual wealth concentration",
+        "linked_units": [
+          "CT-034"
+        ],
+        "source_reference": "Scene 11 script direction [ANIMATED SCALE / GDP visualization.]",
+        "status": "pending_research",
+        "unblock_requirement": "Gather verified official macroeconomic statistical data."
+      }
+    ],
+    "documents_headlines": [
+      {
+        "id": "DEP-DOC-01",
+        "category": "documents_headlines",
+        "description": "Verified high-resolution screenshot graphic of Tobi Lütke comment/tweet formatted for EvidenceFrame",
+        "linked_units": [
+          "CT-030"
+        ],
+        "source_reference": "Scene 10",
+        "status": "blocked",
+        "unblock_requirement": "Blocked by research verification DEP-EVI-01."
+      },
+      {
+        "id": "DEP-DOC-02",
+        "category": "documents_headlines",
+        "description": "Sourced headline and article screenshot for Elon Musk incident formatted for EvidenceFrame",
+        "linked_units": [
+          "CT-031"
+        ],
+        "source_reference": "Scene 10",
+        "status": "blocked",
+        "unblock_requirement": "Blocked by research verification DEP-EVI-02."
+      },
+      {
+        "id": "DEP-DOC-03",
+        "category": "documents_headlines",
+        "description": "Verified publication headline and article screenshot for David Ellison staff homes story",
+        "linked_units": [
+          "CT-032"
+        ],
+        "source_reference": "Scene 10",
+        "status": "blocked",
+        "unblock_requirement": "Blocked by research verification DEP-EVI-03."
+      },
+      {
+        "id": "DEP-DOC-04",
+        "category": "documents_headlines",
+        "description": "Sample headline, tweet, and chart artifacts for Skill 2 (Evaluate) instructional demonstration",
+        "linked_units": [
+          "CT-038"
+        ],
+        "source_reference": "Scene 14",
+        "status": "ready",
+        "unblock_requirement": "Internal design graphic preparation."
+      }
+    ],
+    "generated_assets": [
+      {
+        "id": "DEP-GEN-01",
+        "category": "generated_assets",
+        "description": "Governed 9:16 typography title card: 'WHAT THE FUCK HAPPENED TO CRITICAL THINKING?'",
+        "linked_units": [
+          "CT-003"
+        ],
+        "source_reference": "Scene 1",
+        "status": "ready",
+        "unblock_requirement": "Generate via Claude Design using Urban Punk profile tokens."
+      },
+      {
+        "id": "DEP-GEN-02",
+        "category": "generated_assets",
+        "description": "Two simplified ideological groups shouting and separating animation with ENTRENCHED -> STUBBORN AS FUCK label",
+        "linked_units": [
+          "CT-005"
+        ],
+        "source_reference": "Scene 2",
+        "status": "ready",
+        "unblock_requirement": "Generate via Claude Design component animation."
+      },
+      {
+        "id": "DEP-GEN-03",
+        "category": "generated_assets",
+        "description": "Giant FREEDOM sign pulled away character animation with 'Terms & conditions apply' stamp",
+        "linked_units": [
+          "CT-007"
+        ],
+        "source_reference": "Scene 3",
+        "status": "ready",
+        "unblock_requirement": "Generate via Claude Design."
+      },
+      {
+        "id": "DEP-GEN-04",
+        "category": "generated_assets",
+        "description": "Violently swinging pendulum animation crushing 'HOW DO WE SOLVE THIS?' with 'HOW DO WE FUCKING DESTROY THEM?'",
+        "linked_units": [
+          "CT-009"
+        ],
+        "source_reference": "Scene 3",
+        "status": "ready",
+        "unblock_requirement": "Generate via Claude Design."
+      },
+      {
+        "id": "DEP-GEN-05",
+        "category": "generated_assets",
+        "description": "Kinetic text burst montage: NAZI / FASCIST / SOCIALIST / COMMUNIST / MARXIST / WOKE / BLAH BLAH BLAH",
+        "linked_units": [
+          "CT-011"
+        ],
+        "source_reference": "Scene 4",
+        "status": "ready",
+        "unblock_requirement": "Generate via Claude Design using Urban Punk stencil punch pattern."
+      },
+      {
+        "id": "DEP-GEN-06",
+        "category": "generated_assets",
+        "description": "Process diagram flow: CHILD -> PHONE -> DATA -> $$$",
+        "linked_units": [
+          "CT-019"
+        ],
+        "source_reference": "Scene 5",
+        "status": "ready",
+        "unblock_requirement": "Generate via Claude Design."
+      },
+      {
+        "id": "DEP-GEN-07",
+        "category": "generated_assets",
+        "description": "Category boxes colliding into culture-war shit sandwich / tangled mess animation",
+        "linked_units": [
+          "CT-020",
+          "CT-023"
+        ],
+        "source_reference": "Scenes 5, 6",
+        "status": "ready",
+        "unblock_requirement": "Generate via Claude Design."
+      },
+      {
+        "id": "DEP-GEN-08",
+        "category": "generated_assets",
+        "description": "Animated Potato character with cheerful thumbs-up gesture",
+        "linked_units": [
+          "CT-024"
+        ],
+        "source_reference": "Scene 7",
+        "status": "ready",
+        "unblock_requirement": "Illustrate and animate 2D character asset."
+      },
+      {
+        "id": "DEP-GEN-09",
+        "category": "generated_assets",
+        "description": "Animated balance scale showing individual wealth vs national GDP output",
+        "linked_units": [
+          "CT-034"
+        ],
+        "source_reference": "Scene 11",
+        "status": "ready",
+        "unblock_requirement": "Generate via Claude Design."
+      },
+      {
+        "id": "DEP-GEN-10",
+        "category": "generated_assets",
+        "description": "Animated grenade prop with removable cotter pin",
+        "linked_units": [
+          "CT-035"
+        ],
+        "source_reference": "Scene 11",
+        "status": "ready",
+        "unblock_requirement": "Illustrate prop and coordinate compositing with human recording."
+      },
+      {
+        "id": "DEP-GEN-11",
+        "category": "generated_assets",
+        "description": "Complex monolithic problem object exploding into four labeled analytical components",
+        "linked_units": [
+          "CT-037"
+        ],
+        "source_reference": "Scene 13",
+        "status": "ready",
+        "unblock_requirement": "Generate via Claude Design."
+      },
+      {
+        "id": "DEP-GEN-12",
+        "category": "generated_assets",
+        "description": "Shouting avatars disappearing to reveal central question 'WHAT ACTUALLY FIXES THE FUCKING PROBLEM?'",
+        "linked_units": [
+          "CT-041"
+        ],
+        "source_reference": "Scene 16",
+        "status": "ready",
+        "unblock_requirement": "Generate via Claude Design."
+      },
+      {
+        "id": "DEP-GEN-13",
+        "category": "generated_assets",
+        "description": "Smartphone screen dopamine feedback loop animation",
+        "linked_units": [
+          "CT-043"
+        ],
+        "source_reference": "Scene 18",
+        "status": "ready",
+        "unblock_requirement": "Generate via Claude Design."
+      },
+      {
+        "id": "DEP-GEN-14",
+        "category": "generated_assets",
+        "description": "Absurd cartoon illustration of shadowy billionaire secret room meeting",
+        "linked_units": [
+          "CT-044"
+        ],
+        "source_reference": "Scene 18",
+        "status": "ready",
+        "unblock_requirement": "Illustrate cartoon asset."
+      },
+      {
+        "id": "DEP-GEN-15",
+        "category": "generated_assets",
+        "description": "Giant full-screen distressed rubber stamp: 'THAT\\'S NOT CRITICAL THINKING EITHER'",
+        "linked_units": [
+          "CT-044"
+        ],
+        "source_reference": "Scene 18",
+        "status": "ready",
+        "unblock_requirement": "Generate via Claude Design using Urban Punk tokens."
+      },
+      {
+        "id": "DEP-GEN-16",
+        "category": "generated_assets",
+        "description": "Rapid-cut callback sequence assembling rendered assets from prior scenes",
+        "linked_units": [
+          "CT-045"
+        ],
+        "source_reference": "Scene 19",
+        "status": "blocked",
+        "unblock_requirement": "Blocked by completion of upstream scene assets (CT-005, CT-024, CT-027, CT-032, CT-039, CT-043)."
+      },
+      {
+        "id": "DEP-GEN-17",
+        "category": "generated_assets",
+        "description": "Governed End Card layout with Fair Use notice, credits pointer, and brand handle lockup",
+        "linked_units": [
+          "CT-047"
+        ],
+        "source_reference": "End Card",
+        "status": "ready",
+        "unblock_requirement": "Generate via Claude Design."
+      }
+    ],
+    "internal_design_system": [
+      {
+        "id": "DEP-DS-01",
+        "category": "internal_design_system",
+        "description": "Core component SceneFrame (root 9:16 container with safe-area enforcement)",
+        "linked_units": [
+          "CT-003",
+          "CT-005",
+          "CT-007",
+          "CT-009",
+          "CT-011",
+          "CT-014",
+          "CT-018",
+          "CT-019",
+          "CT-020",
+          "CT-021",
+          "CT-022",
+          "CT-023",
+          "CT-026",
+          "CT-028",
+          "CT-029",
+          "CT-030",
+          "CT-031",
+          "CT-032",
+          "CT-033",
+          "CT-034",
+          "CT-037",
+          "CT-038",
+          "CT-041",
+          "CT-043",
+          "CT-044",
+          "CT-045",
+          "CT-047"
+        ],
+        "source_reference": "design_system/core/components/scene/SceneFrame.jsx",
+        "status": "implemented",
+        "unblock_requirement": "Implemented and tested in Grain 1."
+      },
+      {
+        "id": "DEP-DS-02",
+        "category": "internal_design_system",
+        "description": "Core component Stage (multi-state indexing and attention presence management)",
+        "linked_units": [
+          "CT-005",
+          "CT-014",
+          "CT-019",
+          "CT-020",
+          "CT-021",
+          "CT-022",
+          "CT-026",
+          "CT-028",
+          "CT-034",
+          "CT-037",
+          "CT-038",
+          "CT-041",
+          "CT-044",
+          "CT-047"
+        ],
+        "source_reference": "design_system/core/components/stage/Stage.jsx",
+        "status": "implemented",
+        "unblock_requirement": "Implemented and tested in Grain 1."
+      },
+      {
+        "id": "DEP-DS-03",
+        "category": "internal_design_system",
+        "description": "Core component Statement (primary instructional thesis and typography block)",
+        "linked_units": [
+          "CT-003",
+          "CT-005",
+          "CT-007",
+          "CT-009",
+          "CT-011",
+          "CT-014",
+          "CT-019",
+          "CT-020",
+          "CT-021",
+          "CT-022",
+          "CT-026",
+          "CT-028",
+          "CT-034",
+          "CT-041",
+          "CT-044",
+          "CT-047"
+        ],
+        "source_reference": "design_system/core/components/teach/Statement.jsx",
+        "status": "implemented",
+        "unblock_requirement": "Implemented and tested in Grain 1."
+      },
+      {
+        "id": "DEP-DS-04",
+        "category": "internal_design_system",
+        "description": "Core component Annotation (mono leader lines and focus callouts)",
+        "linked_units": [
+          "CT-005",
+          "CT-014",
+          "CT-022",
+          "CT-037",
+          "CT-038",
+          "CT-044"
+        ],
+        "source_reference": "design_system/core/components/teach/Annotation.jsx",
+        "status": "implemented",
+        "unblock_requirement": "Implemented and tested in Grain 1."
+      },
+      {
+        "id": "DEP-DS-05",
+        "category": "internal_design_system",
+        "description": "Core component EvidenceFrame (structured documentary evidence container with provenance badges)",
+        "linked_units": [
+          "CT-030",
+          "CT-031",
+          "CT-032",
+          "CT-038"
+        ],
+        "source_reference": "design_system/core/components/media/EvidenceFrame.jsx",
+        "status": "implemented",
+        "unblock_requirement": "Implemented and tested in Grain 1."
+      },
+      {
+        "id": "DEP-DS-06",
+        "category": "internal_design_system",
+        "description": "Core visual pattern concept_breakdown",
+        "linked_units": [
+          "CT-005",
+          "CT-014",
+          "CT-019",
+          "CT-020",
+          "CT-021",
+          "CT-022",
+          "CT-026",
+          "CT-028",
+          "CT-034",
+          "CT-037",
+          "CT-043"
+        ],
+        "source_reference": "design_system/core/visual-patterns/concept-breakdown.md",
+        "status": "implemented",
+        "unblock_requirement": "Documented and governed in Grain 1."
+      },
+      {
+        "id": "DEP-DS-07",
+        "category": "internal_design_system",
+        "description": "Core visual pattern claim_evidence_resolution",
+        "linked_units": [
+          "CT-014",
+          "CT-038"
+        ],
+        "source_reference": "design_system/core/visual-patterns/claim-evidence-resolution.md",
+        "status": "implemented",
+        "unblock_requirement": "Documented and governed in Grain 1."
+      },
+      {
+        "id": "DEP-DS-08",
+        "category": "internal_design_system",
+        "description": "Editorial Grunge visual pattern headline-takeover",
+        "linked_units": [
+          "CT-030",
+          "CT-031"
+        ],
+        "source_reference": "design_system/profiles/editorial_grunge/visual-patterns/headline-takeover.md",
+        "status": "implemented",
+        "unblock_requirement": "Documented and governed in Grain 1."
+      },
+      {
+        "id": "DEP-DS-09",
+        "category": "internal_design_system",
+        "description": "Editorial Grunge visual pattern evidence-stack",
+        "linked_units": [
+          "CT-030",
+          "CT-031",
+          "CT-032"
+        ],
+        "source_reference": "design_system/profiles/editorial_grunge/visual-patterns/evidence-stack.md",
+        "status": "implemented",
+        "unblock_requirement": "Documented and governed in Grain 1."
+      },
+      {
+        "id": "DEP-DS-10",
+        "category": "internal_design_system",
+        "description": "Urban Punk visual pattern stencil-punch",
+        "linked_units": [
+          "CT-003",
+          "CT-009",
+          "CT-011",
+          "CT-041",
+          "CT-044"
+        ],
+        "source_reference": "design_system/profiles/urban_punk/visual-patterns/stencil-punch.md",
+        "status": "implemented",
+        "unblock_requirement": "Documented and governed in Grain 1."
+      }
+    ],
+    "editorial_decisions": [
+      {
+        "id": "DEP-DEC-01",
+        "category": "editorial_decisions",
+        "description": "Selection of specific creators to feature in 'least favourite creators who are truly radicalizers' montage in Scene 6",
+        "linked_units": [
+          "CT-023"
+        ],
+        "source_reference": "Scene 6 script note [Show montage of my least favourite creators who are truly radicalizers)",
+        "status": "pending_selection",
+        "unblock_requirement": "Creator/human editorial decision on specific targets."
+      },
+      {
+        "id": "DEP-DEC-02",
+        "category": "editorial_decisions",
+        "description": "Selection of specific Elon Musk incident and precise non-inflammatory framing in Scene 10",
+        "linked_units": [
+          "CT-031"
+        ],
+        "source_reference": "Scene 10 script note [USE PRECISE, SOURCED DESCRIPTION RATHER THAN ASSERTING CONTESTED CHARACTERIZATION AS FACT.]",
+        "status": "pending_selection",
+        "unblock_requirement": "Creator/human editorial decision on which incident and article to highlight."
+      },
+      {
+        "id": "DEP-DEC-03",
+        "category": "editorial_decisions",
+        "description": "Selection and approval of final brand handle / mark for End Card",
+        "linked_units": [
+          "CT-047"
+        ],
+        "source_reference": "End Card script placeholder [BRAND / HANDLE]",
+        "status": "pending_selection",
+        "unblock_requirement": "Creator decision on publication handle and brand mark."
+      },
+      {
+        "id": "DEP-DEC-04",
+        "category": "editorial_decisions",
+        "description": "Human review and approval of production unit boundaries, routes, blockers, and profile selections at Gate A",
+        "linked_units": [
+          "CT-001",
+          "CT-002",
+          "CT-003",
+          "CT-004",
+          "CT-005",
+          "CT-006",
+          "CT-007",
+          "CT-008",
+          "CT-009",
+          "CT-010",
+          "CT-011",
+          "CT-012",
+          "CT-013",
+          "CT-014",
+          "CT-015",
+          "CT-016",
+          "CT-017",
+          "CT-018",
+          "CT-019",
+          "CT-020",
+          "CT-021",
+          "CT-022",
+          "CT-023",
+          "CT-024",
+          "CT-025",
+          "CT-026",
+          "CT-027",
+          "CT-028",
+          "CT-029",
+          "CT-030",
+          "CT-031",
+          "CT-032",
+          "CT-033",
+          "CT-034",
+          "CT-035",
+          "CT-036",
+          "CT-037",
+          "CT-038",
+          "CT-039",
+          "CT-040",
+          "CT-041",
+          "CT-042",
+          "CT-043",
+          "CT-044",
+          "CT-045",
+          "CT-046",
+          "CT-047"
+        ],
+        "source_reference": "PRODUCTION_MAP.md Gate A",
+        "status": "pending_selection",
+        "unblock_requirement": "Explicit human Gate A approval."
+      }
+    ]
+  }
+}
