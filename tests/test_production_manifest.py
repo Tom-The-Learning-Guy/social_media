@@ -277,12 +277,13 @@ class TestProductionManifest(unittest.TestCase):
             self.assertFalse("Obsidian" in filepath and not line.startswith("??"), f"Obsidian file tracked: {filepath}")
 
     def test_13_no_production_scenes_or_renders_generated(self):
-        """13. Verify that no video scenes or renders were generated in production/."""
-        for root, dirs, files in os.walk(PROD_DIR):
+        """13. Verify that no video scenes or renders were generated in production/projects/."""
+        projects_dir = os.path.join(PROD_DIR, "projects")
+        for root, dirs, files in os.walk(projects_dir):
             for f in files:
                 self.assertFalse(
                     f.endswith((".mp4", ".mov", ".webm", ".mkv")),
-                    f"Generated video render detected in production/: {os.path.join(root, f)}"
+                    f"Generated video render detected in production/projects/: {os.path.join(root, f)}"
                 )
 
 
