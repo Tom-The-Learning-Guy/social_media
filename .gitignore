@@ -33,3 +33,12 @@ tmp/
 references/reference_systems/
 references/media
 references/visual
+
+# Video renders
+production/beats/*.mp4
+!production/beats/.gitkeep
+
+# Remotion local agent skills
+.agents/
+skills-lock.json
+

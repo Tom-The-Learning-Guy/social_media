@@ -76,6 +76,18 @@ Unless explicitly authorized:
 - Do not add large generated renders, caches, dependency directories, or temporary exports to Git merely because they exist locally.
 - Do not import the Obsidian client design system as production content. It is an architectural reference only unless explicitly authorized otherwise.
 
+## Programmatic Animation Pipeline & Beat Execution Rules
+
+When implementing code-driven animation beats (`src/animations/`):
+
+1. **Beat Specification Sourcing**: The agent reads deterministic beat specifications from `scripts/` or `prompts/` (conforming to `prompts/animation_beat_spec.md`). Upstream scripts and prompt templates are strictly read-only for downstream animation agents.
+2. **Design System Token Authority**: All visual styling—including colors, typography, margins, safe areas, and motion curves—must read from `design_system/` tokens or the typed bridge in `src/animations/shared/`. The agent **MUST NOT** hardcode arbitrary hex colors, ad-hoc font families, or non-semantic easings.
+3. **Component Encapsulation & Registration**:
+   - Each animation beat must be self-contained within `src/animations/beats/<BeatName>.tsx`.
+   - Shared primitives (safe areas, kinetic typography, easing presets) belong in `src/animations/shared/`.
+   - All authored beats must be registered as compositions in `src/animations/Root.tsx` with canonical dimensions (1080x1920, 30fps) and explicit durations.
+4. **Render Output Boundary**: Video clip renders must be triggered only via designated build commands (e.g., `npx remotion render src/animations/Root.tsx <beat_id> production/beats/<beat_id>.mp4`) and must write strictly to `production/beats/<beat_id>.mp4`. Downstream agents and scripts must not directly create or manually tamper with files in `production/**`.
+
 ## Implementation Requirements
 
 Before modifying the repository:
